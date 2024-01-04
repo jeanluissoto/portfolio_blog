@@ -3,7 +3,9 @@
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/ml/index.html",
+      "/posts/welcome/index.html",
+      "/posts/ml/2023-12-19-delivery-app.html"
     ]
   }
 ]
