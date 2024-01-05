@@ -184,24 +184,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><a href="https://colab.research.google.com/github/jeanlsoto54/E/blob/main/Rapi_group_project.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
-<div class="cell" data-tags="[]" data-execution_count="1">
+<div class="cell" data-tags="[]" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing libraries</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
+<div class="cell" data-tags="[]" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Displaying at least 50 columns</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">'display.max_columns'</span>,<span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-tags="[]" data-execution_count="5">
+<div class="cell" data-tags="[]" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data file</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">equipo</span><span class="ch">\\</span><span class="st">Downloads</span><span class="ch">\\</span><span class="st">DETALLE ORDENES CANCELADAS_CL.csv'</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> pd.read_csv(<span class="st">'C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">equipo</span><span class="ch">\\</span><span class="st">Downloads</span><span class="ch">\\</span><span class="st">DETALLE ORDENES CANCELADAS_EC.csv'</span>)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.read_csv(<span class="st">'C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">equipo</span><span class="ch">\\</span><span class="st">Downloads</span><span class="ch">\\</span><span class="st">DETALLE ORDENES CANCELADAS_PE.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-tags="[]" data-execution_count="6">
+<div class="cell" data-tags="[]" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Merging the datasets for the three countries Chile, Ecuador and Peru</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>merged_df <span class="op">=</span> pd.concat([df, df1, df2], axis<span class="op">=</span><span class="dv">0</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> merged_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -416,28 +416,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>DIA_NOMBRE: Keep the name of the days when the order was</li>
 </ul>
-<div class="cell" data-outputid="6e53108b-7fbd-4727-923f-e026553a9df1" data-tags="[]" data-execution_count="8">
+<div class="cell" data-outputid="6e53108b-7fbd-4727-923f-e026553a9df1" data-tags="[]" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking unique values</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'DIA_NOMBRE'</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>array(['viernes', 'martes', 'miércoles', 'lunes', 'jueves', 'sábado',
        'domingo'], dtype=object)</code></pre>
 </div>
 </div>
-<div class="cell" data-tags="[]" data-execution_count="9">
+<div class="cell" data-tags="[]" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Translating the Spanish values</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>trans <span class="op">=</span> {<span class="st">'sábado'</span>: <span class="st">'Saturday'</span>, <span class="st">'lunes'</span>:<span class="st">'Monday'</span>, <span class="st">'jueves'</span>:<span class="st">'Thursday'</span>, <span class="st">'martes'</span>:<span class="st">'Tuesday'</span>, <span class="st">'viernes'</span>:<span class="st">'Friday'</span>, <span class="st">'miércoles'</span>:<span class="st">'Wednesday'</span>,</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">'domingo'</span>:<span class="st">'Sunday'</span>}</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'DIA_NOMBRE'</span>] <span class="op">=</span> df[<span class="st">'DIA_NOMBRE'</span>].<span class="bu">map</span>(trans)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-tags="[]" data-execution_count="10">
+<div class="cell" data-tags="[]" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lower case of the columns</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-outputid="326b62ea-58b3-49c2-e00b-04228dda8342" data-tags="[]" data-execution_count="11">
+<div class="cell" data-outputid="326b62ea-58b3-49c2-e00b-04228dda8342" data-tags="[]" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking the values</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'sub_vertical'</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="28">
 <pre><code>array(['Licores', 'Floristeria', 'Super', 'Express', 'Hogar',
        'Bebes y niños', 'Tecnologia', 'Mascotas', 'Sex shop', 'Deportes',
        'Farmacia', 'Belleza', 'Especializada', 'Smoking shop', 'Regalos',
@@ -446,7 +446,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>The variable ‘SUB_VERTICAL’ contains the business sector to which is related the store. In this case, the labels are translated and compacted in fewer classes.</p>
-<div class="cell" data-tags="[]" data-execution_count="12">
+<div class="cell" data-tags="[]" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Translating the Spanish values</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>trans1 <span class="op">=</span> {<span class="st">'Super'</span> : <span class="st">'Supermarket'</span>, <span class="st">'Floristeria'</span>:<span class="st">'E-commerce'</span>, <span class="st">'Express'</span>:<span class="st">'Convenience Store'</span>, <span class="st">'Especializada'</span>: <span class="st">'Special Convenient Store'</span>, <span class="st">'Moda'</span>:<span class="st">'E-commerce'</span>,</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Libreria'</span>:<span class="st">'E-commerce'</span>, <span class="st">'Tecnologia'</span>:<span class="st">'E-commerce'</span>, <span class="st">'Hogar'</span>:<span class="st">'E-commerce'</span>, <span class="st">'Farmacia'</span>:<span class="st">'Pharmacy'</span>, <span class="st">'Mascotas'</span>:<span class="st">'E-commerce'</span>,</span>
@@ -455,13 +455,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Outlet'</span>:<span class="st">'E-commerce'</span>}</span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'sub_vertical'</span>] <span class="op">=</span> df[<span class="st">'sub_vertical'</span>].<span class="bu">map</span>(trans1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-tags="[]" data-execution_count="15">
+<div class="cell" data-tags="[]" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.rename(columns<span class="op">=</span>{<span class="st">'sub_vertical'</span>:<span class="st">'store_category'</span>,<span class="st">'mz_name'</span>:<span class="st">'village_name'</span>,<span class="st">'date_agg'</span>:<span class="st">'date'</span>,<span class="st">'dia_nombre'</span>:<span class="st">'weekday'</span>,<span class="st">'gmv_usd'</span>:<span class="st">'order_price'</span>,<span class="st">'stockouts'</span>:<span class="st">'out_of_stock'</span>,<span class="st">'tag_bo'</span>:<span class="st">'wrong_order'</span>,<span class="st">'tag_bo_cancel'</span>:<span class="st">'order_canceled'</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>                        ,<span class="st">'polygon_size'</span>:<span class="st">'coberture area'</span>,<span class="st">'rappi_amount'</span>:<span class="st">'cashback_amount'</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-outputid="82c08e80-398f-40dd-fb43-2928b1f77815" data-tags="[]" data-execution_count="16">
+<div class="cell" data-outputid="82c08e80-398f-40dd-fb43-2928b1f77815" data-tags="[]" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="16">
+<div class="cell-output cell-output-display" data-execution_count="31">
 <div>
 
 
@@ -479,7 +479,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <th data-quarto-table-cell-role="th">payment_method</th>
 <th data-quarto-table-cell-role="th">order_price</th>
 <th data-quarto-table-cell-role="th">item_count</th>
-<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">city</th>
+<th data-quarto-table-cell-role="th">brand_group</th>
+<th data-quarto-table-cell-role="th">lat</th>
+<th data-quarto-table-cell-role="th">lng</th>
+<th data-quarto-table-cell-role="th">t04_picking_time</th>
+<th data-quarto-table-cell-role="th">t05_cashier_time</th>
+<th data-quarto-table-cell-role="th">t06_requesting_rt_time</th>
 <th data-quarto-table-cell-role="th">vehicle_type</th>
 <th data-quarto-table-cell-role="th">store_category</th>
 <th data-quarto-table-cell-role="th">out_of_stock</th>
@@ -505,7 +511,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>rappi_pay_gateway</td>
 <td>25.407407</td>
 <td>2.0</td>
-<td>...</td>
+<td>Santiago de Chile</td>
+<td>Botillería Echenique</td>
+<td>-33.433491</td>
+<td>-70.581792</td>
+<td>NaN</td>
+<td>14187.0</td>
+<td>NaN</td>
 <td>Bicycle</td>
 <td>Licours Shop</td>
 <td>0</td>
@@ -529,7 +541,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>cc-N/A</td>
 <td>43.049383</td>
 <td>1.0</td>
-<td>...</td>
+<td>Santiago de Chile</td>
+<td>SOLOROSASYALGOMAS</td>
+<td>-33.403637</td>
+<td>-70.657823</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>NaN</td>
 <td>Motorcycle</td>
 <td>E-commerce</td>
 <td>0</td>
@@ -553,7 +571,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>cc-credit</td>
 <td>119.438889</td>
 <td>11.0</td>
-<td>...</td>
+<td>Santiago de Chile</td>
+<td>Jumbo</td>
+<td>-33.402225</td>
+<td>-70.598952</td>
+<td>8.0</td>
+<td>12.0</td>
+<td>1.0</td>
 <td>Motorcycle</td>
 <td>Supermarket</td>
 <td>0</td>
@@ -577,7 +601,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>cc-N/A</td>
 <td>13.061728</td>
 <td>1.0</td>
-<td>...</td>
+<td>Santiago de Chile</td>
+<td>Lider</td>
+<td>-33.380700</td>
+<td>-70.686793</td>
+<td>NaN</td>
+<td>0.0</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>Supermarket</td>
 <td>0</td>
@@ -601,7 +631,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>cc-N/A</td>
 <td>36.740741</td>
 <td>3.0</td>
-<td>...</td>
+<td>Santiago de Chile</td>
+<td>Jardineria teresa jacqueline huenun espinoza</td>
+<td>-33.449619</td>
+<td>-70.635816</td>
+<td>NaN</td>
+<td>0.0</td>
+<td>NaN</td>
 <td>Motorcycle</td>
 <td>E-commerce</td>
 <td>0</td>
@@ -616,12 +652,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 
-<p>5 rows × 27 columns</p>
 </div>
 </div>
 </div>
 <p>The variables ORDER_ID and DATE are being dropped since these data is most useful in traceability than predictibility</p>
-<div class="cell" data-tags="[]" data-execution_count="17">
+<div class="cell" data-tags="[]" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dropping unecessary columns</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df.drop([<span class="st">'order_id'</span>], axis<span class="op">=</span> <span class="dv">1</span>,inplace<span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
