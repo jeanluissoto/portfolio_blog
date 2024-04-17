@@ -1,0 +1,197 @@
+---
+title: "Generative AI"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+    notebook-links: global
+---
+
+# About
+
+In this article it is going to be explained with a real case the use of the Generative AI. This type of  artificial intelligence can create new content or models based on the data it is being trained on. Inside the architectures of this kind of models are supported with Neural Network components. This type of AI can create images, videos texts, speechs. The most well known example of this technology is in the field of Large Language Models (LLM) with **GPT-4**
+
+For this use case, the objective in this work is to achieve an application where it receives data in the form of images/video and the model recognize the objects in it and provides information from an LLM.
+
+To achieve this the pipeline proposed is:
+
+1. Define the code to open the camera's device and obtain a photo frame.
+
+2. Search for a Deep Learning model that works on object classfication and apply it on the image.
+
+3. Obtain an Open Generative AI related to LLM and define the use of it.
+
+4. Ensemble the models and make it function all together.
+
+## Capture images
+
+At first it is going to be imported necessary libraries to mnipulate image data
+```python
+# Importing the libraries related to image and video
+#  module Python Imaging Library:
+# the module Image represents an image object
+# the module ImageDraw provide functions to draw lines,text 
+# and shapes in images
+from PIL import Image,ImageDraw
+import torch
+#Computer vision library
+import cv2
+#torchvision is a library that can handle datasets transforms #from computer vision tasks
+from torchvision.models.detection import fasterrcnn_resnet50_fpn
+import time
+import torchvision.transforms as transforms
+```
+
+In the next chunk of code it is being activated the camera in a pop-up window. This module has two options **s** to capture the frame and save it and **q** to stop the module.
+
+```python
+
+cap = cv2.VideoCapture(0)
+
+while True:
+    ret, frame = cap.read()
+    if not ret: 
+        break
+    cv2.imshow('Energy Consuption task', frame)
+    key = cv2.waitKey(1) & 0xFF
+    if key == ord('s'):
+        current_time = time.strftime("%Y%m%d%H%M%S")
+        print("Saving Image " + current_time + ".jpg")
+        file = "./" + current_time + ".jpg"
+        print(file)
+        cv2.imwrite(file, frame)
+    if key == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+```
+Here is shown the result of the previous chunk of code.
+{{< embed GenAI_Final_Project.ipynb#result-1 >}}
+
+## Detecting objects
+
+For the task of detecting objects in images it is going to be used the concept of *Transfer Learning*: technique in machine learning where a pre-trained model is used as a starting point for solving a problem.
+In this case, the search for a pretrained Image Classification model is being search in **Hugging Face** library. a renown company that provides several open-source libraries and models to be used.
+The pre-trained model chosen is [**Faster R-CNN**](https://huggingface.co/Theem/fasterrcnn_resnet50_fpn_grayscale)  
+
+
+Which was trained on the [**COCO**](https://paperswithcode.com/dataset/coco) (Common Objects in Context) dataset which posses around 80 objects categories as person, car, airplane and many other common objects.
+
+With the code defined next is being uploaded the referred model in the workstation. *Pretrained* option is giving the command to keep the pretrained weights to classify obtained in the model. Later, this option can be changed depending on the context of the goal that is wanted to achieve. Some issue that can happen is that is needed to include new categories to detect in the model. In this case a prompting in the pre-trained model can be done by retraining to the desired result.
+
+```python
+model = fasterrcnn_resnet50_fpn(pretrained=True)
+model.eval()
+```
+
+Now, in being defined the function *detect_objects*. This function need as an input an image, which it is going to be converted to a tensor and after it the object detection model is executed and as output is fetched the probabilities of the objects detected.
+
+```python
+def detect_objects(image):
+    
+    transform = transforms.Compose([
+    transforms.ToTensor()])
+    # Preprocess the image
+    input_image = transform(image).unsqueeze(0)
+    
+    # Perform inference
+    with torch.no_grad():
+        predictions = model(input_image)[0]
+    
+    return predictions
+```
+
+The function created is being tested on the image captured before and is printed the results of the model:
+
++ boxes: have the position of the detected object
++ labels: define the  class detected per object
++ scores: provides the % confidence of the object 
+
+```python
+testing_image_path = 'path/photo_frame_to_analyze.jpg'
+testing_image = Image.open(testing_image_path).convert("RGB")
+
+# Perform object detection on the testing image
+detections = detect_objects(testing_image)
+
+# Print the detection results
+print(detections)
+```
+{{< embed GenAI_Final_Project.ipynb#result-5 >}}
+
+
+## Generative AI: LLM
+
+The next step in the task is to obtain another pre-trained model, in this case a **Generative AI** model which can help us in the task of providing descriptions on the objects detected in the image frames. For this step, is going to be used to powerfull libraries:
++ LangChain: lightweight framework meant to make it easier to integrate and orchestaste LLM within application.
++ HuggingFace Hub: This hub possess many open-source LLMs.It can be access via token
+
+In the next code is set an object *secret* saved in a .env file that holds the token to access to the hub. With this API connection is being saved a lot of ram space, since the LLM models possess many features (more than a million) which is also translated in heavy data models. 
+```python
+from dotenv import load_dotenv
+from pathlib import Path
+dotenv_path = Path('./secret.env')
+load_dotenv(dotenv_path=dotenv_path)
+```
+
+Now that the notebook is connected to the Hub, it's being selected the next LLM: [**Falcon 7b Instruct**](https://huggingface.co/tiiuae/falcon-7b-instruct). Which is ready-to-use chat model based on *Falcon-7b*.
+```python
+from langchain import HuggingFaceHub
+repo_id = 'tiiuae/falcon-7b-instruct'
+```
+As example, is send a generic question to the LLM: "What is a laptop?". Given us an aswer to it. 
+{{< embed GenAI_Final_Project.ipynb#result-2 echo=true >}}
+
+
+Now in the function *llm* is being called the LLM model. to start this function is needed as an input a text which a question. After it is going to be fetched the result and the resulting text is going to be splitted to discard the part of the question and only keeping the answer.
+There is some configurations set in the LLM model
++ temperature: this feature control the randomness of the answers provided by the llm. being number close to 1 related to the creative answers and the ones next to 0 being more controlled answers.
++ max_lenght: it is being set a default lenght of response to not overload the images with too many texts
+```python
+def llm(prompt):
+    repo_id = "tiiuae/falcon-7b-instruct" 
+   
+    llm = HuggingFaceHub(repo_id=repo_id, model_kwargs={"temperature": 0.5, "max_length": 3})
+    answer = llm(prompt)
+    answer = answer.split("\nA")[1].strip()
+    return answer
+```
+This next code is validating the way that the question is going to be send to the model: generic question + object detected on the image.
+```python
+object_name = 'flask'
+llm(f'can you tell me what is a  {object_name}?')
+```
+## Final result
+
+The final chunk of code is going to ensemble the previous steps to appy descriptions to the objects found in the image.
+for it is send the initial image. After it, this image is converted to tensor and is being calculated the detection of objects. To avoid some missclassifications is being filtered only the predictions that are above 85% of probability. After it is used the *boxes* positions to draw a squere where the object is found. Only on the objects detected is run the *llm* function and this text is send as a title in the image.
+```python
+#path of the input image
+testing_path = './image_input.jpg'
+#path of the image changed
+output_path ='./image_modified_with_LLM_text.jpg'
+#put the image in a 3 channel object: RGB
+testing = Image.open(testing_path).convert('RGB')
+
+#detecting all the objects in the image
+detecting = detect_objects(testing)
+
+draw = ImageDraw.Draw(testing)
+for box, label, score in zip(detecting['boxes'], detecting['labels'], detecting['scores']):
+    #checking that the objects above the 85% probability are selected and on it draw the box
+    # and run the llm function to describe the object
+    if score > 0.85:
+        draw.rectangle([(box[0], box[1]), (box[2], box[3])], outline='green')
+        if label.item() in coco_classes:  # Check if label exists in coco_classes
+            description = llm(f"what is a {coco_classes[label.item()]}?")
+            draw.text((box[0], box[1]), f"Label: {coco_classes[label.item()]}, Description: {description}", fill="red")
+
+#saving the resulting object
+testing.save(output_path)
+
+testing.show()
+```
+The result is the next, where it is only found the object book, which is well classified and is describing the object thanks to the LLM used.
+{{< embed GenAI_Final_Project.ipynb#result-3 echo=true >}}

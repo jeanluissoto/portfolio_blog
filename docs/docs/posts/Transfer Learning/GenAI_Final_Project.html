@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Jean Luis Soto’s Portfolio - Final Project Generative AI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Jean Luis Soto’s Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jeanlsoto54"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/jeanluissoto/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Project Generative AI</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="final-project-generative-ai" class="level1">
+<h1>Final Project Generative AI</h1>
+<p>In the next document is going to be explained how to apply some models related to generative AI to achieve a business application. The idea intended to achieve is to create an application that can capture videos, images (any graphical data), and model will detect the electronic devices and will provide the energy consumption that the gadget requires.</p>
+<p>First it is going to be developed the model framework with pretrained models and from it the model should be parametized to achieve the current goal.</p>
+<p>In the first part the steps provided are:</p>
+<ol type="1">
+<li>Define the pipeline to use the camera’s device and capture images in real time</li>
+<li>Define a deep learning model that is going to detect the objects</li>
+<li>Execute the model over the images captured and fecth the results of the objects detected</li>
+<li>provide the objects detected to an LLM to ask for the object.</li>
+<li>Show the results of the Popieline</li>
+</ol>
+<section id="image-capture" class="level2">
+<h2 class="anchored" data-anchor-id="image-capture">1. Image capture</h2>
+<div id="cell-3" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing the libraries related to image and video </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image,ImageDraw</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cv2</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision.models.detection <span class="im">import</span> fasterrcnn_resnet50_fpn</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchvision.transforms <span class="im">as</span> transforms</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This code opens the camera device, the user need to press <em>S</em> to capture the desired frame. Aotumatically, it is going to be saved (title: datatime of the shot taken)</p>
+<div id="cell-5" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>cap <span class="op">=</span> cv2.VideoCapture(<span class="dv">0</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    ret, frame <span class="op">=</span> cap.read()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> ret: </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    cv2.imshow(<span class="st">'Energy Consuption task'</span>, frame)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    key <span class="op">=</span> cv2.waitKey(<span class="dv">1</span>) <span class="op">&amp;</span> <span class="bn">0xFF</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> key <span class="op">==</span> <span class="bu">ord</span>(<span class="st">'s'</span>):</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        current_time <span class="op">=</span> time.strftime(<span class="st">"%Y%m</span><span class="sc">%d</span><span class="st">%H%M%S"</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Saving Image "</span> <span class="op">+</span> current_time <span class="op">+</span> <span class="st">".jpg"</span>)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">file</span> <span class="op">=</span> <span class="st">"./"</span> <span class="op">+</span> current_time <span class="op">+</span> <span class="st">".jpg"</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="bu">file</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        cv2.imwrite(<span class="bu">file</span>, frame)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> key <span class="op">==</span> <span class="bu">ord</span>(<span class="st">'q'</span>):</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>cap.release()</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>cv2.destroyAllWindows()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Saving Image 20240415205732.jpg
+./20240415205732.jpg
+Saving Image 20240415205745.jpg
+./20240415205745.jpg</code></pre>
+</div>
+</div>
+<div id="cell-result-1" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Image.<span class="bu">open</span>(<span class="st">'./20240415205745.jpg'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+<figure class="figure">
+<p><img src="GenAI_Final_Project_files/figure-html/result-1-output-1.png" id="result-1" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="object-detection" class="level1">
+<h1>2. Object detection</h1>
+<p>From the Open library Hugging face it is being searched a pre trained model that can help us in the classification task. The model picked is <strong>Faster R-CNN</strong> https://huggingface.co/Theem/fasterrcnn_resnet50_fpn_grayscale</p>
+<p>This model pretrained possess a classification model with 91 classes</p>
+<div id="cell-9" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> fasterrcnn_resnet50_fpn(pretrained<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>c:\Users\jeanl\anaconda3\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+c:\Users\jeanl\anaconda3\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=FasterRCNN_ResNet50_FPN_Weights.COCO_V1`. You can also use `weights=FasterRCNN_ResNet50_FPN_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>FasterRCNN(
+  (transform): GeneralizedRCNNTransform(
+      Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+      Resize(min_size=(800,), max_size=1333, mode='bilinear')
+  )
+  (backbone): BackboneWithFPN(
+    (body): IntermediateLayerGetter(
+      (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+      (bn1): FrozenBatchNorm2d(64, eps=0.0)
+      (relu): ReLU(inplace=True)
+      (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+      (layer1): Sequential(
+        (0): Bottleneck(
+          (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(64, eps=0.0)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(64, eps=0.0)
+          (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(256, eps=0.0)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): FrozenBatchNorm2d(256, eps=0.0)
+          )
+        )
+        (1): Bottleneck(
+          (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(64, eps=0.0)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(64, eps=0.0)
+          (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(256, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (2): Bottleneck(
+          (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(64, eps=0.0)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(64, eps=0.0)
+          (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(256, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (layer2): Sequential(
+        (0): Bottleneck(
+          (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(128, eps=0.0)
+          (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(128, eps=0.0)
+          (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(512, eps=0.0)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): FrozenBatchNorm2d(512, eps=0.0)
+          )
+        )
+        (1): Bottleneck(
+          (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(128, eps=0.0)
+          (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(128, eps=0.0)
+          (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(512, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (2): Bottleneck(
+          (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(128, eps=0.0)
+          (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(128, eps=0.0)
+          (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(512, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (3): Bottleneck(
+          (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(128, eps=0.0)
+          (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(128, eps=0.0)
+          (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(512, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (layer3): Sequential(
+        (0): Bottleneck(
+          (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(256, eps=0.0)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(256, eps=0.0)
+          (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(1024, eps=0.0)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): FrozenBatchNorm2d(1024, eps=0.0)
+          )
+        )
+        (1): Bottleneck(
+          (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(256, eps=0.0)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(256, eps=0.0)
+          (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(1024, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (2): Bottleneck(
+          (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(256, eps=0.0)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(256, eps=0.0)
+          (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(1024, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (3): Bottleneck(
+          (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(256, eps=0.0)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(256, eps=0.0)
+          (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(1024, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (4): Bottleneck(
+          (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(256, eps=0.0)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(256, eps=0.0)
+          (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(1024, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (5): Bottleneck(
+          (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(256, eps=0.0)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(256, eps=0.0)
+          (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(1024, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (layer4): Sequential(
+        (0): Bottleneck(
+          (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(512, eps=0.0)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(512, eps=0.0)
+          (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(2048, eps=0.0)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+            (1): FrozenBatchNorm2d(2048, eps=0.0)
+          )
+        )
+        (1): Bottleneck(
+          (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(512, eps=0.0)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(512, eps=0.0)
+          (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(2048, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+        (2): Bottleneck(
+          (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn1): FrozenBatchNorm2d(512, eps=0.0)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): FrozenBatchNorm2d(512, eps=0.0)
+          (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn3): FrozenBatchNorm2d(2048, eps=0.0)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (fpn): FeaturePyramidNetwork(
+      (inner_blocks): ModuleList(
+        (0): Conv2dNormActivation(
+          (0): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (1): Conv2dNormActivation(
+          (0): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (2): Conv2dNormActivation(
+          (0): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (3): Conv2dNormActivation(
+          (0): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
+        )
+      )
+      (layer_blocks): ModuleList(
+        (0-3): 4 x Conv2dNormActivation(
+          (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        )
+      )
+      (extra_blocks): LastLevelMaxPool()
+    )
+  )
+  (rpn): RegionProposalNetwork(
+    (anchor_generator): AnchorGenerator()
+    (head): RPNHead(
+      (conv): Sequential(
+        (0): Conv2dNormActivation(
+          (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): ReLU(inplace=True)
+        )
+      )
+      (cls_logits): Conv2d(256, 3, kernel_size=(1, 1), stride=(1, 1))
+      (bbox_pred): Conv2d(256, 12, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (roi_heads): RoIHeads(
+    (box_roi_pool): MultiScaleRoIAlign(featmap_names=['0', '1', '2', '3'], output_size=(7, 7), sampling_ratio=2)
+    (box_head): TwoMLPHead(
+      (fc6): Linear(in_features=12544, out_features=1024, bias=True)
+      (fc7): Linear(in_features=1024, out_features=1024, bias=True)
+    )
+    (box_predictor): FastRCNNPredictor(
+      (cls_score): Linear(in_features=1024, out_features=91, bias=True)
+      (bbox_pred): Linear(in_features=1024, out_features=364, bias=True)
+    )
+  )
+)</code></pre>
+</div>
+</div>
+<p>In the next code is defined a function that is going: 1. trasnform the image input to a tensor (needed for the model to process it) 2. Executhe the Neural Network model on the image and attatch the resultd on the predictions object.</p>
+<div id="cell-11" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> detect_objects(image):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    transform <span class="op">=</span> transforms.Compose([</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    transforms.ToTensor()])</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Preprocess the image</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    input_image <span class="op">=</span> transform(image).unsqueeze(<span class="dv">0</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Perform inference</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        predictions <span class="op">=</span> model(input_image)[<span class="dv">0</span>]</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> predictions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Executing the previous function defined on the image captured in the first step</p>
+<div id="result-5" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>testing_image_path <span class="op">=</span> <span class="st">'./20240415205745.jpg'</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>testing_image <span class="op">=</span> Image.<span class="bu">open</span>(testing_image_path).convert(<span class="st">"RGB"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform object detection on the testing image</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>detections <span class="op">=</span> detect_objects(testing_image)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the detection results</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(detections)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'boxes': tensor([[3.2203e-01, 4.1001e+02, 1.9834e+01, 4.7844e+02],
+        [1.4888e+02, 4.1843e+02, 1.9023e+02, 4.7068e+02],
+        [1.6601e+01, 2.1219e+02, 2.5453e+01, 2.6549e+02],
+        [3.0753e+01, 2.1413e+02, 4.0715e+01, 2.6554e+02],
+        [2.3527e+01, 2.1504e+02, 3.2301e+01, 2.6518e+02],
+        [0.0000e+00, 2.0175e+02, 6.4201e+01, 2.6924e+02],
+        [1.2589e+02, 4.2713e+02, 1.3912e+02, 4.7381e+02],
+        [4.4964e+01, 2.0565e+02, 5.3511e+01, 2.6715e+02],
+        [1.1428e+02, 4.2024e+02, 1.3183e+02, 4.7452e+02],
+        [5.0927e+01, 2.0562e+02, 6.1833e+01, 2.6271e+02],
+        [1.0185e+01, 2.1170e+02, 2.7680e+01, 2.6598e+02],
+        [2.5588e+01, 2.1307e+02, 4.4688e+01, 2.6691e+02],
+        [5.5887e+00, 2.1109e+02, 4.2185e+01, 2.6668e+02],
+        [3.9336e+01, 2.1138e+02, 4.6657e+01, 2.6600e+02],
+        [3.2911e+02, 3.5286e+02, 3.4648e+02, 3.7866e+02],
+        [8.6915e+00, 2.1093e+02, 1.7139e+01, 2.6546e+02],
+        [1.2237e+02, 4.2523e+02, 1.3136e+02, 4.7357e+02],
+        [4.7442e+01, 4.6254e+02, 8.0911e+01, 4.7838e+02],
+        [9.8479e-01, 2.0925e+02, 6.2978e+00, 2.6621e+02],
+        [3.7348e+01, 2.1006e+02, 5.3997e+01, 2.6665e+02],
+        [2.0104e+01, 2.1301e+02, 2.7574e+01, 2.6499e+02],
+        [3.5595e+02, 4.5401e+02, 4.0307e+02, 4.6278e+02],
+        [1.3089e+02, 4.2820e+02, 1.4375e+02, 4.6783e+02],
+        [6.7619e+01, 4.3832e+02, 9.0605e+01, 4.4558e+02],
+        [1.0059e+02, 3.8950e+02, 1.2099e+02, 4.1813e+02],
+        [1.2107e+01, 2.1057e+02, 2.0228e+01, 2.6547e+02],
+        [4.2306e+01, 2.0949e+02, 4.9903e+01, 2.6626e+02],
+        [3.5642e+02, 4.3070e+02, 3.9371e+02, 4.4585e+02],
+        [1.4157e+01, 1.6911e+02, 7.0233e+01, 1.9584e+02],
+        [1.1285e+02, 4.2322e+02, 1.2332e+02, 4.7522e+02],
+        [3.2599e+00, 2.0830e+02, 9.6703e+00, 2.6741e+02],
+        [4.0722e+01, 2.0423e+02, 6.4438e+01, 2.6618e+02],
+        [6.9234e+01, 4.5592e+02, 1.1075e+02, 4.7433e+02],
+        [4.8032e+01, 2.0489e+02, 5.7456e+01, 2.6485e+02],
+        [2.3738e+01, 2.0776e+02, 5.8403e+01, 2.6732e+02],
+        [3.5193e+02, 4.1967e+02, 3.9584e+02, 4.4932e+02],
+        [6.2612e+01, 4.0642e+02, 8.7142e+01, 4.3817e+02],
+        [6.2946e+00, 2.1037e+02, 1.3053e+01, 2.6569e+02],
+        [3.5634e+02, 4.5140e+02, 4.0120e+02, 4.5843e+02],
+        [2.6891e+02, 4.3979e+02, 2.9758e+02, 4.6742e+02],
+        [2.3334e+02, 2.5023e+02, 2.3808e+02, 2.5447e+02],
+        [1.3672e+02, 4.2808e+02, 1.4695e+02, 4.5387e+02],
+        [6.0978e+01, 4.5818e+02, 8.2778e+01, 4.7626e+02],
+        [6.7801e+01, 4.5512e+02, 1.1142e+02, 4.6574e+02],
+        [6.3500e+01, 4.5738e+02, 8.5448e+01, 4.6682e+02],
+        [1.5077e+02, 4.1576e+02, 2.4865e+02, 4.7335e+02],
+        [3.5520e+02, 4.4956e+02, 4.0018e+02, 4.5586e+02],
+        [9.8056e+01, 4.2487e+02, 1.2711e+02, 4.7433e+02],
+        [1.1894e+02, 4.2531e+02, 1.5298e+02, 4.7410e+02],
+        [7.2687e+01, 4.3941e+02, 1.1587e+02, 4.7407e+02],
+        [1.2256e+02, 4.1754e+02, 1.8561e+02, 4.7512e+02],
+        [9.8189e+01, 3.8443e+02, 1.2473e+02, 4.2096e+02],
+        [3.5495e+02, 4.3953e+02, 3.9407e+02, 4.4995e+02],
+        [7.6286e+00, 4.1355e+02, 4.8398e+01, 4.7839e+02],
+        [1.1270e+00, 1.8263e+02, 6.0701e+01, 2.0107e+02],
+        [1.3181e+02, 4.2388e+02, 1.7081e+02, 4.6949e+02],
+        [3.6750e+02, 4.0903e+02, 3.8020e+02, 4.2882e+02],
+        [5.9032e+01, 2.0605e+02, 6.8070e+01, 2.6710e+02],
+        [2.3341e+02, 2.5021e+02, 2.3812e+02, 2.5392e+02],
+        [1.5393e+02, 4.1460e+02, 2.6840e+02, 4.7516e+02],
+        [1.3093e+02, 4.2669e+02, 1.5072e+02, 4.5697e+02],
+        [3.2243e+02, 4.6083e+02, 4.3508e+02, 4.7982e+02],
+        [3.6648e+02, 4.1095e+02, 3.8145e+02, 4.2896e+02],
+        [6.4154e+01, 4.6018e+02, 8.5638e+01, 4.7124e+02],
+        [8.7079e+01, 4.3876e+02, 1.1470e+02, 4.4897e+02],
+        [1.4477e+02, 4.5683e+02, 1.7427e+02, 4.7161e+02],
+        [1.4931e+02, 4.1233e+02, 2.7706e+02, 4.7614e+02],
+        [5.6233e+01, 4.3530e+02, 1.4235e+02, 4.7420e+02],
+        [2.2881e+02, 4.4564e+02, 2.6855e+02, 4.7277e+02],
+        [7.8557e-01, 1.6484e+02, 4.8610e+01, 1.9153e+02],
+        [3.2307e+02, 4.6261e+02, 4.3285e+02, 4.8000e+02]]), 'labels': tensor([62, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 10, 84, 84, 75,
+        84, 84, 84, 84, 84, 84,  1, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84, 84,
+        64, 84, 84,  3, 38, 84, 75, 84, 75, 84, 84, 84, 84, 84, 84, 85, 84, 62,
+        84, 84, 44, 84, 16, 72, 84, 33,  1, 75, 84, 84,  8, 84,  3, 84, 15]), 'scores': tensor([0.9074, 0.8842, 0.8691, 0.8563, 0.8438, 0.8296, 0.8295, 0.7874, 0.7130,
+        0.6751, 0.6579, 0.6506, 0.6096, 0.5842, 0.5737, 0.5661, 0.5087, 0.4953,
+        0.4884, 0.4865, 0.4818, 0.4619, 0.4596, 0.4568, 0.4559, 0.4539, 0.4456,
+        0.3914, 0.3834, 0.3728, 0.3693, 0.3603, 0.3183, 0.3048, 0.2935, 0.2692,
+        0.2603, 0.2496, 0.2142, 0.1946, 0.1760, 0.1689, 0.1540, 0.1540, 0.1428,
+        0.1154, 0.1131, 0.0974, 0.0935, 0.0855, 0.0840, 0.0820, 0.0815, 0.0811,
+        0.0794, 0.0787, 0.0757, 0.0750, 0.0746, 0.0739, 0.0718, 0.0698, 0.0694,
+        0.0689, 0.0646, 0.0641, 0.0554, 0.0552, 0.0533, 0.0525, 0.0513])}</code></pre>
+</div>
+</div>
+<p>The creation of a dictionary of the classes that possess the pre trained model <strong>Faster R-CNN</strong>. Later this dictionary will be used to pass this data to the LLM model</p>
+<div id="cell-15" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>coco_classes <span class="op">=</span> {</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>: <span class="st">"Person"</span>, <span class="dv">2</span>: <span class="st">"Bicycle"</span>, <span class="dv">3</span>: <span class="st">"Car"</span>, <span class="dv">4</span>: <span class="st">"Motorcycle"</span>, <span class="dv">5</span>: <span class="st">"Airplane"</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">6</span>: <span class="st">"Bus"</span>, <span class="dv">7</span>: <span class="st">"Train"</span>, <span class="dv">8</span>: <span class="st">"Truck"</span>, <span class="dv">9</span>: <span class="st">"Boat"</span>, <span class="dv">10</span>: <span class="st">"Traffic light"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">11</span>: <span class="st">"Fire hydrant"</span>, <span class="dv">12</span>: <span class="st">"Stop sign"</span>, <span class="dv">13</span>: <span class="st">"Parking meter"</span>, <span class="dv">14</span>: <span class="st">"Bench"</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">15</span>: <span class="st">"Bird"</span>, <span class="dv">16</span>: <span class="st">"Cat"</span>, <span class="dv">17</span>: <span class="st">"Dog"</span>, <span class="dv">18</span>: <span class="st">"Horse"</span>, <span class="dv">19</span>: <span class="st">"Sheep"</span>, <span class="dv">20</span>: <span class="st">"Cow"</span>,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="dv">21</span>: <span class="st">"Elephant"</span>, <span class="dv">22</span>: <span class="st">"Bear"</span>, <span class="dv">23</span>: <span class="st">"Zebra"</span>, <span class="dv">24</span>: <span class="st">"Giraffe"</span>, <span class="dv">25</span>: <span class="st">"Backpack"</span>,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="dv">26</span>: <span class="st">"Umbrella"</span>, <span class="dv">27</span>: <span class="st">"Handbag"</span>, <span class="dv">28</span>: <span class="st">"Tie"</span>, <span class="dv">29</span>: <span class="st">"Suitcase"</span>, <span class="dv">30</span>: <span class="st">"Frisbee"</span>,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="dv">31</span>: <span class="st">"Skis"</span>, <span class="dv">32</span>: <span class="st">"Snowboard"</span>, <span class="dv">33</span>: <span class="st">"Sports ball"</span>, <span class="dv">34</span>: <span class="st">"Kite"</span>, <span class="dv">35</span>: <span class="st">"Baseball bat"</span>,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="dv">36</span>: <span class="st">"Baseball glove"</span>, <span class="dv">37</span>: <span class="st">"Skateboard"</span>, <span class="dv">38</span>: <span class="st">"Surfboard"</span>, <span class="dv">39</span>: <span class="st">"Tennis racket"</span>,</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="dv">40</span>: <span class="st">"Bottle"</span>, <span class="dv">41</span>: <span class="st">"Wine glass"</span>, <span class="dv">42</span>: <span class="st">"Cup"</span>, <span class="dv">43</span>: <span class="st">"Fork"</span>, <span class="dv">44</span>: <span class="st">"Knife"</span>,</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="dv">45</span>: <span class="st">"Spoon"</span>, <span class="dv">46</span>: <span class="st">"Bowl"</span>, <span class="dv">47</span>: <span class="st">"Banana"</span>, <span class="dv">48</span>: <span class="st">"Apple"</span>, <span class="dv">49</span>: <span class="st">"Sandwich"</span>,</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    <span class="dv">50</span>: <span class="st">"Orange"</span>, <span class="dv">51</span>: <span class="st">"Broccoli"</span>, <span class="dv">52</span>: <span class="st">"Carrot"</span>, <span class="dv">53</span>: <span class="st">"Hot dog"</span>, <span class="dv">54</span>: <span class="st">"Pizza"</span>,</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="dv">55</span>: <span class="st">"Donut"</span>, <span class="dv">56</span>: <span class="st">"Cake"</span>, <span class="dv">57</span>: <span class="st">"Chair"</span>, <span class="dv">58</span>: <span class="st">"Couch"</span>, <span class="dv">59</span>: <span class="st">"Potted plant"</span>,</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="dv">60</span>: <span class="st">"Bed"</span>, <span class="dv">61</span>: <span class="st">"Dining table"</span>, <span class="dv">62</span>: <span class="st">"Toilet"</span>, <span class="dv">63</span>: <span class="st">"TV"</span>, <span class="dv">64</span>: <span class="st">"Laptop"</span>,</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="dv">65</span>: <span class="st">"Mouse"</span>, <span class="dv">66</span>: <span class="st">"Remote"</span>, <span class="dv">67</span>: <span class="st">"Keyboard"</span>, <span class="dv">68</span>: <span class="st">"Cell phone"</span>, <span class="dv">69</span>: <span class="st">"Microwave"</span>,</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    <span class="dv">70</span>: <span class="st">"Oven"</span>, <span class="dv">71</span>: <span class="st">"Toaster"</span>, <span class="dv">72</span>: <span class="st">"Sink"</span>, <span class="dv">73</span>: <span class="st">"Refrigerator"</span>, <span class="dv">74</span>: <span class="st">"Book"</span>,</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    <span class="dv">75</span>: <span class="st">"Clock"</span>, <span class="dv">76</span>: <span class="st">"Vase"</span>, <span class="dv">77</span>: <span class="st">"Scissors"</span>, <span class="dv">78</span>: <span class="st">"Teddy bear"</span>, <span class="dv">79</span>: <span class="st">"Hair drier"</span>,</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>    <span class="dv">80</span>: <span class="st">"Toaster"</span>,<span class="dv">81</span>: <span class="st">"Sink"</span>,<span class="dv">82</span>: <span class="st">"Refrigerator"</span>,<span class="dv">83</span>: <span class="st">"Blender"</span>,<span class="dv">84</span>: <span class="st">"Book"</span>,</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>    <span class="dv">85</span>: <span class="st">"Clock"</span>,<span class="dv">86</span>: <span class="st">"Vase"</span>,<span class="dv">87</span>: <span class="st">"Scissors"</span>,<span class="dv">88</span>: <span class="st">"Teddy bear"</span>,<span class="dv">89</span>: <span class="st">"Hair drier"</span>,</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>    <span class="dv">90</span>: <span class="st">"Toothbrush"</span>,<span class="dv">91</span>: <span class="st">"Hairbrush"</span>,</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-16" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pip install python-dotenv</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Collecting python-dotenv
+  Obtaining dependency information for python-dotenv from https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl.metadata
+  Using cached python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+Using cached python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+Installing collected packages: python-dotenv
+Successfully installed python-dotenv-1.0.1
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+</div>
+<p>To use the LLM models that exists in Huggging Face it can be downloeaded from the webpage. However, this models are heavy and for this matter it is going to be used the Hugginf Face api to make a conection to the Open LLMs to use it. To access it is needed a password to make the connection. This for terms of security is being save in another file and is put as a secret to create the connection.</p>
+<div id="cell-18" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>dotenv_path <span class="op">=</span> Path(<span class="st">'./secret.env'</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>load_dotenv(dotenv_path<span class="op">=</span>dotenv_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>True</code></pre>
+</div>
+</div>
+<div id="cell-19" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#pip install langchain</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Note: you may need to restart the kernel to use updated packages.Collecting langchain
+  Obtaining dependency information for langchain from https://files.pythonhosted.org/packages/ed/3e/93045d37eba24e0b5eb05312e30cd9e12805ea5f1ae9ba51ec8a7d2f5372/langchain-0.1.16-py3-none-any.whl.metadata
+  Downloading langchain-0.1.16-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: PyYAML&gt;=5.3 in c:\users\jeanl\anaconda3\lib\site-packages (from langchain) (6.0)
+Requirement already satisfied: SQLAlchemy&lt;3,&gt;=1.4 in c:\users\jeanl\anaconda3\lib\site-packages (from langchain) (1.4.39)
+Requirement already satisfied: aiohttp&lt;4.0.0,&gt;=3.8.3 in c:\users\jeanl\anaconda3\lib\site-packages (from langchain) (3.8.3)
+Collecting dataclasses-json&lt;0.7,&gt;=0.5.7 (from langchain)
+  Obtaining dependency information for dataclasses-json&lt;0.7,&gt;=0.5.7 from https://files.pythonhosted.org/packages/91/ca/7219b838086086972e662c19e908694bdc6744537fb41b70392501b8b5e4/dataclasses_json-0.6.4-py3-none-any.whl.metadata
+  Using cached dataclasses_json-0.6.4-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch&lt;2.0,&gt;=1.33 (from langchain)
+  Obtaining dependency information for jsonpatch&lt;2.0,&gt;=1.33 from https://files.pythonhosted.org/packages/73/07/02e16ed01e04a374e644b575638ec7987ae846d25ad97bcc9945a3ee4b0e/jsonpatch-1.33-py2.py3-none-any.whl.metadata
+  Using cached jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-community&lt;0.1,&gt;=0.0.32 (from langchain)
+  Obtaining dependency information for langchain-community&lt;0.1,&gt;=0.0.32 from https://files.pythonhosted.org/packages/6d/9e/2af18bcaebd47995ec5a4e3eeb7c6cf8e6a99c637a7cafe09bb98fc0f6f5/langchain_community-0.0.32-py3-none-any.whl.metadata
+  Downloading langchain_community-0.0.32-py3-none-any.whl.metadata (8.5 kB)
+Collecting langchain-core&lt;0.2.0,&gt;=0.1.42 (from langchain)
+  Obtaining dependency information for langchain-core&lt;0.2.0,&gt;=0.1.42 from https://files.pythonhosted.org/packages/1d/93/0f6969c7d8a9cd220e600d10ccc16a8e5f1f27e55310ae077d8c3bc8d354/langchain_core-0.1.42-py3-none-any.whl.metadata
+  Downloading langchain_core-0.1.42-py3-none-any.whl.metadata (5.9 kB)
+Collecting langchain-text-splitters&lt;0.1,&gt;=0.0.1 (from langchain)
+  Obtaining dependency information for langchain-text-splitters&lt;0.1,&gt;=0.0.1 from https://files.pythonhosted.org/packages/9d/a1/aec824080111e9b4a4802b51b988032faa193828c865e11233d1b18e88fa/langchain_text_splitters-0.0.1-py3-none-any.whl.metadata
+  Using cached langchain_text_splitters-0.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting langsmith&lt;0.2.0,&gt;=0.1.17 (from langchain)
+  Obtaining dependency information for langsmith&lt;0.2.0,&gt;=0.1.17 from https://files.pythonhosted.org/packages/d8/e1/915944a1017a811762b07259b188100f04f887199a71f7d2cd801ac1216a/langsmith-0.1.47-py3-none-any.whl.metadata
+  Downloading langsmith-0.1.47-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: numpy&lt;2,&gt;=1 in c:\users\jeanl\anaconda3\lib\site-packages (from langchain) (1.24.4)
+Collecting pydantic&lt;3,&gt;=1 (from langchain)
+  Obtaining dependency information for pydantic&lt;3,&gt;=1 from https://files.pythonhosted.org/packages/16/ca/330c4f3bd983bb24ac12c7fd1e08c26c8aed70bc64498cf38c770321067f/pydantic-2.7.0-py3-none-any.whl.metadata
+  Downloading pydantic-2.7.0-py3-none-any.whl.metadata (103 kB)
+     ---------------------------------------- 0.0/103.4 kB ? eta -:--:--
+     -------------------------------------- 103.4/103.4 kB 5.8 MB/s eta 0:00:00
+Requirement already satisfied: requests&lt;3,&gt;=2 in c:\users\jeanl\anaconda3\lib\site-packages (from langchain) (2.31.0)
+Requirement already satisfied: tenacity&lt;9.0.0,&gt;=8.1.0 in c:\users\jeanl\anaconda3\lib\site-packages (from langchain) (8.2.2)
+Requirement already satisfied: attrs&gt;=17.3.0 in c:\users\jeanl\anaconda3\lib\site-packages (from aiohttp&lt;4.0.0,&gt;=3.8.3-&gt;langchain) (22.1.0)
+Requirement already satisfied: charset-normalizer&lt;3.0,&gt;=2.0 in c:\users\jeanl\anaconda3\lib\site-packages (from aiohttp&lt;4.0.0,&gt;=3.8.3-&gt;langchain) (2.0.4)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in c:\users\jeanl\anaconda3\lib\site-packages (from aiohttp&lt;4.0.0,&gt;=3.8.3-&gt;langchain) (6.0.2)
+Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in c:\users\jeanl\anaconda3\lib\site-packages (from aiohttp&lt;4.0.0,&gt;=3.8.3-&gt;langchain) (4.0.2)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in c:\users\jeanl\anaconda3\lib\site-packages (from aiohttp&lt;4.0.0,&gt;=3.8.3-&gt;langchain) (1.8.1)
+Requirement already satisfied: frozenlist&gt;=1.1.1 in c:\users\jeanl\anaconda3\lib\site-packages (from aiohttp&lt;4.0.0,&gt;=3.8.3-&gt;langchain) (1.3.3)
+Requirement already satisfied: aiosignal&gt;=1.1.2 in c:\users\jeanl\anaconda3\lib\site-packages (from aiohttp&lt;4.0.0,&gt;=3.8.3-&gt;langchain) (1.2.0)
+Collecting marshmallow&lt;4.0.0,&gt;=3.18.0 (from dataclasses-json&lt;0.7,&gt;=0.5.7-&gt;langchain)
+  Obtaining dependency information for marshmallow&lt;4.0.0,&gt;=3.18.0 from https://files.pythonhosted.org/packages/38/04/37055b7013dfaaf66e3a9a51e46857cc9be151476a891b995fa70da7e139/marshmallow-3.21.1-py3-none-any.whl.metadata
+  Using cached marshmallow-3.21.1-py3-none-any.whl.metadata (7.2 kB)
+Collecting typing-inspect&lt;1,&gt;=0.4.0 (from dataclasses-json&lt;0.7,&gt;=0.5.7-&gt;langchain)
+  Obtaining dependency information for typing-inspect&lt;1,&gt;=0.4.0 from https://files.pythonhosted.org/packages/65/f3/107a22063bf27bdccf2024833d3445f4eea42b2e598abfbd46f6a63b6cb0/typing_inspect-0.9.0-py3-none-any.whl.metadata
+  Using cached typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Requirement already satisfied: jsonpointer&gt;=1.9 in c:\users\jeanl\anaconda3\lib\site-packages (from jsonpatch&lt;2.0,&gt;=1.33-&gt;langchain) (2.1)
+Collecting packaging&lt;24.0,&gt;=23.2 (from langchain-core&lt;0.2.0,&gt;=0.1.42-&gt;langchain)
+  Obtaining dependency information for packaging&lt;24.0,&gt;=23.2 from https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl.metadata
+  Using cached packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting orjson&lt;4.0.0,&gt;=3.9.14 (from langsmith&lt;0.2.0,&gt;=0.1.17-&gt;langchain)
+  Obtaining dependency information for orjson&lt;4.0.0,&gt;=3.9.14 from https://files.pythonhosted.org/packages/0d/7b/566fa00c023652b4a1d409a26cc4dd71bcdbea86814ba4a05ff6ac6a2c0a/orjson-3.10.0-cp311-none-win_amd64.whl.metadata
+  Downloading orjson-3.10.0-cp311-none-win_amd64.whl.metadata (50 kB)
+     ---------------------------------------- 0.0/50.7 kB ? eta -:--:--
+     ---------------------------------------- 50.7/50.7 kB ? eta 0:00:00
+Collecting annotated-types&gt;=0.4.0 (from pydantic&lt;3,&gt;=1-&gt;langchain)
+  Obtaining dependency information for annotated-types&gt;=0.4.0 from https://files.pythonhosted.org/packages/28/78/d31230046e58c207284c6b2c4e8d96e6d3cb4e52354721b944d3e1ee4aa5/annotated_types-0.6.0-py3-none-any.whl.metadata
+  Using cached annotated_types-0.6.0-py3-none-any.whl.metadata (12 kB)
+Collecting pydantic-core==2.18.1 (from pydantic&lt;3,&gt;=1-&gt;langchain)
+  Obtaining dependency information for pydantic-core==2.18.1 from https://files.pythonhosted.org/packages/65/9c/04371826c287b9e0233b2a7c910ea0275a41d6a9574e186a43ead32cd22c/pydantic_core-2.18.1-cp311-none-win_amd64.whl.metadata
+  Downloading pydantic_core-2.18.1-cp311-none-win_amd64.whl.metadata (6.7 kB)
+Requirement already satisfied: typing-extensions&gt;=4.6.1 in c:\users\jeanl\anaconda3\lib\site-packages (from pydantic&lt;3,&gt;=1-&gt;langchain) (4.10.0)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in c:\users\jeanl\anaconda3\lib\site-packages (from requests&lt;3,&gt;=2-&gt;langchain) (3.4)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in c:\users\jeanl\anaconda3\lib\site-packages (from requests&lt;3,&gt;=2-&gt;langchain) (1.26.16)
+Requirement already satisfied: certifi&gt;=2017.4.17 in c:\users\jeanl\anaconda3\lib\site-packages (from requests&lt;3,&gt;=2-&gt;langchain) (2023.7.22)
+Requirement already satisfied: greenlet!=0.4.17 in c:\users\jeanl\anaconda3\lib\site-packages (from SQLAlchemy&lt;3,&gt;=1.4-&gt;langchain) (2.0.1)
+Requirement already satisfied: mypy-extensions&gt;=0.3.0 in c:\users\jeanl\anaconda3\lib\site-packages (from typing-inspect&lt;1,&gt;=0.4.0-&gt;dataclasses-json&lt;0.7,&gt;=0.5.7-&gt;langchain) (0.4.3)
+Downloading langchain-0.1.16-py3-none-any.whl (817 kB)
+   ---------------------------------------- 0.0/817.7 kB ? eta -:--:--
+   --------------------------------------- 817.7/817.7 kB 50.5 MB/s eta 0:00:00
+Using cached dataclasses_json-0.6.4-py3-none-any.whl (28 kB)
+Using cached jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Downloading langchain_community-0.0.32-py3-none-any.whl (1.9 MB)
+   ---------------------------------------- 0.0/1.9 MB ? eta -:--:--
+   ---------------------------------------- 1.9/1.9 MB 59.0 MB/s eta 0:00:00
+Downloading langchain_core-0.1.42-py3-none-any.whl (287 kB)
+   ---------------------------------------- 0.0/287.5 kB ? eta -:--:--
+   ---------------------------------------- 287.5/287.5 kB ? eta 0:00:00
+Using cached langchain_text_splitters-0.0.1-py3-none-any.whl (21 kB)
+Downloading langsmith-0.1.47-py3-none-any.whl (113 kB)
+   ---------------------------------------- 0.0/113.0 kB ? eta -:--:--
+   ---------------------------------------- 113.0/113.0 kB ? eta 0:00:00
+Downloading pydantic-2.7.0-py3-none-any.whl (407 kB)
+   ---------------------------------------- 0.0/407.9 kB ? eta -:--:--
+   --------------------------------------- 407.9/407.9 kB 24.9 MB/s eta 0:00:00
+Downloading pydantic_core-2.18.1-cp311-none-win_amd64.whl (1.9 MB)
+   ---------------------------------------- 0.0/1.9 MB ? eta -:--:--
+   ---------------------------------------  1.9/1.9 MB 61.4 MB/s eta 0:00:01
+   ---------------------------------------  1.9/1.9 MB 61.4 MB/s eta 0:00:01
+   ---------------------------------------  1.9/1.9 MB 61.4 MB/s eta 0:00:01
+   ---------------------------------------  1.9/1.9 MB 61.4 MB/s eta 0:00:01
+   ---------------------------------------- 1.9/1.9 MB 11.1 MB/s eta 0:00:00
+Using cached annotated_types-0.6.0-py3-none-any.whl (12 kB)
+Using cached marshmallow-3.21.1-py3-none-any.whl (49 kB)
+Downloading orjson-3.10.0-cp311-none-win_amd64.whl (139 kB)
+   ---------------------------------------- 0.0/139.2 kB ? eta -:--:--
+   ---------------------------------------- 139.2/139.2 kB ? eta 0:00:00
+Using cached packaging-23.2-py3-none-any.whl (53 kB)
+Using cached typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Installing collected packages: typing-inspect, pydantic-core, packaging, orjson, jsonpatch, annotated-types, pydantic, marshmallow, langsmith, dataclasses-json, langchain-core, langchain-text-splitters, langchain-community, langchain
+  Attempting uninstall: packaging
+    Found existing installation: packaging 23.0
+    Uninstalling packaging-23.0:
+      Successfully uninstalled packaging-23.0
+  Attempting uninstall: jsonpatch
+    Found existing installation: jsonpatch 1.32
+    Uninstalling jsonpatch-1.32:
+      Successfully uninstalled jsonpatch-1.32
+Successfully installed annotated-types-0.6.0 dataclasses-json-0.6.4 jsonpatch-1.33 langchain-0.1.16 langchain-community-0.0.32 langchain-core-0.1.42 langchain-text-splitters-0.0.1 langsmith-0.1.47 marshmallow-3.21.1 orjson-3.10.0 packaging-23.2 pydantic-2.7.0 pydantic-core-2.18.1 typing-inspect-0.9.0
+</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tables 3.8.0 requires blosc2~=2.0.0, which is not installed.
+tables 3.8.0 requires cython&gt;=0.29.21, which is not installed.
+panel 1.2.1 requires tqdm&gt;=4.48.0, but you have tqdm 4.41.1 which is incompatible.
+pdpbox 0.3.0 requires tqdm&gt;=4.64.1, but you have tqdm 4.41.1 which is incompatible.
+python-lsp-black 1.2.1 requires black&gt;=22.3.0, but you have black 0.0 which is incompatible.</code></pre>
+</div>
+</div>
+<div id="cell-20" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pip install huggingface_hub</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Collecting huggingface_hub
+  Obtaining dependency information for huggingface_hub from https://files.pythonhosted.org/packages/05/c0/779afbad8e75565c09ffa24a88b5dd7e293c92b74eb09df6435fc58ac986/huggingface_hub-0.22.2-py3-none-any.whl.metadata
+  Downloading huggingface_hub-0.22.2-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: filelock in c:\users\jeanl\anaconda3\lib\site-packages (from huggingface_hub) (3.9.0)
+Collecting fsspec&gt;=2023.5.0 (from huggingface_hub)
+  Obtaining dependency information for fsspec&gt;=2023.5.0 from https://files.pythonhosted.org/packages/93/6d/66d48b03460768f523da62a57a7e14e5e95fdf339d79e996ce3cecda2cdb/fsspec-2024.3.1-py3-none-any.whl.metadata
+  Using cached fsspec-2024.3.1-py3-none-any.whl.metadata (6.8 kB)
+Requirement already satisfied: packaging&gt;=20.9 in c:\users\jeanl\anaconda3\lib\site-packages (from huggingface_hub) (23.2)
+Requirement already satisfied: pyyaml&gt;=5.1 in c:\users\jeanl\anaconda3\lib\site-packages (from huggingface_hub) (6.0)
+Requirement already satisfied: requests in c:\users\jeanl\anaconda3\lib\site-packages (from huggingface_hub) (2.31.0)
+Collecting tqdm&gt;=4.42.1 (from huggingface_hub)
+  Obtaining dependency information for tqdm&gt;=4.42.1 from https://files.pythonhosted.org/packages/2a/14/e75e52d521442e2fcc9f1df3c5e456aead034203d4797867980de558ab34/tqdm-4.66.2-py3-none-any.whl.metadata
+  Downloading tqdm-4.66.2-py3-none-any.whl.metadata (57 kB)
+     ---------------------------------------- 0.0/57.6 kB ? eta -:--:--
+     ---------------------------------------- 57.6/57.6 kB ? eta 0:00:00
+Requirement already satisfied: typing-extensions&gt;=3.7.4.3 in c:\users\jeanl\anaconda3\lib\site-packages (from huggingface_hub) (4.10.0)
+Requirement already satisfied: colorama in c:\users\jeanl\anaconda3\lib\site-packages (from tqdm&gt;=4.42.1-&gt;huggingface_hub) (0.4.6)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in c:\users\jeanl\anaconda3\lib\site-packages (from requests-&gt;huggingface_hub) (2.0.4)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in c:\users\jeanl\anaconda3\lib\site-packages (from requests-&gt;huggingface_hub) (3.4)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in c:\users\jeanl\anaconda3\lib\site-packages (from requests-&gt;huggingface_hub) (1.26.16)
+Requirement already satisfied: certifi&gt;=2017.4.17 in c:\users\jeanl\anaconda3\lib\site-packages (from requests-&gt;huggingface_hub) (2023.7.22)
+Downloading huggingface_hub-0.22.2-py3-none-any.whl (388 kB)
+   ---------------------------------------- 0.0/388.9 kB ? eta -:--:--
+   --------------------------------------- 388.9/388.9 kB 23.7 MB/s eta 0:00:00
+Using cached fsspec-2024.3.1-py3-none-any.whl (171 kB)
+Downloading tqdm-4.66.2-py3-none-any.whl (78 kB)
+   ---------------------------------------- 0.0/78.3 kB ? eta -:--:--
+   ---------------------------------------- 78.3/78.3 kB ? eta 0:00:00
+Installing collected packages: tqdm, fsspec, huggingface_hub
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.41.1
+    Uninstalling tqdm-4.41.1:
+      Successfully uninstalled tqdm-4.41.1
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2023.3.0
+    Uninstalling fsspec-2023.3.0:
+      Successfully uninstalled fsspec-2023.3.0
+Successfully installed fsspec-2024.3.1 huggingface_hub-0.22.2 tqdm-4.66.2
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+transformers 2.1.1 requires sentencepiece, which is not installed.
+s3fs 2023.3.0 requires fsspec==2023.3.0, but you have fsspec 2024.3.1 which is incompatible.</code></pre>
+</div>
+</div>
+<p>Using Langchain framework and Hugging face hub to make the connection with the next Open LLM modeL: Falcon-7b</p>
+<p>https://huggingface.co/tiiuae/falcon-7b-instruct</p>
+<div id="cell-22" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain <span class="im">import</span> HuggingFaceHub</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co">#repo_id = 'tiiuae/falcon-7b-instruct' </span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>repo_id <span class="op">=</span> <span class="st">'tiiuae/falcon-7b-instruct'</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>repo_id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>'tiiuae/falcon-7b-instruct'</code></pre>
+</div>
+</div>
+<div id="cell-result-2" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>llm <span class="op">=</span> HuggingFaceHub(repo_id<span class="op">=</span>repo_id) </span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>llm(<span class="st">"What is a laptop?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>c:\Users\jeanl\anaconda3\Lib\site-packages\langchain_core\_api\deprecation.py:117: LangChainDeprecationWarning: The function `__call__` was deprecated in LangChain 0.1.7 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(</code></pre>
+</div>
+<div id="result-2" class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>'What is a laptop?\nA laptop is a portable computer that is typically smaller than a desktop computer. It is designed to be used on the go and can be used for a variety of tasks, including browsing the internet, working on documents, and playing games.'</code></pre>
+<p>Result of the LLM to a generic question</p>
+</div>
+</div>
+<p>With the next function is send an especific question to the LLM and is fetched the asnwer</p>
+<div id="cell-25" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain <span class="im">import</span> HuggingFaceHub</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> llm(prompt):</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    repo_id <span class="op">=</span> <span class="st">"tiiuae/falcon-7b-instruct"</span> </span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    llm <span class="op">=</span> HuggingFaceHub(repo_id<span class="op">=</span>repo_id, model_kwargs<span class="op">=</span>{<span class="st">"temperature"</span>: <span class="fl">0.5</span>, <span class="st">"max_length"</span>: <span class="dv">3</span>})</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    answer <span class="op">=</span> llm(prompt)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    answer <span class="op">=</span> answer.split(<span class="st">"</span><span class="ch">\n</span><span class="st">A"</span>)[<span class="dv">1</span>].strip()</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> answer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Testing the function</p>
+<div id="cell-27" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>object_name <span class="op">=</span> <span class="st">'flask'</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>llm(<span class="ss">f'can you tell me what is a  </span><span class="sc">{</span>object_name<span class="sc">}</span><span class="ss">?'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>'flask is a type of container, typically made of glass or metal, that is used to hold liquid substances.'</code></pre>
+</div>
+</div>
+<p>Finally this function is nested is the previous function to recognize the image and from it now for each of the objects that with a confidence over 80 % recognized the description of the object is put in the image.</p>
+<div id="cell-29" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>testing_path <span class="op">=</span> <span class="st">'./20240415205732.jpg'</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>output_path <span class="op">=</span><span class="st">'./20240415205732_mod.jpg'</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>testing <span class="op">=</span> Image.<span class="bu">open</span>(testing_path).convert(<span class="st">'RGB'</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>detecting <span class="op">=</span> detect_objects(testing)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>draw <span class="op">=</span> ImageDraw.Draw(testing)</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> box, label, score <span class="kw">in</span> <span class="bu">zip</span>(detecting[<span class="st">'boxes'</span>], detecting[<span class="st">'labels'</span>], detecting[<span class="st">'scores'</span>]):</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> score <span class="op">&gt;</span> <span class="fl">0.85</span>:</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>        draw.rectangle([(box[<span class="dv">0</span>], box[<span class="dv">1</span>]), (box[<span class="dv">2</span>], box[<span class="dv">3</span>])], outline<span class="op">=</span><span class="st">'green'</span>)</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> label.item() <span class="kw">in</span> coco_classes:  <span class="co"># Check if label exists in coco_classes</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>            description <span class="op">=</span> llm(<span class="ss">f"what is a </span><span class="sc">{</span>coco_classes[label.item()]<span class="sc">}</span><span class="ss">?"</span>)</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>            draw.text((box[<span class="dv">0</span>], box[<span class="dv">1</span>]), <span class="ss">f"Label: </span><span class="sc">{</span>coco_classes[label.item()]<span class="sc">}</span><span class="ss">, Description: </span><span class="sc">{</span>description<span class="sc">}</span><span class="ss">"</span>, fill<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>testing.save(output_path)</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>testing.show()  <span class="co"># Show the image with detections and descriptions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-result-3" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>Image.<span class="bu">open</span>(output_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="GenAI_Final_Project_files/figure-html/result-3-output-1.png" class="img-fluid figure-img"></p>
+<figcaption>Image with the description of the object detected</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="adaptation-of-the-current-model" class="level2">
+<h2 class="anchored" data-anchor-id="adaptation-of-the-current-model">Adaptation of the current model</h2>
+<p>Now that the whole data pipeline is being modeled. It is needed some adjustments on the definition of the data objectives in each steps. In terms of constrain of time, it will no be fully developed but the next steps in this work are the next:</p>
+<ul>
+<li>Transfer learning with the classification model to be specialized on electronic devices</li>
+<li>Validate the probability of the model</li>
+<li>Define good questions to send to the LLM</li>
+<li>change the image format to be more easy to understand the messages to be put.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

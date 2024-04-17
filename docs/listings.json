@@ -2,7 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
+      "/docs/posts/Transfer Learning/GenAI_Final_Project.html",
+      "/docs/posts/Transfer Learning/GenAI_Final_Project.out.html",
       "/posts/delivery/Delivery_app_group_project.html",
+      "/posts/Transfer Learning/GenAI_Final_Project.html",
+      "/posts/Transfer Learning/Image_text.html",
       "/posts/post-with-code/index.html",
       "/posts/ml/index.html",
       "/posts/welcome/index.html",
