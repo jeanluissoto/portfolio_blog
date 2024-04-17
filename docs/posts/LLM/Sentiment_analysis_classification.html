@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Jean Luis Soto’s Portfolio - Large Language Model: Sentyment Analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Jean Luis Soto’s Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jeanlsoto54"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/jeanluissoto/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Large Language Model: Sentyment Analysis</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a></li>
+  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration">Data Exploration</a></li>
+  <li><a href="#umbalanced-data-handling-with-data-augmentation" id="toc-umbalanced-data-handling-with-data-augmentation" class="nav-link" data-scroll-target="#umbalanced-data-handling-with-data-augmentation">Umbalanced data handling with Data Augmentation</a></li>
+  <li><a href="#split-of-data" id="toc-split-of-data" class="nav-link" data-scroll-target="#split-of-data">Split of data</a></li>
+  <li><a href="#clean-data-text" id="toc-clean-data-text" class="nav-link" data-scroll-target="#clean-data-text">Clean Data: Text</a></li>
+  <li><a href="#tokenization" id="toc-tokenization" class="nav-link" data-scroll-target="#tokenization">Tokenization</a></li>
+  <li><a href="#vectorizatiion-of-data" id="toc-vectorizatiion-of-data" class="nav-link" data-scroll-target="#vectorizatiion-of-data">Vectorizatiion of data</a>
+  <ul class="collapse">
+  <li><a href="#basic-vectorizations" id="toc-basic-vectorizations" class="nav-link" data-scroll-target="#basic-vectorizations">Basic Vectorizations</a></li>
+  <li><a href="#distributed-representations" id="toc-distributed-representations" class="nav-link" data-scroll-target="#distributed-representations">Distributed Representations</a></li>
+  </ul></li>
+  <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">Modeling</a>
+  <ul class="collapse">
+  <li><a href="#multinomial-naive-bayes" id="toc-multinomial-naive-bayes" class="nav-link" data-scroll-target="#multinomial-naive-bayes">Multinomial Naive Bayes</a></li>
+  <li><a href="#logistic-regression" id="toc-logistic-regression" class="nav-link" data-scroll-target="#logistic-regression">Logistic Regression</a></li>
+  <li><a href="#support-vector-machine" id="toc-support-vector-machine" class="nav-link" data-scroll-target="#support-vector-machine">Support Vector Machine</a></li>
+  <li><a href="#random-forest" id="toc-random-forest" class="nav-link" data-scroll-target="#random-forest">Random Forest</a></li>
+  <li><a href="#stocastic-gradient-descent-sgd" id="toc-stocastic-gradient-descent-sgd" class="nav-link" data-scroll-target="#stocastic-gradient-descent-sgd">Stocastic Gradient Descent (SGD)</a></li>
+  </ul></li>
+  <li><a href="#hyperparametrization" id="toc-hyperparametrization" class="nav-link" data-scroll-target="#hyperparametrization">Hyperparametrization</a>
+  <ul class="collapse">
+  <li><a href="#logistic-regression-1" id="toc-logistic-regression-1" class="nav-link" data-scroll-target="#logistic-regression-1">Logistic Regression</a></li>
+  <li><a href="#sgd-classifiers" id="toc-sgd-classifiers" class="nav-link" data-scroll-target="#sgd-classifiers">SGD Classifiers</a></li>
+  <li><a href="#ensemble-model-stacking-classifiers" id="toc-ensemble-model-stacking-classifiers" class="nav-link" data-scroll-target="#ensemble-model-stacking-classifiers">Ensemble model: Stacking Classifiers</a></li>
+  </ul></li>
+  <li><a href="#validation-set" id="toc-validation-set" class="nav-link" data-scroll-target="#validation-set">Validation set</a></li>
+  <li><a href="#interpretability" id="toc-interpretability" class="nav-link" data-scroll-target="#interpretability">Interpretability</a></li>
+  </ul>
+<div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://www.kaggle.com/code/jeanluissotovidal/generative-ai-task"><i class="bi bi-file-code"></i>Code file</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="context" class="level1">
+<h1>Context</h1>
+</section>
+<section id="data-exploration" class="level1">
+<h1>Data Exploration</h1>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-1">
+<div id="cell-code-1" class="cell" data-outputid="9625daed-8832-42dd-b352-19d6d681a4f4" data-execution_count="167">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>train_df.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-1" class="cell-output cell-output-display" data-execution_count="167">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">OriginalTweet</th>
+<th data-quarto-table-cell-role="th">Sentiment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>@MeNyrbie @Phil_Gahan @Chrisitv https://t.co/i...</td>
+<td>Neutral</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>advice Talk to your neighbours family to excha...</td>
+<td>Positive</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Coronavirus Australia: Woolworths to give elde...</td>
+<td>Positive</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>My food stock is not the only one which is emp...</td>
+<td>Positive</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Me, ready to go at supermarket during the #COV...</td>
+<td>Extremely Negative</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>As news of the regionÂ’s first confirmed COVID...</td>
+<td>Positive</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Cashier at grocery store was sharing his insig...</td>
+<td>Positive</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Was at the supermarket today. Didn't buy toile...</td>
+<td>Neutral</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Due to COVID-19 our retail store and classroom...</td>
+<td>Positive</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>For corona prevention,we should stop to buy th...</td>
+<td>Negative</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-2">
+<div id="cell-code-2" class="cell" data-outputid="03c6bd7c-8d2b-4ea8-bbb8-a1599c411862" data-execution_count="163">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>train_df.Sentiment)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-2-output-1.png" class="img-fluid figure-img"></p>
+<figcaption>Distribution of the Sentiment classes</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-3">
+<div id="cell-code-3" class="cell" data-outputid="51ba252b-a401-4f4f-8033-f4227e7724f1" data-execution_count="165">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>train_df.groupby(<span class="st">'Sentiment'</span>).count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-3" class="cell-output cell-output-display" data-execution_count="165">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">OriginalTweet</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Sentiment</th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Extremely Negative</td>
+<td>5481</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Extremely Positive</td>
+<td>6624</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Negative</td>
+<td>9917</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Neutral</td>
+<td>7713</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Positive</td>
+<td>11422</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p>Table of Classes</p>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_words(text):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    words <span class="op">=</span> text.split()</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">len</span>(words)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Calculation is on average 30 words per tweet.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>lenword <span class="op">=</span> model_df[<span class="st">'OriginalTweet'</span>].<span class="bu">apply</span>(count_words)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>lenword.mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="umbalanced-data-handling-with-data-augmentation" class="level1">
+<h1>Umbalanced data handling with Data Augmentation</h1>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> translate <span class="im">import</span> Translator</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> deep_translator <span class="im">import</span> MyMemoryTranslator</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> translation_balance(texto):</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    sr <span class="op">=</span> random.SystemRandom()</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    languages <span class="op">=</span> [<span class="st">"es"</span>, <span class="st">"fr"</span>, <span class="st">"nl"</span>]</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    dest_lang <span class="op">=</span> sr.choice(languages)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Translate to a random language</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        translator1 <span class="op">=</span> Translator( to_lang<span class="op">=</span>dest_lang)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        text_translated <span class="op">=</span> translator1.translate(texto)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        <span class="co">#print("Translated to random language:", text_translated)</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Format the translated text</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        formatted_text <span class="op">=</span> text_translated.upper()</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Translate the formatted text back to English</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>        translator2 <span class="op">=</span> Translator(from_lang<span class="op">=</span>dest_lang, to_lang<span class="op">=</span><span class="st">"en"</span>)</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        text_translated_back <span class="op">=</span> translator2.translate(formatted_text)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        <span class="co">#print("Translated back to English:", text_translated_back)</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> text_translated_back</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>        <span class="co">#print(f"Translation failed: {e}")</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>subset_neutral <span class="op">=</span> model_df[model_df[<span class="st">'Sentiment'</span>] <span class="op">==</span> <span class="st">'Neutral'</span>].sample(n<span class="op">=</span><span class="dv">1000</span>, replace<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>subset_negative <span class="op">=</span> model_df[model_df[<span class="st">'Sentiment'</span>] <span class="op">==</span> <span class="st">'Extremely Negative'</span>].sample(n<span class="op">=</span><span class="dv">2000</span>, replace<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>subset_positive <span class="op">=</span> model_df[model_df[<span class="st">'Sentiment'</span>] <span class="op">==</span> <span class="st">'Extremely Positive'</span>].sample(n<span class="op">=</span><span class="dv">1500</span>, replace<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>subset_neutral[<span class="st">'OriginalTweet'</span>] <span class="op">=</span> subset_neutral[<span class="st">'OriginalTweet'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: translation_balance(x))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>subset_negative[<span class="st">'OriginalTweet'</span>] <span class="op">=</span> subset_negative[<span class="st">'OriginalTweet'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: translation_balance(x))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>subset_positive[<span class="st">'OriginalTweet'</span>] <span class="op">=</span> subset_positive[<span class="st">'OriginalTweet'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: translation_balance(x))</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>model_df_1 <span class="op">=</span> pd.concat([model_df, aug_df], axis<span class="op">=</span><span class="dv">0</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>model_df_1 <span class="op">=</span> model_df_1.drop_duplicates()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-4">
+<div id="cell-code-4" class="cell" data-outputid="4dd58a74-62d2-4739-f0a6-ea9ba06c2979" data-execution_count="187">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>model_df_1.Sentiment)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-4-output-1.png" class="img-fluid figure-img"></p>
+<figcaption>New distribution of classes</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-5">
+<div id="cell-code-5" class="cell" data-outputid="e960a760-8867-4f44-af15-d92dae4e1c1d" data-execution_count="188">
+<div id="code-5" class="cell-output cell-output-display" data-execution_count="188">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">OriginalTweet</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Sentiment</th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Extremely Negative</td>
+<td>8945</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Extremely Positive</td>
+<td>9118</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Negative</td>
+<td>9917</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Neutral</td>
+<td>8678</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Positive</td>
+<td>11422</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> LabelEncoder</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>le <span class="op">=</span> LabelEncoder()</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>model_df_1[<span class="st">'Sentiment'</span>] <span class="op">=</span> le.fit_transform(model_df_1[<span class="st">'Sentiment'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="split-of-data" class="level1">
+<h1>Split of data</h1>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>X_train, X_test, Y_train, Y_test <span class="op">=</span> train_test_split(X,Y, random_state<span class="op">=</span><span class="dv">23</span>,test_size<span class="op">=</span><span class="fl">0.25</span>, stratify<span class="op">=</span>Y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-6">
+<div id="code-6" class="cell" data-outputid="ab32ddde-b45f-47be-f30d-7746080c5ffb" data-execution_count="193">
+<div class="cell-output cell-output-stdout">
+<pre><code>(36060,) (36060,)
+(12020,) (12020,)</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="clean-data-text" class="level1">
+<h1>Clean Data: Text</h1>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#manipulation of the text by REGeX methodology</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#library to manipulate HTML code. which in this case there are #present web links.</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.feature_extraction._stop_words <span class="im">as</span> stop_words</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># this dictionary is created in order correct some contractions that can happen in common language in the tweets</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>Apostrophes_expansion <span class="op">=</span> {</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"'s"</span>: <span class="st">" is"</span>,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"'re"</span>: <span class="st">" are"</span>,</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"'r"</span>: <span class="st">" are"</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"'ll"</span>: <span class="st">" will"</span>,</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"'d"</span>: <span class="st">" would"</span>,</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"won't"</span>: <span class="st">"will not"</span>,</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"can't"</span>: <span class="st">"cannot"</span>,</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"couldn't"</span>: <span class="st">"could not"</span>,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"shouldn't"</span>: <span class="st">"should not"</span>,</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">" isn't "</span>: <span class="st">" is not"</span>,</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"don't"</span>: <span class="st">"do not"</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> strip(text):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>   <span class="co">#from textblob import TextBlob</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>   <span class="im">from</span> nltk.stem <span class="im">import</span> WordNetLemmatizer</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>   <span class="co">#from spellchecker import SpellChecker</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>   text <span class="op">=</span> text.lower()</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>   <span class="co">#remove HTML tags, there is no cases in the current dataset but could happen in a tweet</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>   tweet <span class="op">=</span> BeautifulSoup(text).get_text()</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>   <span class="co">#remove URlS</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>   tweet <span class="op">=</span> <span class="st">' '</span>.join(re.sub(<span class="st">"(\w+:\/\/\S+)"</span>, <span class="st">" "</span>, tweet).split())</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>   <span class="co">#remove the gramatical contractions in English</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>   tweet <span class="op">=</span> <span class="st">' '</span>.join([Apostrophes_expansion[word] <span class="cf">if</span> word <span class="kw">in</span> Apostrophes_expansion <span class="cf">else</span> word <span class="cf">for</span> word <span class="kw">in</span> tweet.split()])</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>   <span class="co">#remove the mention character since does not give particular information on the sentiment. However it will be keeped the texts of hashtags</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>   tweet <span class="op">=</span> <span class="st">' '</span>.join(re.sub(<span class="st">"(@[A-Za-z0-9]+)"</span>,<span class="st">" "</span>, tweet).split())</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>   <span class="co">#remove the hashtags related to covid (kind of stopwords in this specific case)</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>   <span class="co">#tweet = ' '.join(re.sub(r"#(covid\w*|coronavirus\w*)", "", tweet).split())</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>   <span class="co">#Remove all the punctation signs that are not alphanumerical</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>   tweet <span class="op">=</span> <span class="st">' '</span>.join(re.sub(<span class="st">"[^a-zA-Z0-9\s]"</span>,<span class="st">" "</span>, tweet).split())</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>   <span class="co">#removing cases in which the word has several repeated characters</span></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>   tweet <span class="op">=</span> <span class="st">' '</span>.join(re.sub(<span class="vs">r"(.)\1+"</span>, <span class="vs">r"\1\1"</span>, tweet).split())</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>   <span class="co">#Lemmatization: Using the grammatical roots to understand and modify the words to the origin</span></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>   lemmatizer <span class="op">=</span> WordNetLemmatizer()</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>   tweeter <span class="op">=</span>  <span class="st">' '</span>.join([lemmatizer.lemmatize(word) <span class="cf">for</span> word <span class="kw">in</span> tweet.split()])</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>   <span class="cf">return</span> tweeter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-7">
+<div id="cell-code-7" class="cell" data-outputid="3e79c3ed-e867-4aa7-c311-6e54efcb75b8" data-execution_count="199">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>testing <span class="op">=</span> <span class="st">""" My food stock is not the only one which is empty... @Carlitos</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="st">PLEASE, don't panic, THERE WILL BE ENOUGH FOOD FOR EVERYONE if you do not take more than you need. pleaissssss</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="st">Stay calm, stay safe, stai in homel. #COVID19france #COVID_19 #COVID19 #coronavirus #confinement #Confinementotal #ConfinementGeneral https://t.co/zrlG0Z520j """</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>testing1 <span class="op">=</span>strip(testing)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>testing1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-7" class="cell-output cell-output-display" data-execution_count="199">
+<pre><code>'my food stock is not the only one which is empty please do not panic there will be enough food for everyone if you do not take more than you need pleaiss stay calm stay safe stai in homel confinement confinementotal confinementgeneral'</code></pre>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Apply it on all the X dataset</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> X_train.<span class="bu">apply</span>(strip)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> X_test.<span class="bu">apply</span>(strip)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-8">
+<div id="cell-code-8" class="cell" data-outputid="0bbeaa32-20b2-4f1e-f21f-1048e2c4b67d" data-execution_count="201">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>X_train[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-8" class="cell-output cell-output-display" data-execution_count="201">
+<pre><code>655      im fucking calling it now covid 19 isnt gonna ...
+14088    agreed i can tell you you have a better chance...
+36393    hosted a webinar with three procurement though...
+337      in the wake of covid 19 we are working with ag...
+9571     hello are you a complete fucking moron then th...
+Name: OriginalTweet, dtype: object</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="tokenization" class="level1">
+<h1>Tokenization</h1>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.tokenize <span class="im">import</span> TweetTokenizer</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.tokenize <span class="im">import</span> word_tokenize </span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> tokenize(tweet,token<span class="op">=</span><span class="st">'tweet'</span>):</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> token <span class="op">==</span> <span class="st">'tweet'</span>:</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>        tokenizer <span class="op">=</span> TweetTokenizer()</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>        tui <span class="op">=</span> tokenizer.tokenize(tweet)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> token<span class="op">==</span><span class="st">'regular'</span>:    </span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>        tui <span class="op">=</span>word_tokenize(tweet)</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tui</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>X_train_token <span class="op">=</span> X_train.<span class="bu">apply</span>(tokenize, token<span class="op">=</span><span class="st">'tweet'</span>).tolist()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>X_test_token <span class="op">=</span> X_test.<span class="bu">apply</span>(tokenize, token<span class="op">=</span><span class="st">'tweet'</span>).tolist()</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_train_token[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-9">
+<div id="code-9" class="cell" data-execution_count="213">
+<div class="cell-output cell-output-stdout">
+<pre><code>['agreed', 'i', 'can', 'tell', 'you', 'you', 'have', 'a', 'better', 'chance', 'of', 'dying', 'driving', 'to', 'the', 'grocery', 'store', 'to', 'hoard', 'tp', 'than', 'dying', 'from', 'the']</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="vectorizatiion-of-data" class="level1">
+<h1>Vectorizatiion of data</h1>
+<section id="basic-vectorizations" class="level2">
+<h2 class="anchored" data-anchor-id="basic-vectorizations">Basic Vectorizations</h2>
+<p><strong>One Hot Encoding</strong></p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>vocab<span class="op">=</span>{}</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tweets <span class="kw">in</span> twitter:</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> word <span class="kw">in</span> tweets.split():</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> word <span class="kw">not</span> <span class="kw">in</span> vocab:</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>      count <span class="op">=</span> count<span class="op">+</span><span class="dv">1</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>      vocab[word] <span class="op">=</span>count</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="co">#One Hot Encoding</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> OHE_vector(string):</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>  OHE_encoded <span class="op">=</span>[]</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> word <span class="kw">in</span> string.split():</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    temp <span class="op">=</span>[<span class="dv">0</span>]<span class="op">*</span><span class="bu">len</span>(vocab)</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> word <span class="kw">in</span> vocab:</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>      temp[vocab[word]<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span><span class="dv">1</span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>    OHE_encoded.append(temp)</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> OHE_encoded</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>OHE_vector(twitter[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-10">
+<div id="cell-code-10" class="cell" data-execution_count="223">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(count_vect.vocabulary_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-10" class="cell-output cell-output-display" data-execution_count="223">
+<pre><code>36850</code></pre>
+</div>
+</div>
+</div>
+<p><strong>Bag of Words</strong></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># It will be used the library scikit learn to calculate the density (reptitions) of the words in the corpus</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> CountVectorizer</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>count_vect <span class="op">=</span> CountVectorizer()</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Build a BOW representation</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>x_train_bow_testa <span class="op">=</span> count_vect.fit_transform(X_train)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>x_test_bow_testa <span class="op">=</span> count_vect.transform(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>#| label: code-10</p>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-10">
+<div id="cell-code-10" class="cell" data-execution_count="223">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(count_vect.vocabulary_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-10" class="cell-output cell-output-display" data-execution_count="223">
+<pre><code>36850</code></pre>
+</div>
+</div>
+</div>
+<p><strong>Bag of N-Grams</strong></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bag of N-grams: in this case the modification is in that the n-gram is going to agglutine words to catch the relationship between them</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co"># this feature importance depends on the number of n-grams defined</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>count_vect_ngram <span class="op">=</span> CountVectorizer(ngram_range<span class="op">=</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>x_train_ngram_testa <span class="op">=</span> count_vect_ngram.fit_transform(X_train)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>x_test_ngram_testa <span class="op">=</span> count_vect_ngram.transform(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>count_vect_ngram_testb <span class="op">=</span> CountVectorizer(max_features <span class="op">=</span> <span class="dv">25000</span>, ngram_range<span class="op">=</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>x_train_ngram_testb <span class="op">=</span> count_vect_ngram_testb.fit_transform(X_train)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>x_test_ngram_testb <span class="op">=</span> count_vect_ngram_testb.transform(X_test)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>count_vect_ngram_testc <span class="op">=</span> CountVectorizer(max_features <span class="op">=</span> <span class="dv">25000</span>, ngram_range<span class="op">=</span>(<span class="dv">1</span>,<span class="dv">4</span>))</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>x_train_ngram_testc <span class="op">=</span> count_vect_ngram_testc.fit_transform(X_train)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>x_test_ngram_testc <span class="op">=</span> count_vect_ngram_testc.transform(X_test)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>count_vect_ngram_testd <span class="op">=</span> CountVectorizer(max_features <span class="op">=</span> <span class="dv">25000</span>, ngram_range<span class="op">=</span>(<span class="dv">1</span>,<span class="dv">5</span>))</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>x_train_ngram_testd <span class="op">=</span> count_vect_ngram_testd.fit_transform(X_train)</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>x_test_ngram_testd <span class="op">=</span> count_vect_ngram_testd.transform(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>TF-IDF</strong></p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#TF-IDF: this model can catch the importance of the word in each text and across the documents related to the study</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> TfidfVectorizer</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>tfidif <span class="op">=</span>TfidfVectorizer()</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>x_train_tfidif_testa <span class="op">=</span> tfidif.fit_transform(X_train)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>x_test_tfidif_testa <span class="op">=</span> tfidif.transform(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>tfidif_testb <span class="op">=</span>TfidfVectorizer(max_features <span class="op">=</span> <span class="dv">25000</span>)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>x_train_tfidif_testb <span class="op">=</span> tfidif_testb.fit_transform(X_train)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>x_test_tfidif_testb <span class="op">=</span> tfidif_testb.transform(X_test)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>tfidif_testc <span class="op">=</span>TfidfVectorizer(max_features <span class="op">=</span> <span class="dv">10000</span>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>x_train_tfidif_testc <span class="op">=</span> tfidif_testc.fit_transform(X_train)</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>x_test_tfidif_testc <span class="op">=</span> tfidif_testc.transform(X_test)</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>tfidif_testd <span class="op">=</span>TfidfVectorizer(max_features <span class="op">=</span> <span class="dv">5000</span>)</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>x_train_tfidif_testd <span class="op">=</span> tfidif_testd.fit_transform(X_train)</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>x_test_tfidif_testd <span class="op">=</span> tfidif_testd.transform(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="distributed-representations" class="level2">
+<h2 class="anchored" data-anchor-id="distributed-representations">Distributed Representations</h2>
+<p><strong>GLOvE Twitter 100</strong></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> gensim.downloader <span class="im">as</span> api</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>info <span class="op">=</span>api.info()</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>model_twitter <span class="op">=</span> api.load(<span class="st">"glove-twitter-100"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-11">
+<div id="code-11" class="cell" data-execution_count="76">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> gensim.models.word2vec <span class="im">import</span> Word2Vec</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>similar_crisis <span class="op">=</span> model_twitter.most_similar(<span class="st">"crisis"</span>, topn<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>similar_pandemic <span class="op">=</span> model_twitter.most_similar(<span class="st">"pandemic"</span>, topn<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>similar_quarantine <span class="op">=</span> model_twitter.most_similar(<span class="st">"quarantine"</span>, topn<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(similar_crisis)</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(similar_pandemic)</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(similar_quarantine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[('fiscal', 0.6861035227775574), ('economic', 0.6322633624076843), ('disaster', 0.6271545886993408)]
+[('terjangkit', 0.5816013813018799), ('swine', 0.577864944934845), ('epidemic', 0.5776160359382629)]
+[('transpose', 0.5684693455696106), ('idlewild', 0.5681213736534119), ('detachment', 0.5586339235305786)]</code></pre>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-12">
+<div id="code-12" class="cell" data-execution_count="77">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the Glove model on twitter have more than 1 millon words in the dictionary</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>glove_twitter_vocab <span class="op">=</span> model_twitter.index_to_key</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>glove_twitter_vocab_lower <span class="op">=</span> [item.lower() <span class="cf">for</span> item <span class="kw">in</span> glove_twitter_vocab]</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(glove_twitter_vocab_lower))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1193514</code></pre>
+</div>
+</div>
+</div>
+<p>65.5% of actual dataset inside the pre-trained vectoring</p>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-13">
+<div id="code-13" class="cell" data-execution_count="78">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>words_found <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> word <span class="kw">in</span> glove_twitter_vocab_lower:</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> word <span class="kw">in</span> vocab:</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>        words_found <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of words found in dataset vocabulary:"</span>, words_found, <span class="st">"out of "</span>, <span class="bu">len</span>(vocab),<span class="st">":"</span>,words_found<span class="op">/</span><span class="bu">len</span>(vocab))</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(vocab))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Number of words found in dataset vocabulary: 24169 out of  36886 : 0.6552350485278967
+36886</code></pre>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pre trained embeddings</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Word2vec - twitter training. In this case it is being averaged all the values of the tokens </span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="co"># fixed dimention of 100 since the pre trained embedding has this configuration</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> embedding(corpus,dimension):</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>    DIM <span class="op">=</span> dimension</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>    zero_vector <span class="op">=</span> np.zeros(DIM)</span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>    features <span class="op">=</span> []</span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> tokens <span class="kw">in</span> corpus:</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>        arrays <span class="op">=</span> np.zeros(DIM)</span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>        counts <span class="op">=</span> <span class="dv">0</span> <span class="op">+</span> <span class="fl">1e-5</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> token <span class="kw">in</span> tokens:</span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> token <span class="kw">in</span> model_twitter:</span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>                arrays <span class="op">+=</span> model_twitter[token]</span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>                counts <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> counts <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>            features.append(arrays <span class="op">/</span> counts)</span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>            features.append(zero_vector)</span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> features</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>X_train_embed_w2v_tweeter <span class="op">=</span>embedding(X_train_token,<span class="dv">100</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>X_test_embed_w2v_tweeter <span class="op">=</span>embedding(X_test_token,<span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="modeling" class="level1">
+<h1>Modeling</h1>
+<div class="sourceCode" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>datasets <span class="op">=</span>{</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Bag of words case 1'</span>: {<span class="st">'train'</span>: x_train_bow_testa, <span class="st">'test'</span>: x_test_bow_testa},</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Bag of words case 2'</span>: {<span class="st">'train'</span>: x_train_bow_testb, <span class="st">'test'</span>: x_test_bow_testb},</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Bag of words case 3'</span>: {<span class="st">'train'</span>: x_train_bow_testc, <span class="st">'test'</span>: x_test_bow_testc},</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Bag of words case 4'</span>: {<span class="st">'train'</span>: x_train_bow_testd, <span class="st">'test'</span>: x_test_bow_testd},</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'N-grams case 1'</span>: {<span class="st">'train'</span>: x_train_ngram_testa, <span class="st">'test'</span>: x_test_ngram_testa},</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'N-grams case 2'</span>: {<span class="st">'train'</span>: x_train_ngram_testb, <span class="st">'test'</span>: x_test_ngram_testb},</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'N-grams case 3'</span>: {<span class="st">'train'</span>: x_train_ngram_testc, <span class="st">'test'</span>: x_test_ngram_testc},</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'N-grams case 4'</span>: {<span class="st">'train'</span>: x_train_ngram_testd, <span class="st">'test'</span>: x_test_ngram_testd},</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'tf-idf case 1'</span>: {<span class="st">'train'</span>: x_train_tfidif_testa, <span class="st">'test'</span>: x_test_tfidif_testa},</span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'tf-idf case 2'</span>: {<span class="st">'train'</span>: x_train_tfidif_testb, <span class="st">'test'</span>: x_test_tfidif_testb},</span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'tf-idf case 3'</span>: {<span class="st">'train'</span>: x_train_tfidif_testc, <span class="st">'test'</span>: x_test_tfidif_testc},</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'tf-idf case 4'</span>: {<span class="st">'train'</span>: x_train_tfidif_testd, <span class="st">'test'</span>: x_test_tfidif_testd},</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'w2v embedding'</span>: {<span class="st">'train'</span>: X_train_embed_w2v_tweeter, <span class="st">'test'</span>: X_test_embed_w2v_tweeter}</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> metricas(y_real, y_predicted):</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix ,roc_curve,auc</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> sklearn <span class="im">import</span> metrics</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> sklearn.metrics <span class="im">import</span> ConfusionMatrixDisplay</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Accuracy: "</span>, accuracy_score(y_real, y_predicted))</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>    cnf_matrix <span class="op">=</span> confusion_matrix(y_real, y_predicted, normalize<span class="op">=</span><span class="st">"true"</span>)</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">6</span>))</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>    disp <span class="op">=</span> ConfusionMatrixDisplay(confusion_matrix<span class="op">=</span>cnf_matrix,  display_labels<span class="op">=</span>le.classes_)</span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>    disp.plot(cmap<span class="op">=</span><span class="st">"Blues"</span>, values_format<span class="op">=</span><span class="st">".2f"</span>, ax<span class="op">=</span>ax, colorbar<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(classification_report(y_real, y_predicted))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="multinomial-naive-bayes" class="level2">
+<h2 class="anchored" data-anchor-id="multinomial-naive-bayes">Multinomial Naive Bayes</h2>
+<div class="sourceCode" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the BOG vector to apply Multinomial Naive Bayes model</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Supports multiclasses </span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> MultinomialNB</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> LinearSVC</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>nb <span class="op">=</span> MultinomialNB()</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>time nb.fit(x_train_bow_testa,Y_train)</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>y_pred_MNB <span class="op">=</span> nb.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-14">
+<div id="cell-code-14" class="cell" data-execution_count="167">
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.5174708818635607
+              precision    recall  f1-score   support
+
+           0       0.60      0.75      0.66      2236
+           1       0.55      0.66      0.60      2280
+           2       0.43      0.36      0.39      2479
+           3       0.71      0.38      0.50      2169
+           4       0.41      0.47      0.44      2856
+
+    accuracy                           0.52     12020
+   macro avg       0.54      0.52      0.52     12020
+weighted avg       0.53      0.52      0.51     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-14-output-2.png" id="code-14" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-15">
+<div id="cell-code-15" class="cell" data-execution_count="97">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>class_metrics <span class="op">=</span> pd.DataFrame.<span class="op">\</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>    from_dict(datasets, <span class="st">'index'</span>)[[<span class="st">'Accuracy_train'</span>, <span class="st">'Accuracy_test'</span>,</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>                                      <span class="st">'F1_test'</span>]]</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>class_metrics.sort_values(by<span class="op">=</span><span class="st">'Accuracy_test'</span>, ascending<span class="op">=</span><span class="va">False</span>)   </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-15" class="cell-output cell-output-display" data-execution_count="97">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Accuracy_train</th>
+<th data-quarto-table-cell-role="th">Accuracy_test</th>
+<th data-quarto-table-cell-role="th">F1_test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">tf-idf case 2</td>
+<td>0.789268</td>
+<td>0.615807</td>
+<td>0.613486</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tf-idf case 3</td>
+<td>0.766334</td>
+<td>0.614393</td>
+<td>0.612125</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">tf-idf case 4</td>
+<td>0.738159</td>
+<td>0.614309</td>
+<td>0.611962</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">N-grams case 1</td>
+<td>0.979673</td>
+<td>0.540516</td>
+<td>0.520580</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Bag of words case 2</td>
+<td>0.722213</td>
+<td>0.520133</td>
+<td>0.516547</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Bag of words case 3</td>
+<td>0.670438</td>
+<td>0.520133</td>
+<td>0.514778</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Bag of words case 1</td>
+<td>0.737299</td>
+<td>0.517720</td>
+<td>0.511114</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Bag of words case 4</td>
+<td>0.619773</td>
+<td>0.510483</td>
+<td>0.504621</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">N-grams case 2</td>
+<td>0.706406</td>
+<td>0.509484</td>
+<td>0.504226</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">N-grams case 3</td>
+<td>0.698641</td>
+<td>0.506156</td>
+<td>0.500874</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">N-grams case 4</td>
+<td>0.695868</td>
+<td>0.504742</td>
+<td>0.499482</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tf-idf case 1</td>
+<td>0.670327</td>
+<td>0.472712</td>
+<td>0.457420</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">w2v embedding</td>
+<td>0.453882</td>
+<td>0.431115</td>
+<td>0.427992</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="logistic-regression" class="level2">
+<h2 class="anchored" data-anchor-id="logistic-regression">Logistic Regression</h2>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>logreg <span class="op">=</span> LogisticRegression() <span class="co">#class_weight="balanced")</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>logreg.fit(x_train_bow_testa,Y_train) </span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>y_pred_lr <span class="op">=</span> logreg.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-16">
+<div id="cell-code-16" class="cell" data-execution_count="155">
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.6539933444259567
+              precision    recall  f1-score   support
+
+           0       0.77      0.74      0.76      2236
+           1       0.76      0.71      0.74      2280
+           2       0.54      0.53      0.54      2479
+           3       0.67      0.74      0.70      2169
+           4       0.57      0.58      0.57      2856
+
+    accuracy                           0.65     12020
+   macro avg       0.66      0.66      0.66     12020
+weighted avg       0.66      0.65      0.65     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-16-output-2.png" id="code-16" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-17">
+<div id="cell-code-17" class="cell" data-execution_count="95">
+<div id="code-17" class="cell-output cell-output-display" data-execution_count="95">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Accuracy_train</th>
+<th data-quarto-table-cell-role="th">Accuracy_test</th>
+<th data-quarto-table-cell-role="th">F1_test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Bag of words case 1</td>
+<td>0.890266</td>
+<td>0.655491</td>
+<td>0.654289</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Bag of words case 2</td>
+<td>0.877787</td>
+<td>0.653744</td>
+<td>0.652258</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">N-grams case 1</td>
+<td>0.999750</td>
+<td>0.653744</td>
+<td>0.649574</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Bag of words case 3</td>
+<td>0.844010</td>
+<td>0.649334</td>
+<td>0.648297</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Bag of words case 4</td>
+<td>0.805103</td>
+<td>0.648087</td>
+<td>0.647560</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">N-grams case 2</td>
+<td>0.971908</td>
+<td>0.630200</td>
+<td>0.629032</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">N-grams case 3</td>
+<td>0.968996</td>
+<td>0.628619</td>
+<td>0.627243</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">N-grams case 4</td>
+<td>0.969717</td>
+<td>0.627205</td>
+<td>0.626754</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">tf-idf case 2</td>
+<td>0.789268</td>
+<td>0.615807</td>
+<td>0.613486</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tf-idf case 3</td>
+<td>0.766334</td>
+<td>0.614393</td>
+<td>0.612125</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">tf-idf case 4</td>
+<td>0.738159</td>
+<td>0.614309</td>
+<td>0.611962</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tf-idf case 1</td>
+<td>0.794038</td>
+<td>0.613561</td>
+<td>0.610816</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">w2v embedding</td>
+<td>0.453882</td>
+<td>0.431115</td>
+<td>0.427992</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#trying with the pretrained embedding</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>X_train_embed_w2v_tweeter[np.isnan(X_train_embed_w2v_tweeter)] <span class="op">=</span> <span class="fl">0.001</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>X_test_embed_w2v_tweeter[np.isnan(X_test_embed_w2v_tweeter)] <span class="op">=</span> <span class="fl">0.001</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>logreg_w2v <span class="op">=</span> LogisticRegression()</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>time logreg_w2v.fit(X_train_embed_w2v_tweeter,Y_train)</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>y_pred_lr_w2v <span class="op">=</span> logreg_w2v.predict(X_test_embed_w2v_tweeter)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-18">
+<div id="cell-code-18" class="cell" data-execution_count="163">
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.43885191347753744
+              precision    recall  f1-score   support
+
+           0       0.50      0.57      0.53      2236
+           1       0.53      0.55      0.54      2280
+           2       0.35      0.28      0.31      2479
+           3       0.47      0.44      0.45      2169
+           4       0.35      0.39      0.37      2856
+
+    accuracy                           0.44     12020
+   macro avg       0.44      0.44      0.44     12020
+weighted avg       0.44      0.44      0.44     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-18-output-2.png" id="code-18" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="support-vector-machine" class="level2">
+<h2 class="anchored" data-anchor-id="support-vector-machine">Support Vector Machine</h2>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> LinearSVC</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> LinearSVC()<span class="co">#(class_weight='balanced') # instantiate a logistic regression model</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>classifier.fit(x_train_bow_testa, Y_train) <span class="co"># fit the model with training data</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make predictions on test data</span></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>y_pred_svc <span class="op">=</span> classifier.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-19">
+<div id="cell-code-19" class="cell" data-execution_count="160">
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.6032445923460898
+              precision    recall  f1-score   support
+
+           0       0.75      0.79      0.77      2236
+           1       0.70      0.75      0.72      2280
+           2       0.48      0.41      0.44      2479
+           3       0.59      0.69      0.63      2169
+           4       0.49      0.44      0.46      2856
+
+    accuracy                           0.60     12020
+   macro avg       0.60      0.62      0.61     12020
+weighted avg       0.59      0.60      0.60     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-19-output-2.png" id="code-19" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-20">
+<div id="cell-code-20" class="cell" data-execution_count="99">
+<div id="code-20" class="cell-output cell-output-display" data-execution_count="99">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Accuracy_train</th>
+<th data-quarto-table-cell-role="th">Accuracy_test</th>
+<th data-quarto-table-cell-role="th">F1_test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">N-grams case 1</td>
+<td>0.999889</td>
+<td>0.634359</td>
+<td>0.626083</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tf-idf case 1</td>
+<td>0.925430</td>
+<td>0.617554</td>
+<td>0.607794</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">tf-idf case 2</td>
+<td>0.905935</td>
+<td>0.615724</td>
+<td>0.606290</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">tf-idf case 4</td>
+<td>0.781864</td>
+<td>0.612978</td>
+<td>0.602221</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">tf-idf case 3</td>
+<td>0.848918</td>
+<td>0.609734</td>
+<td>0.600272</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Bag of words case 4</td>
+<td>0.815585</td>
+<td>0.605990</td>
+<td>0.596530</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Bag of words case 2</td>
+<td>0.965530</td>
+<td>0.605574</td>
+<td>0.599426</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Bag of words case 1</td>
+<td>0.976095</td>
+<td>0.603161</td>
+<td>0.596607</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Bag of words case 3</td>
+<td>0.912230</td>
+<td>0.602912</td>
+<td>0.595109</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">N-grams case 2</td>
+<td>0.998447</td>
+<td>0.569634</td>
+<td>0.567153</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">N-grams case 4</td>
+<td>0.998392</td>
+<td>0.568469</td>
+<td>0.565710</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">N-grams case 3</td>
+<td>0.998308</td>
+<td>0.567388</td>
+<td>0.564763</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">w2v embedding</td>
+<td>0.446506</td>
+<td>0.428869</td>
+<td>0.400543</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="random-forest" class="level2">
+<h2 class="anchored" data-anchor-id="random-forest">Random Forest</h2>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier, GradientBoostingClassifier</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> RandomForestClassifier()<span class="co">#(class_weight='balanced') # instantiate a logistic regression model</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>classifier.fit(x_train_bow_testa, Y_train) <span class="co"># fit the model with training data</span></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make predictions on test data</span></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>y_pred_rfc <span class="op">=</span> classifier.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-21">
+<div id="cell-code-21" class="cell" data-execution_count="103">
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.6085690515806988
+              precision    recall  f1-score   support
+
+           0       0.75      0.77      0.76      2236
+           1       0.74      0.66      0.70      2280
+           2       0.53      0.38      0.44      2479
+           3       0.58      0.75      0.65      2169
+           4       0.49      0.52      0.51      2856
+
+    accuracy                           0.61     12020
+   macro avg       0.62      0.62      0.61     12020
+weighted avg       0.61      0.61      0.60     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-21-output-2.png" id="code-21" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="stocastic-gradient-descent-sgd" class="level2">
+<h2 class="anchored" data-anchor-id="stocastic-gradient-descent-sgd">Stocastic Gradient Descent (SGD)</h2>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> SGDClassifier</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> SGDClassifier()</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>classifier.fit(x_train_bow_testa, Y_train) <span class="co"># fit the model with training data</span></span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make predictions on test data</span></span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>y_pred_sgd <span class="op">=</span> classifier.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-22">
+<div id="cell-code-22" class="cell" data-execution_count="108">
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.6247088186356073
+              precision    recall  f1-score   support
+
+           0       0.69      0.86      0.76      2236
+           1       0.70      0.80      0.75      2280
+           2       0.53      0.40      0.45      2479
+           3       0.60      0.78      0.68      2169
+           4       0.56      0.39      0.46      2856
+
+    accuracy                           0.62     12020
+   macro avg       0.62      0.64      0.62     12020
+weighted avg       0.61      0.62      0.61     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-22-output-2.png" id="code-22" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="hyperparametrization" class="level1">
+<h1>Hyperparametrization</h1>
+<section id="logistic-regression-1" class="level2">
+<h2 class="anchored" data-anchor-id="logistic-regression-1">Logistic Regression</h2>
+<div class="sourceCode" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>lr_impr <span class="op">=</span> LogisticRegression()</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>parameters <span class="op">=</span> {</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'penalty'</span>: [<span class="va">None</span>,<span class="st">'l1'</span>, <span class="st">'l2'</span>],  </span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'C'</span>: [<span class="dv">100</span>, <span class="dv">10</span>, <span class="fl">1.0</span>, <span class="fl">0.1</span>, <span class="fl">0.01</span>],</span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'class_weight'</span>: [<span class="va">None</span>,<span class="st">'balanced'</span>],</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'solver'</span>:[<span class="st">'lbfgs'</span>,<span class="st">'newton-cg'</span>, <span class="st">'sag'</span>] </span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>gcv_lr <span class="op">=</span> GridSearchCV(lr_impr, parameters, n_jobs<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a>gcv_lr.fit(datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'train'</span>], Y_train) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-23">
+<div id="code-23" class="cell" data-execution_count="143">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, gcv_lr.best_params_)</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>best_model_lr <span class="op">=</span> gcv_lr.best_estimator_</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>y_val_gcv_lr <span class="op">=</span> best_model_lr.predict(datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'test'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Best parameters: {'C': 10, 'class_weight': 'balanced', 'penalty': 'l2', 'solver': 'sag'}</code></pre>
+</div>
+</div>
+</div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-24">
+<div id="cell-code-24" class="cell" data-execution_count="125">
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.6417637271214642
+              precision    recall  f1-score   support
+
+           0       0.74      0.78      0.76      2236
+           1       0.71      0.74      0.72      2280
+           2       0.56      0.51      0.53      2479
+           3       0.64      0.73      0.68      2169
+           4       0.57      0.50      0.53      2856
+
+    accuracy                           0.64     12020
+   macro avg       0.64      0.65      0.65     12020
+weighted avg       0.64      0.64      0.64     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-24-output-2.png" id="code-24" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="sgd-classifiers" class="level2">
+<h2 class="anchored" data-anchor-id="sgd-classifiers">SGD Classifiers</h2>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-25">
+<div id="cell-code-25" class="cell" data-execution_count="138">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> SGDClassifier()</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>parameters <span class="op">=</span> {</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'alpha'</span>: [<span class="fl">0.001</span>, <span class="fl">0.1</span>, <span class="fl">1.0</span>],</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'penalty'</span>: [<span class="va">None</span>, <span class="st">'l1'</span>, <span class="st">'l2'</span>],</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'tol'</span>: [ <span class="fl">1e-4</span>, <span class="fl">1e-5</span>],</span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'max_iter'</span>: [<span class="dv">100</span>, <span class="dv">500</span>],</span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">#'multi_class': ['ovr', 'multinomial'],</span></span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#'loss': ['hinge', 'log'],</span></span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'random_state'</span>: [<span class="dv">42</span>]</span>
+<span id="cb62-11"><a href="#cb62-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb62-12"><a href="#cb62-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-13"><a href="#cb62-13" aria-hidden="true" tabindex="-1"></a>gcv_sgd <span class="op">=</span> GridSearchCV(classifier, parameters, n_jobs<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb62-14"><a href="#cb62-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-15"><a href="#cb62-15" aria-hidden="true" tabindex="-1"></a>X_train_win <span class="op">=</span> datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'train'</span>]</span>
+<span id="cb62-16"><a href="#cb62-16" aria-hidden="true" tabindex="-1"></a>gcv_sgd.fit(X_train, Y_train) </span>
+<span id="cb62-17"><a href="#cb62-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-18"><a href="#cb62-18" aria-hidden="true" tabindex="-1"></a>best_model_sgd <span class="op">=</span> gcv_sgd.best_estimator_</span>
+<span id="cb62-19"><a href="#cb62-19" aria-hidden="true" tabindex="-1"></a>y_val_gcv_sgd<span class="op">=</span> best_model_sgd.predict(datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'test'</span>])</span>
+<span id="cb62-20"><a href="#cb62-20" aria-hidden="true" tabindex="-1"></a>metricas(Y_test, y_val_gcv_sgd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.5595673876871881
+              precision    recall  f1-score   support
+
+           0       0.60      0.83      0.69      2236
+           1       0.58      0.82      0.68      2280
+           2       0.49      0.26      0.33      2479
+           3       0.57      0.71      0.63      2169
+           4       0.50      0.29      0.36      2856
+
+    accuracy                           0.56     12020
+   macro avg       0.55      0.58      0.54     12020
+weighted avg       0.54      0.56      0.53     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-25-output-2.png" id="code-25" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ensemble-model-stacking-classifiers" class="level2">
+<h2 class="anchored" data-anchor-id="ensemble-model-stacking-classifiers">Ensemble model: Stacking Classifiers</h2>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-26">
+<div id="cell-code-26" class="cell" data-execution_count="247">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> StackingClassifier</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>X_train_win <span class="op">=</span> datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'train'</span>]</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>estimators <span class="op">=</span> [(<span class="st">'lr'</span>,best_model_lr),</span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>              (<span class="st">'svc'</span>,LinearSVC()),</span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>              (<span class="st">'sgd'</span>,best_model_sgd)]</span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>stacking_clf <span class="op">=</span> StackingClassifier(estimators<span class="op">=</span>estimators, final_estimator<span class="op">=</span>best_model_lr)</span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>stacking_clf.fit(X_train_win, Y_train)</span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-10"><a href="#cb64-10" aria-hidden="true" tabindex="-1"></a>y_val_stacking_clf <span class="op">=</span> stacking_clf.predict(datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'test'</span>])</span>
+<span id="cb64-11"><a href="#cb64-11" aria-hidden="true" tabindex="-1"></a>metricas(Y_test, y_val_stacking_clf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.7083194675540765
+              precision    recall  f1-score   support
+
+           0       0.79      0.83      0.81      2236
+           1       0.75      0.82      0.78      2280
+           2       0.63      0.59      0.61      2479
+           3       0.73      0.76      0.74      2169
+           4       0.65      0.59      0.62      2856
+
+    accuracy                           0.71     12020
+   macro avg       0.71      0.72      0.71     12020
+weighted avg       0.70      0.71      0.71     12020
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-26-output-2.png" id="code-26" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="validation-set" class="level1">
+<h1>Validation set</h1>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-27">
+<div id="cell-code-27" class="cell" data-execution_count="248">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pipeline to treat the set</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>valid_df <span class="op">=</span> pd.read_csv(<span class="vs">r'D:\Documents\Documents\EM Lyon\001B_Semester_2\02-Natural language processing\Final exam\TP Exam\Corona_NLP_test.csv'</span>, encoding<span class="op">=</span><span class="st">'latin'</span>)</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>valid_df <span class="op">=</span> valid_df[[<span class="st">'OriginalTweet'</span>, <span class="st">'Sentiment'</span>]]</span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>le <span class="op">=</span> LabelEncoder()</span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a>valid_df[<span class="st">'Sentiment'</span>] <span class="op">=</span> le.fit_transform(valid_df[<span class="st">'Sentiment'</span>])</span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>Y_valid <span class="op">=</span> valid_df[<span class="st">'Sentiment'</span>]</span>
+<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a>X_valid <span class="op">=</span> valid_df[<span class="st">'OriginalTweet'</span>]</span>
+<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a>X_valid <span class="op">=</span> X_valid.<span class="bu">apply</span>(strip)</span>
+<span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a><span class="co">#tf_dif_val = TfidfVectorizer(max_features = 25000)</span></span>
+<span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a>X_valid_fin <span class="op">=</span> tfidif_testb.transform(X_valid)</span>
+<span id="cb66-17"><a href="#cb66-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-18"><a href="#cb66-18" aria-hidden="true" tabindex="-1"></a>X_valid_fin.shape</span>
+<span id="cb66-19"><a href="#cb66-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-20"><a href="#cb66-20" aria-hidden="true" tabindex="-1"></a>y_valid_pred <span class="op">=</span> stacking_clf.predict(X_valid_fin)</span>
+<span id="cb66-21"><a href="#cb66-21" aria-hidden="true" tabindex="-1"></a>metricas(Y_valid, y_valid_pred)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Accuracy:  0.6492890995260664
+              precision    recall  f1-score   support
+
+           0       0.65      0.76      0.70       592
+           1       0.70      0.75      0.72       599
+           2       0.64      0.54      0.58      1041
+           3       0.67      0.74      0.70       619
+           4       0.61      0.58      0.60       947
+
+    accuracy                           0.65      3798
+   macro avg       0.65      0.67      0.66      3798
+weighted avg       0.65      0.65      0.65      3798
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sentiment_analysis_classification_files/figure-html/TP_Exam-code-27-output-2.png" id="code-27" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="interpretability" class="level1">
+<h1>Interpretability</h1>
+<div class="sourceCode" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> lime</span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lime.lime_text <span class="im">import</span> LimeTextExplainer</span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> make_pipeline</span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>log_reg_pipeline <span class="op">=</span> make_pipeline(tfidif_testb, stacking_clf)</span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a>lime_explainer <span class="op">=</span> LimeTextExplainer(class_names<span class="op">=</span>[<span class="st">'Extremely Negative'</span>, <span class="st">'Extremely Positive'</span>, <span class="st">'Negative'</span>, <span class="st">'Neutral'</span>,</span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Positive'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-28">
+<div id="cell-code-28" class="cell" data-execution_count="257">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span><span class="dv">10</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>text_instance <span class="op">=</span> X_valid.iloc[idx]</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>text_instance</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="code-28" class="cell-output cell-output-display" data-execution_count="257">
+<pre><code>'best quality couch at unbelievably low price available to order we are in boksburg gp for more info whatsapp 084 764 8086 supertuesdsy powertalk covid 19 sayentrepreneur djsbu'</code></pre>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

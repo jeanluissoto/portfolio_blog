@@ -1,0 +1,512 @@
+---
+title: "Large Language Model: Sentyment Analysis"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+    notebook-links: false
+    code-links:
+    - text: Code file
+      icon: file-code
+      href: https://www.kaggle.com/code/jeanluissotovidal/generative-ai-task
+---
+
+# Context
+
+# Data Exploration
+{{< embed TP_Exam.ipynb#code-1 echo=true >}}
+
+{{< embed TP_Exam.ipynb#code-2 echo=true >}}
+
+{{< embed TP_Exam.ipynb#code-3 echo=true >}}
+
+```python
+def count_words(text):
+    words = text.split()
+    return len(words)
+```
+Calculation is on average 30 words per tweet.
+```python
+lenword = model_df['OriginalTweet'].apply(count_words)
+lenword.mean()
+```
+
+# Umbalanced data handling with Data Augmentation
+
+```python
+from translate import Translator
+from deep_translator import MyMemoryTranslator
+import random
+
+def translation_balance(texto):
+    sr = random.SystemRandom()
+    languages = ["es", "fr", "nl"]
+
+    dest_lang = sr.choice(languages)
+    try:
+        # Translate to a random language
+        translator1 = Translator( to_lang=dest_lang)
+        text_translated = translator1.translate(texto)
+        #print("Translated to random language:", text_translated)
+
+        # Format the translated text
+        formatted_text = text_translated.upper()
+
+        # Translate the formatted text back to English
+        translator2 = Translator(from_lang=dest_lang, to_lang="en")
+        text_translated_back = translator2.translate(formatted_text)
+        #print("Translated back to English:", text_translated_back)
+
+        return text_translated_back
+        except Exception as e:
+        #print(f"Translation failed: {e}")
+        return None
+```
+
+
+```python
+subset_neutral = model_df[model_df['Sentiment'] == 'Neutral'].sample(n=1000, replace=False)
+subset_negative = model_df[model_df['Sentiment'] == 'Extremely Negative'].sample(n=2000, replace=False)
+subset_positive = model_df[model_df['Sentiment'] == 'Extremely Positive'].sample(n=1500, replace=False)
+```
+
+```python
+subset_neutral['OriginalTweet'] = subset_neutral['OriginalTweet'].apply(lambda x: translation_balance(x))
+subset_negative['OriginalTweet'] = subset_negative['OriginalTweet'].apply(lambda x: translation_balance(x))
+subset_positive['OriginalTweet'] = subset_positive['OriginalTweet'].apply(lambda x: translation_balance(x))
+
+model_df_1 = pd.concat([model_df, aug_df], axis=0, ignore_index=True)
+
+model_df_1 = model_df_1.drop_duplicates()
+```
+
+{{< embed TP_Exam.ipynb#code-4 echo=true >}}
+
+{{< embed TP_Exam.ipynb#code-5 >}}
+
+
+```python
+from sklearn.preprocessing import LabelEncoder
+
+le = LabelEncoder()
+model_df_1['Sentiment'] = le.fit_transform(model_df_1['Sentiment'])
+```
+
+# Split of  data
+
+```python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y, random_state=23,test_size=0.25, stratify=Y)
+```
+
+{{< embed TP_Exam.ipynb#code-6 >}}
+
+
+# Clean Data: Text
+
+```python
+#manipulation of the text by REGeX methodology
+import re 
+#library to manipulate HTML code. which in this case there are #present web links.
+from bs4 import BeautifulSoup 
+import sklearn.feature_extraction._stop_words as stop_words
+```
+
+```python
+# this dictionary is created in order correct some contractions that can happen in common language in the tweets
+Apostrophes_expansion = {
+    "'s": " is",
+    "'re": " are",
+    "'r": " are",
+    "'ll": " will",
+    "'d": " would",
+    "won't": "will not",
+    "can't": "cannot",
+    "couldn't": "could not",
+    "shouldn't": "should not",
+    " isn't ": " is not",
+    "don't": "do not"
+}
+```
+
+```python
+def strip(text):
+   #from textblob import TextBlob
+   from nltk.stem import WordNetLemmatizer
+   #from spellchecker import SpellChecker
+   text = text.lower()
+   #remove HTML tags, there is no cases in the current dataset but could happen in a tweet
+   tweet = BeautifulSoup(text).get_text()
+   #remove URlS
+   tweet = ' '.join(re.sub("(\w+:\/\/\S+)", " ", tweet).split())
+   #remove the gramatical contractions in English
+   tweet = ' '.join([Apostrophes_expansion[word] if word in Apostrophes_expansion else word for word in tweet.split()])
+   
+   #remove the mention character since does not give particular information on the sentiment. However it will be keeped the texts of hashtags
+   tweet = ' '.join(re.sub("(@[A-Za-z0-9]+)"," ", tweet).split())
+   
+   #remove the hashtags related to covid (kind of stopwords in this specific case)
+   #tweet = ' '.join(re.sub(r"#(covid\w*|coronavirus\w*)", "", tweet).split())
+ 
+   #Remove all the punctation signs that are not alphanumerical
+   tweet = ' '.join(re.sub("[^a-zA-Z0-9\s]"," ", tweet).split())
+   
+   #removing cases in which the word has several repeated characters
+   tweet = ' '.join(re.sub(r"(.)\1+", r"\1\1", tweet).split())
+   
+   
+   #Lemmatization: Using the grammatical roots to understand and modify the words to the origin
+   lemmatizer = WordNetLemmatizer()
+   tweeter =  ' '.join([lemmatizer.lemmatize(word) for word in tweet.split()])
+   return tweeter
+```
+
+{{< embed TP_Exam.ipynb#code-7 echo=true >}}
+
+
+```python
+#Apply it on all the X dataset
+X_train = X_train.apply(strip)
+X_test = X_test.apply(strip)
+```
+
+{{< embed TP_Exam.ipynb#code-8 echo=true >}}
+
+
+# Tokenization
+
+```python
+from nltk.tokenize import TweetTokenizer
+from nltk.tokenize import word_tokenize 
+def tokenize(tweet,token='tweet'):
+
+    if token == 'tweet':
+        tokenizer = TweetTokenizer()
+        tui = tokenizer.tokenize(tweet)
+    if token=='regular':    
+        tui =word_tokenize(tweet)
+    return tui
+```
+
+```python
+X_train_token = X_train.apply(tokenize, token='tweet').tolist()
+X_test_token = X_test.apply(tokenize, token='tweet').tolist()
+print(X_train_token[1])
+```
+
+{{< embed TP_Exam.ipynb#code-9 >}}
+
+# Vectorizatiion of data
+## Basic Vectorizations
+
+**One Hot Encoding**
+```python
+vocab={}
+count = 0
+for tweets in twitter:
+  for word in tweets.split():
+    if word not in vocab:
+      count = count+1
+      vocab[word] =count
+
+#One Hot Encoding
+def OHE_vector(string):
+  OHE_encoded =[]
+  for word in string.split():
+    temp =[0]*len(vocab)
+    if word in vocab:
+      temp[vocab[word]-1] =1
+    OHE_encoded.append(temp)
+  return OHE_encoded
+
+
+OHE_vector(twitter[1])
+```
+
+{{< embed TP_Exam.ipynb#code-10 echo=true >}}
+
+**Bag of Words**
+
+```python
+# It will be used the library scikit learn to calculate the density (reptitions) of the words in the corpus
+from sklearn.feature_extraction.text import CountVectorizer
+count_vect = CountVectorizer()
+
+#Build a BOW representation
+
+x_train_bow_testa = count_vect.fit_transform(X_train)
+x_test_bow_testa = count_vect.transform(X_test)
+```
+
+#| label: code-10
+{{< embed TP_Exam.ipynb#code-10 echo=true >}}
+
+**Bag of N-Grams**
+```python
+# Bag of N-grams: in this case the modification is in that the n-gram is going to agglutine words to catch the relationship between them
+# this feature importance depends on the number of n-grams defined
+count_vect_ngram = CountVectorizer(ngram_range=(1,3))
+
+x_train_ngram_testa = count_vect_ngram.fit_transform(X_train)
+x_test_ngram_testa = count_vect_ngram.transform(X_test)
+```
+
+```python
+count_vect_ngram_testb = CountVectorizer(max_features = 25000, ngram_range=(1,3))
+x_train_ngram_testb = count_vect_ngram_testb.fit_transform(X_train)
+x_test_ngram_testb = count_vect_ngram_testb.transform(X_test)
+
+count_vect_ngram_testc = CountVectorizer(max_features = 25000, ngram_range=(1,4))
+x_train_ngram_testc = count_vect_ngram_testc.fit_transform(X_train)
+x_test_ngram_testc = count_vect_ngram_testc.transform(X_test)
+
+count_vect_ngram_testd = CountVectorizer(max_features = 25000, ngram_range=(1,5))
+x_train_ngram_testd = count_vect_ngram_testd.fit_transform(X_train)
+x_test_ngram_testd = count_vect_ngram_testd.transform(X_test)
+```
+
+**TF-IDF**
+
+```python
+#TF-IDF: this model can catch the importance of the word in each text and across the documents related to the study
+from sklearn.feature_extraction.text import TfidfVectorizer
+tfidif =TfidfVectorizer()
+x_train_tfidif_testa = tfidif.fit_transform(X_train)
+x_test_tfidif_testa = tfidif.transform(X_test)
+```
+
+```python
+tfidif_testb =TfidfVectorizer(max_features = 25000)
+x_train_tfidif_testb = tfidif_testb.fit_transform(X_train)
+x_test_tfidif_testb = tfidif_testb.transform(X_test)
+
+tfidif_testc =TfidfVectorizer(max_features = 10000)
+x_train_tfidif_testc = tfidif_testc.fit_transform(X_train)
+x_test_tfidif_testc = tfidif_testc.transform(X_test)
+
+tfidif_testd =TfidfVectorizer(max_features = 5000)
+x_train_tfidif_testd = tfidif_testd.fit_transform(X_train)
+x_test_tfidif_testd = tfidif_testd.transform(X_test)
+```
+
+
+
+## Distributed Representations
+
+**GLOvE Twitter 100**
+
+```python
+import gensim.downloader as api
+info =api.info()
+model_twitter = api.load("glove-twitter-100")
+```
+
+{{< embed TP_Exam.ipynb#code-11 echo=true >}}
+
+
+{{< embed TP_Exam.ipynb#code-12 echo=true >}}
+
+65.5% of actual dataset inside the pre-trained vectoring
+{{< embed TP_Exam.ipynb#code-13 echo=true >}}
+
+```python
+# Pre trained embeddings
+# Word2vec - twitter training. In this case it is being averaged all the values of the tokens 
+# fixed dimention of 100 since the pre trained embedding has this configuration
+def embedding(corpus,dimension):
+    import numpy as np
+    DIM = dimension
+    zero_vector = np.zeros(DIM)
+    features = []
+    for tokens in corpus:
+        arrays = np.zeros(DIM)
+        counts = 0 + 1e-5
+        for token in tokens:
+            if token in model_twitter:
+                arrays += model_twitter[token]
+                counts += 1
+        if counts > 0:
+            features.append(arrays / counts)
+        else:
+            features.append(zero_vector)
+    return features
+```
+
+```python
+X_train_embed_w2v_tweeter =embedding(X_train_token,100)
+X_test_embed_w2v_tweeter =embedding(X_test_token,100)
+```
+
+# Modeling
+
+```python
+datasets ={
+    'Bag of words case 1': {'train': x_train_bow_testa, 'test': x_test_bow_testa},
+    'Bag of words case 2': {'train': x_train_bow_testb, 'test': x_test_bow_testb},
+    'Bag of words case 3': {'train': x_train_bow_testc, 'test': x_test_bow_testc},
+    'Bag of words case 4': {'train': x_train_bow_testd, 'test': x_test_bow_testd},
+    
+    'N-grams case 1': {'train': x_train_ngram_testa, 'test': x_test_ngram_testa},
+    'N-grams case 2': {'train': x_train_ngram_testb, 'test': x_test_ngram_testb},
+    'N-grams case 3': {'train': x_train_ngram_testc, 'test': x_test_ngram_testc},
+    'N-grams case 4': {'train': x_train_ngram_testd, 'test': x_test_ngram_testd},
+    
+    'tf-idf case 1': {'train': x_train_tfidif_testa, 'test': x_test_tfidif_testa},
+    'tf-idf case 2': {'train': x_train_tfidif_testb, 'test': x_test_tfidif_testb},
+    'tf-idf case 3': {'train': x_train_tfidif_testc, 'test': x_test_tfidif_testc},
+    'tf-idf case 4': {'train': x_train_tfidif_testd, 'test': x_test_tfidif_testd},
+    
+    'w2v embedding': {'train': X_train_embed_w2v_tweeter, 'test': X_test_embed_w2v_tweeter}
+}
+```
+
+```python
+def metricas(y_real, y_predicted):
+    from sklearn.metrics import accuracy_score
+    from sklearn.metrics import confusion_matrix ,roc_curve,auc
+    from sklearn import metrics
+    import matplotlib.pyplot as plt
+    from sklearn.metrics import ConfusionMatrixDisplay
+    from sklearn.metrics import classification_report
+    
+    print("Accuracy: ", accuracy_score(y_real, y_predicted))
+    cnf_matrix = confusion_matrix(y_real, y_predicted, normalize="true")
+    fig, ax = plt.subplots(figsize=(6, 6))
+    disp = ConfusionMatrixDisplay(confusion_matrix=cnf_matrix,  display_labels=le.classes_)
+    disp.plot(cmap="Blues", values_format=".2f", ax=ax, colorbar=False)
+    print(classification_report(y_real, y_predicted))
+```
+## Multinomial Naive Bayes
+
+```python
+# Using the BOG vector to apply Multinomial Naive Bayes model
+#Supports multiclasses 
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
+
+nb = MultinomialNB()
+%time nb.fit(x_train_bow_testa,Y_train)
+y_pred_MNB = nb.predict(x_test_bow_testa)
+```
+
+{{< embed TP_Exam.ipynb#code-14 >}}
+
+{{< embed TP_Exam.ipynb#code-15 echo=true >}}
+
+## Logistic Regression
+
+```python
+from sklearn.linear_model import LogisticRegression
+logreg = LogisticRegression() #class_weight="balanced")
+logreg.fit(x_train_bow_testa,Y_train) 
+y_pred_lr = logreg.predict(x_test_bow_testa)
+```
+
+{{< embed TP_Exam.ipynb#code-16 >}}
+
+{{< embed TP_Exam.ipynb#code-17 >}}
+
+```python
+#trying with the pretrained embedding
+
+X_train_embed_w2v_tweeter[np.isnan(X_train_embed_w2v_tweeter)] = 0.001
+X_test_embed_w2v_tweeter[np.isnan(X_test_embed_w2v_tweeter)] = 0.001
+
+logreg_w2v = LogisticRegression()
+%time logreg_w2v.fit(X_train_embed_w2v_tweeter,Y_train)
+y_pred_lr_w2v = logreg_w2v.predict(X_test_embed_w2v_tweeter)
+```
+{{< embed TP_Exam.ipynb#code-18 >}}
+
+## Support Vector Machine 
+
+```python
+from sklearn.svm import LinearSVC
+
+classifier = LinearSVC()#(class_weight='balanced') # instantiate a logistic regression model
+classifier.fit(x_train_bow_testa, Y_train) # fit the model with training data
+
+# Make predictions on test data
+y_pred_svc = classifier.predict(x_test_bow_testa)
+```
+
+{{< embed TP_Exam.ipynb#code-19 >}}
+
+{{< embed TP_Exam.ipynb#code-20 >}}
+
+## Random Forest
+```python
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+
+classifier = RandomForestClassifier()#(class_weight='balanced') # instantiate a logistic regression model
+classifier.fit(x_train_bow_testa, Y_train) # fit the model with training data
+
+# Make predictions on test data
+y_pred_rfc = classifier.predict(x_test_bow_testa)
+```
+
+{{< embed TP_Exam.ipynb#code-21 >}}
+
+## Stocastic Gradient Descent (SGD)
+
+
+```python
+from sklearn.linear_model import SGDClassifier
+
+classifier = SGDClassifier()
+classifier.fit(x_train_bow_testa, Y_train) # fit the model with training data
+
+# Make predictions on test data
+y_pred_sgd = classifier.predict(x_test_bow_testa)
+```
+
+{{< embed TP_Exam.ipynb#code-22 >}}
+
+# Hyperparametrization
+## Logistic Regression
+```python
+from sklearn.model_selection import GridSearchCV
+lr_impr = LogisticRegression()
+
+parameters = {
+    'penalty': [None,'l1', 'l2'],  
+    'C': [100, 10, 1.0, 0.1, 0.01],
+    'class_weight': [None,'balanced'],
+    'solver':['lbfgs','newton-cg', 'sag'] 
+}
+
+gcv_lr = GridSearchCV(lr_impr, parameters, n_jobs=-1)
+gcv_lr.fit(datasets['tf-idf case 2']['train'], Y_train) 
+```
+
+{{< embed TP_Exam.ipynb#code-23 echo=true >}}
+{{< embed TP_Exam.ipynb#code-24 >}}
+
+## SGD Classifiers
+
+{{< embed TP_Exam.ipynb#code-25 echo=true >}}
+
+## Ensemble model: Stacking Classifiers
+
+{{< embed TP_Exam.ipynb#code-26 echo=true >}}
+
+# Validation set
+{{< embed TP_Exam.ipynb#code-27 echo=true >}}
+
+
+# Interpretability 
+
+```python
+import lime
+from lime.lime_text import LimeTextExplainer
+from sklearn.pipeline import make_pipeline
+
+log_reg_pipeline = make_pipeline(tfidif_testb, stacking_clf)
+lime_explainer = LimeTextExplainer(class_names=['Extremely Negative', 'Extremely Positive', 'Negative', 'Neutral',
+       'Positive'])
+```
+{{< embed TP_Exam.ipynb#code-28 echo=true >}}
+
