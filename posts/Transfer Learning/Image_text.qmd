@@ -5,7 +5,11 @@ format:
     toc: true
     html-math-method: katex
     css: styles.css
-    notebook-links: global
+    notebook-links: false
+    code-links:
+    - text: Code file
+      icon: file-code
+      href: https://www.kaggle.com/code/jeanluissotovidal/generative-ai-task
 ---
 
 # About

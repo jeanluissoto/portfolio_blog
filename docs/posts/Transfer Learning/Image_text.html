@@ -177,7 +177,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#final-result" id="toc-final-result" class="nav-link" data-scroll-target="#final-result">Final result</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="GenAI_Final_Project-preview.html"><i class="bi bi-journal-code"></i>Final Project Generative AI</a></li></ul></div></nav>
+<div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://www.kaggle.com/code/jeanluissotovidal/generative-ai-task"><i class="bi bi-file-code"></i>Code file</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -235,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>cap.release()</span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>cv2.destroyAllWindows()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here is shown the result of the previous chunk of code.</p>
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\Transfer Learning\GenAI_Final_Project.ipynb" data-notebook-title="Final Project Generative AI" data-notebook-cellid="cell-result-1">
 <div id="cell-result-1" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display" data-execution_count="4">
 <div>
@@ -281,7 +281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the detection results</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(detections)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\Transfer Learning\GenAI_Final_Project.ipynb" data-notebook-title="Final Project Generative AI" data-notebook-cellid="cell-result-5">
 <div id="result-5" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-stdout">
 <pre><code>{'boxes': tensor([[3.2203e-01, 4.1001e+02, 1.9834e+01, 4.7844e+02],
@@ -381,7 +381,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> langchain <span class="im">import</span> HuggingFaceHub</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>repo_id <span class="op">=</span> <span class="st">'tiiuae/falcon-7b-instruct'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>As example, is send a generic question to the LLM: “What is a laptop?”. Given us an aswer to it.</p>
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\Transfer Learning\GenAI_Final_Project.ipynb" data-notebook-title="Final Project Generative AI" data-notebook-cellid="cell-result-2">
 <div id="cell-result-2" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>llm <span class="op">=</span> HuggingFaceHub(repo_id<span class="op">=</span>repo_id) </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>llm(<span class="st">"What is a laptop?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -431,7 +431,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>testing.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The result is the next, where it is only found the object book, which is well classified and is describing the object thanks to the LLM used.</p>
-<div class="quarto-embed-nb-cell">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\Transfer Learning\GenAI_Final_Project.ipynb" data-notebook-title="Final Project Generative AI" data-notebook-cellid="cell-result-3">
 <div id="cell-result-3" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>Image.<span class="bu">open</span>(output_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
