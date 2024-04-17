@@ -1,5 +1,5 @@
 ---
-title: "Large Language Model: Sentyment Analysis"
+title: "Large Language Model: Sentiment Analysis"
 format:
   html:
     toc: true
