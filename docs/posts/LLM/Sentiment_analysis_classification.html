@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jean Luis Soto’s Portfolio - Large Language Model: Sentyment Analysis</title>
+<title>Jean Luis Soto’s Portfolio - Large Language Model: Sentiment Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,7 +151,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Large Language Model: Sentyment Analysis</h1>
+      <h1 class="title">Large Language Model: Sentiment Analysis</h1>
                       </div>
   </div>
     
@@ -200,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#validation-set" id="toc-validation-set" class="nav-link" data-scroll-target="#validation-set">Validation set</a></li>
   <li><a href="#interpretability" id="toc-interpretability" class="nav-link" data-scroll-target="#interpretability">Interpretability</a></li>
   </ul>
-<div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://www.kaggle.com/code/jeanluissotovidal/generative-ai-task"><i class="bi bi-file-code"></i>Code file</a></li></ul></div></nav>
+<div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://www.kaggle.com/code/jeanluissotovidal/nlp-corovirus-tweets"><i class="bi bi-file-code"></i>Code file</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="data-exploration" class="level1">
 <h1>Data Exploration</h1>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-1">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-1">
 <div id="cell-code-1" class="cell" data-outputid="9625daed-8832-42dd-b352-19d6d681a4f4" data-execution_count="167">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>train_df.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="code-1" class="cell-output cell-output-display" data-execution_count="167">
@@ -289,7 +289,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-2">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-2">
 <div id="cell-code-2" class="cell" data-outputid="03c6bd7c-8d2b-4ea8-bbb8-a1599c411862" data-execution_count="163">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>train_df.Sentiment)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
@@ -302,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-3">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-3">
 <div id="cell-code-3" class="cell" data-outputid="51ba252b-a401-4f4f-8033-f4227e7724f1" data-execution_count="165">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>train_df.groupby(<span class="st">'Sentiment'</span>).count()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="code-3" class="cell-output cell-output-display" data-execution_count="165">
@@ -397,7 +397,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>model_df_1 <span class="op">=</span> pd.concat([model_df, aug_df], axis<span class="op">=</span><span class="dv">0</span>, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>model_df_1 <span class="op">=</span> model_df_1.drop_duplicates()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-4">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-4">
 <div id="cell-code-4" class="cell" data-outputid="4dd58a74-62d2-4739-f0a6-ea9ba06c2979" data-execution_count="187">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span>model_df_1.Sentiment)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
@@ -410,7 +410,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-5">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-5">
 <div id="cell-code-5" class="cell" data-outputid="e960a760-8867-4f44-af15-d92dae4e1c1d" data-execution_count="188">
 <div id="code-5" class="cell-output cell-output-display" data-execution_count="188">
 <div>
@@ -467,7 +467,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>X_train, X_test, Y_train, Y_test <span class="op">=</span> train_test_split(X,Y, random_state<span class="op">=</span><span class="dv">23</span>,test_size<span class="op">=</span><span class="fl">0.25</span>, stratify<span class="op">=</span>Y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-6">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-6">
 <div id="code-6" class="cell" data-outputid="ab32ddde-b45f-47be-f30d-7746080c5ffb" data-execution_count="193">
 <div class="cell-output cell-output-stdout">
 <pre><code>(36060,) (36060,)
@@ -526,7 +526,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>   lemmatizer <span class="op">=</span> WordNetLemmatizer()</span>
 <span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>   tweeter <span class="op">=</span>  <span class="st">' '</span>.join([lemmatizer.lemmatize(word) <span class="cf">for</span> word <span class="kw">in</span> tweet.split()])</span>
 <span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>   <span class="cf">return</span> tweeter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-7">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-7">
 <div id="cell-code-7" class="cell" data-outputid="3e79c3ed-e867-4aa7-c311-6e54efcb75b8" data-execution_count="199">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>testing <span class="op">=</span> <span class="st">""" My food stock is not the only one which is empty... @Carlitos</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -542,7 +542,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Apply it on all the X dataset</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> X_train.<span class="bu">apply</span>(strip)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> X_test.<span class="bu">apply</span>(strip)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-8">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-8">
 <div id="cell-code-8" class="cell" data-outputid="0bbeaa32-20b2-4f1e-f21f-1048e2c4b67d" data-execution_count="201">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>X_train[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="code-8" class="cell-output cell-output-display" data-execution_count="201">
@@ -571,7 +571,7 @@ Name: OriginalTweet, dtype: object</code></pre>
 <div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>X_train_token <span class="op">=</span> X_train.<span class="bu">apply</span>(tokenize, token<span class="op">=</span><span class="st">'tweet'</span>).tolist()</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>X_test_token <span class="op">=</span> X_test.<span class="bu">apply</span>(tokenize, token<span class="op">=</span><span class="st">'tweet'</span>).tolist()</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_train_token[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-9">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-9">
 <div id="code-9" class="cell" data-execution_count="213">
 <div class="cell-output cell-output-stdout">
 <pre><code>['agreed', 'i', 'can', 'tell', 'you', 'you', 'have', 'a', 'better', 'chance', 'of', 'dying', 'driving', 'to', 'the', 'grocery', 'store', 'to', 'hoard', 'tp', 'than', 'dying', 'from', 'the']</code></pre>
@@ -604,7 +604,7 @@ Name: OriginalTweet, dtype: object</code></pre>
 <span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>OHE_vector(twitter[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-10">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-10">
 <div id="cell-code-10" class="cell" data-execution_count="223">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(count_vect.vocabulary_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="code-10" class="cell-output cell-output-display" data-execution_count="223">
@@ -622,7 +622,7 @@ Name: OriginalTweet, dtype: object</code></pre>
 <span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>x_train_bow_testa <span class="op">=</span> count_vect.fit_transform(X_train)</span>
 <span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>x_test_bow_testa <span class="op">=</span> count_vect.transform(X_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>#| label: code-10</p>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-10">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-10">
 <div id="cell-code-10" class="cell" data-execution_count="223">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(count_vect.vocabulary_)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="code-10" class="cell-output cell-output-display" data-execution_count="223">
@@ -672,7 +672,7 @@ Name: OriginalTweet, dtype: object</code></pre>
 <div class="sourceCode" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> gensim.downloader <span class="im">as</span> api</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>info <span class="op">=</span>api.info()</span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>model_twitter <span class="op">=</span> api.load(<span class="st">"glove-twitter-100"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-11">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-11">
 <div id="code-11" class="cell" data-execution_count="76">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> gensim.models.word2vec <span class="im">import</span> Word2Vec</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>similar_crisis <span class="op">=</span> model_twitter.most_similar(<span class="st">"crisis"</span>, topn<span class="op">=</span><span class="dv">3</span>)</span>
@@ -688,7 +688,7 @@ Name: OriginalTweet, dtype: object</code></pre>
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-12">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-12">
 <div id="code-12" class="cell" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the Glove model on twitter have more than 1 millon words in the dictionary</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>glove_twitter_vocab <span class="op">=</span> model_twitter.index_to_key</span>
@@ -700,7 +700,7 @@ Name: OriginalTweet, dtype: object</code></pre>
 </div>
 </div>
 <p>65.5% of actual dataset inside the pre-trained vectoring</p>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-13">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-13">
 <div id="code-13" class="cell" data-execution_count="78">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>words_found <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> word <span class="kw">in</span> glove_twitter_vocab_lower:</span>
@@ -783,7 +783,7 @@ Name: OriginalTweet, dtype: object</code></pre>
 <span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>nb <span class="op">=</span> MultinomialNB()</span>
 <span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>time nb.fit(x_train_bow_testa,Y_train)</span>
 <span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>y_pred_MNB <span class="op">=</span> nb.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-14">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-14">
 <div id="cell-code-14" class="cell" data-execution_count="167">
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy:  0.5174708818635607
@@ -809,7 +809,7 @@ weighted avg       0.53      0.52      0.51     12020
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-15">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-15">
 <div id="cell-code-15" class="cell" data-execution_count="97">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>class_metrics <span class="op">=</span> pd.DataFrame.<span class="op">\</span></span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>    from_dict(datasets, <span class="st">'index'</span>)[[<span class="st">'Accuracy_train'</span>, <span class="st">'Accuracy_test'</span>,</span>
@@ -923,7 +923,7 @@ weighted avg       0.53      0.52      0.51     12020
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>logreg <span class="op">=</span> LogisticRegression() <span class="co">#class_weight="balanced")</span></span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>logreg.fit(x_train_bow_testa,Y_train) </span>
 <span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>y_pred_lr <span class="op">=</span> logreg.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-16">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-16">
 <div id="cell-code-16" class="cell" data-execution_count="155">
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy:  0.6539933444259567
@@ -949,7 +949,7 @@ weighted avg       0.66      0.65      0.65     12020
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-17">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-17">
 <div id="cell-code-17" class="cell" data-execution_count="95">
 <div id="code-17" class="cell-output cell-output-display" data-execution_count="95">
 <div>
@@ -1060,7 +1060,7 @@ weighted avg       0.66      0.65      0.65     12020
 <span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>logreg_w2v <span class="op">=</span> LogisticRegression()</span>
 <span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>time logreg_w2v.fit(X_train_embed_w2v_tweeter,Y_train)</span>
 <span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>y_pred_lr_w2v <span class="op">=</span> logreg_w2v.predict(X_test_embed_w2v_tweeter)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-18">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-18">
 <div id="cell-code-18" class="cell" data-execution_count="163">
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy:  0.43885191347753744
@@ -1096,7 +1096,7 @@ weighted avg       0.44      0.44      0.44     12020
 <span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make predictions on test data</span></span>
 <span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>y_pred_svc <span class="op">=</span> classifier.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-19">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-19">
 <div id="cell-code-19" class="cell" data-execution_count="160">
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy:  0.6032445923460898
@@ -1122,7 +1122,7 @@ weighted avg       0.59      0.60      0.60     12020
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-20">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-20">
 <div id="cell-code-20" class="cell" data-execution_count="99">
 <div id="code-20" class="cell-output cell-output-display" data-execution_count="99">
 <div>
@@ -1235,7 +1235,7 @@ weighted avg       0.59      0.60      0.60     12020
 <span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make predictions on test data</span></span>
 <span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>y_pred_rfc <span class="op">=</span> classifier.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-21">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-21">
 <div id="cell-code-21" class="cell" data-execution_count="103">
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy:  0.6085690515806988
@@ -1271,7 +1271,7 @@ weighted avg       0.61      0.61      0.60     12020
 <span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Make predictions on test data</span></span>
 <span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>y_pred_sgd <span class="op">=</span> classifier.predict(x_test_bow_testa)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-22">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-22">
 <div id="cell-code-22" class="cell" data-execution_count="108">
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy:  0.6247088186356073
@@ -1315,7 +1315,7 @@ weighted avg       0.61      0.62      0.61     12020
 <span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>gcv_lr <span class="op">=</span> GridSearchCV(lr_impr, parameters, n_jobs<span class="op">=-</span><span class="dv">1</span>)</span>
 <span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a>gcv_lr.fit(datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'train'</span>], Y_train) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-23">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-23">
 <div id="code-23" class="cell" data-execution_count="143">
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Best parameters:"</span>, gcv_lr.best_params_)</span>
 <span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>best_model_lr <span class="op">=</span> gcv_lr.best_estimator_</span>
@@ -1325,7 +1325,7 @@ weighted avg       0.61      0.62      0.61     12020
 </div>
 </div>
 </div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-24">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-24">
 <div id="cell-code-24" class="cell" data-execution_count="125">
 <div class="cell-output cell-output-stdout">
 <pre><code>Accuracy:  0.6417637271214642
@@ -1354,7 +1354,7 @@ weighted avg       0.64      0.64      0.64     12020
 </section>
 <section id="sgd-classifiers" class="level2">
 <h2 class="anchored" data-anchor-id="sgd-classifiers">SGD Classifiers</h2>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-25">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-25">
 <div id="cell-code-25" class="cell" data-execution_count="138">
 <div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>classifier <span class="op">=</span> SGDClassifier()</span>
 <span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1403,7 +1403,7 @@ weighted avg       0.54      0.56      0.53     12020
 </section>
 <section id="ensemble-model-stacking-classifiers" class="level2">
 <h2 class="anchored" data-anchor-id="ensemble-model-stacking-classifiers">Ensemble model: Stacking Classifiers</h2>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-26">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-26">
 <div id="cell-code-26" class="cell" data-execution_count="247">
 <div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> StackingClassifier</span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>X_train_win <span class="op">=</span> datasets[<span class="st">'tf-idf case 2'</span>][<span class="st">'train'</span>]</span>
@@ -1444,7 +1444,7 @@ weighted avg       0.70      0.71      0.71     12020
 </section>
 <section id="validation-set" class="level1">
 <h1>Validation set</h1>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-27">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-27">
 <div id="cell-code-27" class="cell" data-execution_count="248">
 <div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pipeline to treat the set</span></span>
 <span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1501,7 +1501,7 @@ weighted avg       0.65      0.65      0.65      3798
 <span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a>log_reg_pipeline <span class="op">=</span> make_pipeline(tfidif_testb, stacking_clf)</span>
 <span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a>lime_explainer <span class="op">=</span> LimeTextExplainer(class_names<span class="op">=</span>[<span class="st">'Extremely Negative'</span>, <span class="st">'Extremely Positive'</span>, <span class="st">'Negative'</span>, <span class="st">'Neutral'</span>,</span>
 <span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Positive'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="EXAM" data-notebook-cellid="cell-code-28">
+<div class="quarto-embed-nb-cell" data-notebook="C:\Users\equipo\Documents\GitHub\ml_blog_3\posts\LLM\TP_Exam.ipynb" data-notebook-title="Coronavirus Tweets: Sentiment Analysis" data-notebook-cellid="cell-code-28">
 <div id="cell-code-28" class="cell" data-execution_count="257">
 <div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span><span class="dv">10</span></span>
 <span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>text_instance <span class="op">=</span> X_valid.iloc[idx]</span>
