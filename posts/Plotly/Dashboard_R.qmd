@@ -1,0 +1,59 @@
+--- 
+title: "Graphs_RStudio"
+format: 
+  dashboard:
+    scrolling: true
+--- 
+
+```{r}
+#| message: false
+library(tidyverse)
+library(ggridges)
+library(ggplot2)
+library(dplyr)
+```
+```{r}
+data <- read.csv("D:/Documents/Documents/EM Lyon/001B_Semester_2/17-Data science mission/QUARTO/Documentation_Prosol/DASHBOARD_RESULTS/watts_clients.csv")
+```
+
+```{r}
+data$CLASSES <- as.character(data$CLASSES)
+```
+## Column
+
+### Row 
+
+```{r}
+data %>% 
+  ggplot(aes(x = CLASSES, fill = MORNING))+geom_bar() + scale_color_brewer(palette = "Spectral")
+```
+
+```{r}
+data %>% 
+  ggplot(aes(x = MORNING, y = SPAN,color=CLASSES))+geom_point() + facet_wrap(vars(CLASSES),ncol = 2)
+```
+### Row
+```{r}
+data %>% 
+  ggplot(aes(x = CLASSES, y = NIGHT,fill=NIGHT))+geom_violin() 
+```
+```{r}
+data %>% 
+  ggplot(aes(x = CLASSES, y = AFTERNOON,fill=AFTERNOON))+geom_boxplot() 
+```
+### Row
+```{r}
+data %>% 
+  ggplot(aes(x = CLASSES, y = NIGHT,fill=NIGHT))+geom_violin() 
+```
+```{r}
+data %>% 
+  ggplot(aes(x = CLASSES, y = AFTERNOON,fill=AFTERNOON))+geom_boxplot() 
+```
+### Row
+```{r}
+library(plotly)
+h <- data %>%
+  ggplot(aes(x = NIGHT, y = MORNING, color= CLASSES))+geom_point()
+ggplotly(h)
+```
