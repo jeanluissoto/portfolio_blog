@@ -1,0 +1,130 @@
+,json_Explainability_think,Topic,Explainability_think_topics
+4,The chatbot's actions and decisions are transparent and easily understandable by users.,2,Label: Chatbot Decision Making Processes
+6, The chatbot provides clear explanations for its recommendations and decisions making it easy for users to understand why something is being suggested.,3,Label: Chatbot Explanations
+14,User wants clear explanations of AI's decision-making processes,4,Label: AI Decision Making Transparency
+27,Clear explanations provided for chatbot AI decisions and actions,3,Label: Chatbot Explanations
+28,Chatbot's transparent responses help users understand how decisions are made,2,Label: Chatbot Decision Making Processes
+35,Provides clear explanations for chatbot actions and decisions,3,Label: Chatbot Explanations
+36,User appreciates the tool's ability to provide clear explanations for its decisions and actions,0,Label: Automation Decision Explanations
+50,Chatbot's decision-making processes are transparent and understandable to users,2,Label: Chatbot Decision Making Processes
+68,"The chatbot provides clear explanations for its responses and actions, making it easier for users to understand.",7,Label: Chatbot Transparency
+80,"User provides reasons for their satisfaction with the tool, such as striking while the curiosity iron is hot, demonstrating a basic understanding of how the tool works and why it is useful.",1,Label: Explainable Sales Tool
+88,Developers provide clear explanations for product features and decisions,0,Label: Automation Decision Explanations
+91," The chatbot provides clear explanations for its decisions and actions, allowing customers to trust and understand it.",7,Label: Chatbot Transparency
+93," The chatbot provides clear and transparent explanations for its responses and actions, helping customers understand why it made certain decisions.",3,Label: Chatbot Explanations
+94,User provides specific examples of how the chatbot's responses are transparent and easy to understand,7,Label: Chatbot Transparency
+105,User provides specific examples of how the chatbot was able to address their needs,3,Label: Chatbot Explanations
+106,"User understands the chatbot's decision-making processes, promoting transparency and accountability",2,Label: Chatbot Decision Making Processes
+109,User understands how the chatbot makes decisions and takes actions,2,Label: Chatbot Decision Making Processes
+110,User finds chatbot's actions and decisions to be transparent and understandable,2,Label: Chatbot Decision Making Processes
+116," Chatbot interactions are designed to be transparent and understandable, providing visitors with clear explanations for actions and decisions.",2,Label: Chatbot Decision Making Processes
+118," User understands how the bot arrives at its conclusions and decisions,",4,Label: AI Decision Making Transparency
+128,Chatbot's decision-making processes are transparent and understandable,2,Label: Chatbot Decision Making Processes
+131," While the tool's AI assistant responses may not be fully explainable, the customizable pre-chat surveys provide some transparency into the interaction process,",2,Label: Chatbot Decision Making Processes
+134,User wants transparency in how the AI assistant makes decisions,6,Label: User Transparency in Decision Making
+136,"Reviewer notes that the service provides clear explanations of its features and functionality, making it easier for them to understand and use.",1,Label: Explainable Sales Tool
+138,User understands how platform works and makes decisions,5,Label: Marketing Automation Leads
+139,"The chatbot's decision-making processes are transparent and explainable, allowing users to understand why certain responses were given.",2,Label: Chatbot Decision Making Processes
+143,User appreciates the tool's ability to provide clear explanations for its decisions and actions,0,Label: Automation Decision Explanations
+158,User appreciates the tool's ability to provide clear explanations for its actions and decisions,0,Label: Automation Decision Explanations
+166,User suggests that the tool should provide clear explanations for its responses to help users understand why certain actions were taken.,0,Label: Automation Decision Explanations
+177,Need for clear explanations of AI-powered chatbot's decision-making processes and responses,3,Label: Chatbot Explanations
+180,"User notes that the tool is able to provide explanations for its decisions, which suggests a high degree of explainability and transparency.",0,Label: Automation Decision Explanations
+188,"User appreciates tool's ability to provide clear explanations and justifications for decisions, promoting trust and accountability.",0,Label: Automation Decision Explanations
+200,User understands how the tool works and can provide detailed explanations of its features and capabilities.,1,Label: Explainable Sales Tool
+206," User wants transparency and clarity in how the tool makes decisions,",6,Label: User Transparency in Decision Making
+208,"User seeks clarity on platform's decision-making processes, underscoring the need for transparent and understandable AI systems",6,Label: User Transparency in Decision Making
+216,User recognizes importance of explanation in AI-powered tools,1,Label: Explainable Sales Tool
+219,User appreciates the platform's ability to provide clear explanations and justifications for its actions and recommendations,0,Label: Automation Decision Explanations
+223, User expresses satisfaction with the tool's ability to provide clear explanations and documentation.,1,Label: Explainable Sales Tool
+225,User understands how the tool works and makes decisions,5,Label: Marketing Automation Leads
+228,"The platform's transparent and comprehensive documentation demonstrates a high level of explainability, enabling users to understand how the platform works and make informed decisions.",0,Label: Automation Decision Explanations
+236,User wants transparency in how chatbot makes decisions and provides explanations for its actions,3,Label: Chatbot Explanations
+246,User wants more information on how the tool works and makes decisions,5,Label: Marketing Automation Leads
+266," User seeks clarity on how the tool makes decisions and takes into account the importance of transparency in building trust,",0,Label: Automation Decision Explanations
+272,User appreciates the tool's ability to provide clear explanations for its decisions and actions,0,Label: Automation Decision Explanations
+274,User finds the tool's explanations for its recommendations and actions to be clear and understandable.,0,Label: Automation Decision Explanations
+275,Users want clear explanations of how the tool works,5,Label: Marketing Automation Leads
+283,User finds the tool's decision-making processes to be transparent and understandable.,0,Label: Automation Decision Explanations
+286,User wants the chatbot to provide clear explanations for its decisions and actions,3,Label: Chatbot Explanations
+288," User appreciates the tool's transparency and ability to provide clear explanations for its decisions and actions,",0,Label: Automation Decision Explanations
+293,User's understanding of the tool's functionality and their ability to create customized chatbots suggests high explainability.,1,Label: Explainable Sales Tool
+294,User wants more transparency and explanation about how the chatbot works and makes decisions,3,Label: Chatbot Explanations
+296,The reviewer finds the platform's explanations for its decision-making processes helpful in understanding how the chatbots are built.,2,Label: Chatbot Decision Making Processes
+299,User wants transparency in how AI makes decisions,6,Label: User Transparency in Decision Making
+303,User wants transparency and explanations about how the AI bot makes decisions and takes actions,6,Label: User Transparency in Decision Making
+305,User has provided clear explanations of how the chatbot works and what it can do,3,Label: Chatbot Explanations
+307,User appreciates the help provided by the customer service team,1,Label: Explainable Sales Tool
+311,"Users receive clear explanations for chatbot responses and actions, promoting trust and understanding.",7,Label: Chatbot Transparency
+322,User wants clear explanations of AI-driven decisions,4,Label: AI Decision Making Transparency
+326,User wants more transparency on how tool works and makes decisions,6,Label: User Transparency in Decision Making
+335,"The AI chatbot's decision-making processes are transparent and easily understood by users, promoting trust and accountability.",2,Label: Chatbot Decision Making Processes
+336,"The chatbot provides clear and transparent explanations for its decisions and actions, allowing customers to understand and trust the system.",7,Label: Chatbot Transparency
+350,Intercom provides clear explanations and justifications for their support decisions and actions.,0,Label: Automation Decision Explanations
+353,User notes the tool's ability to provide clear explanations for its decisions and actions,0,Label: Automation Decision Explanations
+356,Chatbot provides clear explanations for its actions and decisions,3,Label: Chatbot Explanations
+357,User wants more information about how the app works,5,Label: Marketing Automation Leads
+358,"User finds the tool's functionality easy to understand and use, indicating high explainability.",1,Label: Explainable Sales Tool
+368,"The AI chatbot provides clear explanations for its responses and actions, enabling users to understand and trust the technology.",7,Label: Chatbot Transparency
+371,"The chatbot provides clear and concise explanations for its responses, making it easier for customers to understand and trust the information provided.",7,Label: Chatbot Transparency
+381,User finds the tool's response suggestions to be clear and easy to understand.,1,Label: Explainable Sales Tool
+383,"User understands how the chatbot works and makes decisions, providing transparency",2,Label: Chatbot Decision Making Processes
+390,Chatbot provides clear explanations to customers,7,Label: Chatbot Transparency
+397,User wants more explanations about how the AI assistant generates answers,4,Label: AI Decision Making Transparency
+398,User wants more information about how the AI tool works,5,Label: Marketing Automation Leads
+404,User appreciates the system's ability to provide clear explanations and demos.,1,Label: Explainable Sales Tool
+418,User appreciates transparency and clarity of AI decision-making processes,4,Label: AI Decision Making Transparency
+430," Developers can understand how algorithms arrive at their conclusions,",4,Label: AI Decision Making Transparency
+431,User finds the tool's decision-making processes to be transparent and understandable.,0,Label: Automation Decision Explanations
+436,User appreciates the tool's ability to provide clear explanations for each step of the flow,1,Label: Explainable Sales Tool
+440,"User appreciates the tool's ability to provide clear explanations for its decisions and actions, highlighting a positive view of its transparency and accountability.",0,Label: Automation Decision Explanations
+442,"User does not provide any explanation concerns, but highlights the tool's ability to blend human-written conversation flows with large language model capability.",1,Label: Explainable Sales Tool
+446,User wants more information about how the tool generates its responses,5,Label: Marketing Automation Leads
+447,Users appreciate the tool's transparency in chatbot development,2,Label: Chatbot Decision Making Processes
+451,User wants more transparency into GenAI tool's decision-making processes,6,Label: User Transparency in Decision Making
+453,"Chatbot provides clear explanations for its responses and actions, enhancing user trust and understanding",7,Label: Chatbot Transparency
+460,"AI vision feature provides clear explanations and advice to customers, enhancing trust and transparency.",4,Label: AI Decision Making Transparency
+468," User appreciates the transparency and clarity of the AI solution's decision-making process,",4,Label: AI Decision Making Transparency
+471,User understands how the AI makes decisions,4,Label: AI Decision Making Transparency
+480,"The tool provides clear and detailed explanations for its responses and recommendations, making it easy for potential customers to understand their options and make informed decisions.",0,Label: Automation Decision Explanations
+507,Providing clear and understandable explanations for Ai-driven decisions and actions,4,Label: AI Decision Making Transparency
+509," User wants transparency in the bot's decision-making processes,",6,Label: User Transparency in Decision Making
+513,"The chatbot provides clear and understandable explanations for its responses, fostering trust and confidence.",7,Label: Chatbot Transparency
+521,User expresses desire for more transparent and explainable AI decision-making processes,6,Label: User Transparency in Decision Making
+525,User found the platform's user-friendly interface and minimal coding requirements made it easy to understand and explain how the chatbot works.,1,Label: Explainable Sales Tool
+531,Clear explanations provided for chatbot actions,3,Label: Chatbot Explanations
+540,Clear communication of AI decision-making processes enhances accountability,4,Label: AI Decision Making Transparency
+543,User appreciates the tool's transparent and understandable functionality,1,Label: Explainable Sales Tool
+545,"User finds the platform easy to use and understand, with clear documentation and support resources available.",1,Label: Explainable Sales Tool
+551,User's lack of concern about explanation suggests a platform that provides clear and understandable information.,1,Label: Explainable Sales Tool
+552,Need for clear explanations and justifications for chatbot's actions and decisions,3,Label: Chatbot Explanations
+554," User wants transparency in the bot's decision-making processes,",6,Label: User Transparency in Decision Making
+559,User finds the platform's ability to provide clear explanations for its actions impressive,0,Label: Automation Decision Explanations
+566,"The chatbot provides clear explanations for its responses, promoting transparency and accountability.",7,Label: Chatbot Transparency
+578,User wants more information on how AI makes decisions and takes actions,5,Label: Marketing Automation Leads
+603,User wants more information about how the tool works,5,Label: Marketing Automation Leads
+626,User appreciates the bot's ability to provide clear explanations,1,Label: Explainable Sales Tool
+637,User finds the chatbot's decision-making processes to be transparent and understandable,2,Label: Chatbot Decision Making Processes
+642,User wants more transparency into chatbot's decision-making processes,6,Label: User Transparency in Decision Making
+643,User expresses understanding of how the tool works and its recommendations,5,Label: Marketing Automation Leads
+645,"Users may want explanations for the chatbot's decisions and actions, particularly when they conflict with user expectations.",3,Label: Chatbot Explanations
+648, The tool provides clear explanations and justifications for its decisions and recommendations.,0,Label: Automation Decision Explanations
+650,User wants more transparency into how the Ai makes decisions,6,Label: User Transparency in Decision Making
+652,"User expresses satisfaction with the tool's ability to provide clear and understandable explanations of sales call data, suggesting a high level of explainability.",1,Label: Explainable Sales Tool
+670, User finds the tool's decision-making processes to be somewhat transparent but notes that more information would be helpful.,5,Label: Marketing Automation Leads
+672,Clear explanations and justifications provided for AI-driven decisions,4,Label: AI Decision Making Transparency
+676, User finds the tool's decision-making processes to be somewhat transparent but notes that more information would be helpful.,5,Label: Marketing Automation Leads
+678,User wants clear explanations of tool's actions,5,Label: Marketing Automation Leads
+683,User appreciates AI's ability to explain its decision-making process,4,Label: AI Decision Making Transparency
+685,User finds the tool's explanations for its decisions to be clear and understandable,0,Label: Automation Decision Explanations
+687,Chatbot's decision-making processes are transparent and understandable,2,Label: Chatbot Decision Making Processes
+695," User appreciates the tool's ability to provide clear explanations and justifications for its actions and decisions,",0,Label: Automation Decision Explanations
+701,"User finds the tool's explanations to be clear and understandable, indicating a high level of explainability.",1,Label: Explainable Sales Tool
+705,User appreciates the tool's ability to provide clear explanations for its actions and decisions,0,Label: Automation Decision Explanations
+708, The chatbot's decision-making processes could benefit from greater transparency and explainability.,2,Label: Chatbot Decision Making Processes
+713,"User appreciates the tool's ability to provide clear explanations for its actions and decisions, fostering trust and understanding.",0,Label: Automation Decision Explanations
+715,User appreciates the ability of the tool to provide clear explanations for its actions and decisions,0,Label: Automation Decision Explanations
+721," The tool provides clear explanations for its actions and decisions,",0,Label: Automation Decision Explanations
+723,"User finds the bot's responses to be clear and easy to understand, indicating a high level of explainability.",1,Label: Explainable Sales Tool
+730," The tool provides clear and transparent explanations for its actions and decisions, allowing users to understand and trust its recommendations.",0,Label: Automation Decision Explanations
+731,"The AI assistant's decision-making process could benefit from greater transparency and interpretability, enabling users to understand and trust its recommendations.",4,Label: AI Decision Making Transparency

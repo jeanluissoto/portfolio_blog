@@ -262,10 +262,6 @@ Epoch: 3 | Loss: 0.49615, Accuracy: 88.73% | val loss: 0.38051, val acc: 91.07%
 
 {{< embed _Face_Recognition.ipynb#code-4 echo=true >}}
 
-# Validation
-
-{{< embed _Face_Recognition.ipynb#code-5 echo=true >}}
-
 # Application
 ```python
 def predict_frame(frame, model, transform, device):

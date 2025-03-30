@@ -1,0 +1,465 @@
+---
+title: "Generative AI in Customer Experience Improvement"
+author: "SOTO VIDAL, Jean Luis"
+institute: "Data Science and Artificial Intelligence Strategy"
+format: 
+  revealjs:
+    #incremental: true
+    logo: Images/emlyon.png
+    #footer: "`emitanaka.org/slides/toronto2022`"
+    slide-number: true
+    multiplex: true
+    theme: serif
+    show-slide-number: all
+    controls: true
+    width: 1280
+    height: 720
+    css: [assets/syntax-highlight.css, assets/custom.css, assets/pacman.css]
+    header-includes: |
+      <link rel="stylesheet" href="/assets/fontawesome-free-6.1.1-web/css/font-awesome.min.css">
+      <script defer src="/assets/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+    highlight-style: arrow
+execute:
+  echo: true
+---
+
+---
+
+
+# Introduction<br>  & Background  {background-color="#006dae"}
+
+
+## Context and Relevance - What? {.smaller }
+
++ Customer Experience has always eagered to offer personalized experiences
++ Now with GenAI capabilities is possible to have personalizations 1 to 1
++ In a Zendesk survey, **80 %** of customers expect companies to have chat agents
+
+::: {layout-ncol="2"}
+![](Images/visual selection_3.png)
+
+![](Images/DSAIS_2_1.png)
+:::
+
+
+## Context and Relevance - Why? {.smaller }
+
++ Customer Experience is **key** for any Organization 
++ There was a personalization barrier, that has been broken by *GenAI*
+
+::: {layout-ncol="2"}
+![](images/_- visual selection.png)
+
+![](Images/visual selection_5.png)
+:::
+
+
+## Context and Relevance - How? {.smaller }
+
+::: {layout-ncol="2"}
+![](Images/DSAIS_7.png)
+
+![](Images/visual selection_6.png)
+:::
+
+**How GenAI is changing CX and which challenges are ahead?**
+
+
+# Literature<br> Review  {background-color="#006dae"}
+
+## Why CX teams are eager to implement Gen AI? {.smaller }
+
+::: panel-tabset
+
+### Operative Efficience 
+
+::: {layout-ncol="3"}
+
+### Improve resource management
++ Automatize several routine tasks
++ Human personnel can focus on complex issues 
++ Gen AI can increase productivity up to 50 %
+![](Images/Using-ChatGPT-to-Automate-and-Streamline-Developer-Tasks.jpg){width=80%}
+
+### Optimal Customer Service
++ Customer Services can be provided continously
++ Outsmart the current rule-based chatbots, blogs  
+![](Images/customerservice_1.jpg){width=80%}
+
+### Customer Interaction
++ Can be interpreted the sentiments the sentiments and intentions of users 
+![](Images/sentimentanalysis.jpg){width=80%}
+
+:::
+
+### Proactive Support 
+
+::: {layout-ncol="2"}
+
+###
+![](Images/visual selection_7.png){width=90%}
+
+###
++ Generative AI can sustain a consistent service quality
++ Override frustration, effectiveless solutions provide by rule-based chatbots
++ User detects uniform support quality at any time 
+
+:::
+
+### Human Augmentation 
+
+::: {layout-ncol="2"}
+
+###
++ Improve skills of agent in real-time interactions
++ Instantanious suggestions to provide assertive most probable answers
++ IA can drilldown on big pools of data and obtain customers needs
+
+###
+![](Images/visual selection_8.png){width=90%} 
+
+:::
+
+### Hyperpersonalization 
+
+::: {layout-ncol="2"}
+
+###
+![](Images/DSAIS_17.png){width=40%} 
+
+### 
+
++ Users expect hypertailored options since organizations possess quantity of data about them
++ Gen AI can connect with CRM to provide specific recommendations
++ Advanced segmentation and target marketing strategies
+
+:::
+
+:::
+
+## What Challenges Gen AI CX have on the horizon?
+
+| Challenges | Description                                         |
+|------------|-----------------------------------------------------|
+| `Ethical and Social` | Biases, trust, AI-human balance in customer experience  |
+| `Technical`  | Adaptability, training, transparency and scalability of the model  |
+| `For Consumers` | Privacy, loss of human contact, transparency  |
+
+## Ethical and Social Challenges {.smaller .scrollable transition="slide"}
+
+::: {layout-ncol="3"}
+
+### **Algorithm Bias Mitigation**
+
++ AI algorithms can perpetuate existing biases in data, leading to discriminatory recommendations. 
++ The opacity of AI models makes it difficult to identify and mitigate biases
++ A continuous process of vigilance and adaptation is necessary to address ethical challenges as AI becomes more integrated into daily tasks
+
+### **Trustness building by Ethic Implementation**
+
++ Companies must demonstrate responsible use of AI and protect their customers' personal data.
++ Customers must understand how AI technologies make decisions and have control over the use of their data.
++ Informed consent for data use and compliance with data protection regulations are essential.
+
+
+### **Managing Human-AI Interaction**
+
++ AI can automate tasks and provide quick responses, but it still lacks empathy and relationship-building skills.
++ Hybrid systems, which combine AI with human support, are an effective solution to balance efficiency with customer satisfaction.
+
+:::
+
+## Technical Challenges {.smaller .scrollable transition="slide"}
+
+::: {layout-ncol="3"}
+
+### **Continuous Training and Development**
+
++ Training staff on GenAI capabilities, how to interpret results, and identifying and mitigating potential biases or errors is critical.
++ Training should foster collaboration between humans and GenAI, ensuring employees understand that these technologies are a complement to their skills, not a threat to their jobs.
+
+
+### **Dependency on an exhaustive Knowledge Base**
+
++ AI applications in customer service rely heavily on an accurate and up-to-date knowledge base
++ A comprehensive knowledge base should include detailed information about the company's products or services, answers to frequently asked questions, troubleshooting guides, and company policies
++ It is important to establish clear processes for collecting, organizing, and updating information in the knowledge base
+
+### **AI Strategy communication in CX team**
+
++ Collaborators need to understand how AI will impact their roles and how it can help them be more efficient and effective in their work.
++ It's essential to involve CX employees in the implementation process. Their feedback can help ensure that AI tools and processes are effectively integrated into existing workflows.
+
+:::
+
+## Consumer Challenges {.smaller .scrollable transition="slide"}
+
+
+::: {layout-ncol="2"}
+
+### Management over Private Data
+
++ It is crucial to understand how companies collect, store, and use this information.
++ Companies must clearly inform their customers about what type of data they collect, how they use it, and with whom they share it.
++ Companies must obtain explicit customer consent before using their data for GenAI
++ It is essential that customers have control over their data, including the ability to access, modify, or delete the information that companies have collected.
+
+### Loss in Human Interaction
+
++ Lack of human connection can lead to frustration and feelings of isolation for customers
++ Customers have the right to know whether they are interacting with a machine or a person.
+
+::: 
+
+
+# Methodology  {background-color="#006dae"}
+## Blueprint{.smaller}
+
+::: {layout-ncol="2"}
+
+###
+```{mermaid}
+%%| echo: false
+%%| fig-width: 8.5
+flowchart  TD
+  A(Research Questions) --> B(Data Gathering)
+  B --> C(Topic Extraction)
+  C --> D(Result Findings)
+```
+
+###
++ NLP application on Topic Modeling  on Core Pillars on Gen AI CX to validate theoretical findings within the business field 
+
+  + ***Research Questions: *** Retrieve the key questions found on the Literature review
+
+  + ***Data Gathering: *** Understand which is the public target which can answer to the relevant questions
+
+  + ***Topic Extraction: *** Organize and categorize the upcoming data from the target public
+
+  + ***Result Findings: *** Provide the insights and relevant new information to put in contrast with the Literature Review
+
+:::
+
+
+## Technical Drilldown {.smaller .scrollable}
+
+::: panel-tabset 
+
+### Scope {.smaller}
+
+Focus on evaluate how the CX field is considering aspects as *transparency*, *security*, *human connection*, *bias* when implementing GenAI use cases:
+
++----------------------------------+-------------------------------------------------------------------------+
+| Topic                            | Question                                                                |
++----------------------------------+-------------------------------------------------------------------------+
+| `CX usage`                       | - Which Gen AI use cases have developed in CX?                          |
+|                                  | - Which CX Business Process has been implemented?                       |
++----------------------------------+-------------------------------------------------------------------------+
+| `Human Control`                  | - Which degree of automatization has been applied over process?         | 
+|                                  | - Degree of hyperpersonalization applied on GenAI use case ?            |
++----------------------------------+-------------------------------------------------------------------------+
+| `Privacy and Data Security`      | - Any concerns related to privacy and security over the GenAI platform? |
++----------------------------------+-------------------------------------------------------------------------+
+| `Bias Mitigation`                | - Any concern related to model biases?                                  |
+|                                  | - User has faced any ethical challenge?                                 |
++----------------------------------+-------------------------------------------------------------------------+
+| `Transparency and communication` | - Users expressed more explainability on the GenAI business process?    |
+|                                  | - How customers are informed about the use of GenAI in CX?              |
++----------------------------------+-------------------------------------------------------------------------+
+
+### Objective Users {.smaller}
+
+::: {layout-ncol="2"}
+
+####
++ CX professionals that had interacted with GenAI platforms and implemented in their organizations
++ Feedback retrieved from software review ratings webpage 
++ The reviews are related about 24 GenAI platforms tha aim to improve CX tasks, which resulted in **730** valid reviews to process.
+![](Images/DSAIS_15.png)
+
+#### 
+
+| Model | Description | 
+| --- | ---------- | 
+| Tidio | A live chat and chatbot platform that helps businesses automate customer service and increase sales through AI-powered conversations | 
+| Kore.AI | Enterprise-grade conversational AI platform that helps organizations build sophisticated virtual assistants and chatbots |
+| Botpress | Open-source chatbot creation platform that allows developers to build, debug and deploy conversational applications | 
+| Twixor | Customer engagement platform offering omnichannel communication solutions with AI-powered automation |
+
+:::
+
+### Data Process
+
+::: {layout-ncol="2"}
+
+#### Data Extraction 
+  + GenAI model *Llama 3.2* used to process , extract and structure data 
+
+    ```python
+    generator = transformers.pipeline(
+          model=model,
+          tokenizer=tokenizer,
+          task='text-generation',
+          temperature=0.01,
+          max_new_tokens=max_tokens,
+          repetition_penalty=1.1,)
+      response = generator(prompt)[0]['generated_text']
+    ```
+
+    ![](Images/visual selection_9.png)
+
+
+#### Topic Extraction
+  
+  + For topic modeling it has been used *BERTopic* because of its capacity to manouver complex data text. 
+
+    ![](Images/modularity.svg)
+
+    [Ethics: Topic Map](Images\map_topics_json_Ethics_think.html){preview-link="true" style="text-align: center"}
+
+    [Ethics: Similarity Matriz](Images\heatmap_json_Ethics_think.html){preview-link="true" style="text-align: center"}
+  
+
+:::
+:::
+
+# Findings  {background-color="#006dae"}
+
+## What we learned? - Automatization {.smaller }
+
+::: {layout-ncol="2"}
+
+###
+   
+   + 60 % of the CX users mentioned they had used GenAI tools to improve a process. Meanwhile 40 % had automated completly tasks.
+   + Small businesses tend to fully automatize the customer service tasks.
+   + Most common use cases are: Website chatbots, Client Support
+  
+
+###
+
+  ![](Images/Find_Automatization_2.png)
+
+::: 
+
+## What we learned? - Hyperpersonalization & Bias {.smaller }
+
+::: {layout-ncol="2"}
+
+###
+
+![](Images/Find_Hyperpersonalization_3.png)
+![](Images/Find_Bias_1.png)
+
+
+###
+
++ **Hyperpersonalization**
+
+  + Users don't apply hyperpersonalization, but rather automate easy and repetitive tasks
+  + Some users mention to integrate GenAI use case with Social Media and CRM
+  + Most common topics are: Personalization for no technical users, Answer automatization, Personalized asnwers in chatbots
+
++ **Bias**
+
+  + Just only 3 % of the reviewers mentioned issues related to Algorithm Bias
+  + Lack of options to retrain the model, bad comprehension of requirements
+ 
+::: 
+
+## What we learned? - Human Likeliness & Compliancy {.smaller }
+
+::: {layout-ncol="2"}
+
+###
+
++ **Human Likeliness**
+
+  + 90 % of reviewers aim for a service with human qualities as empathy, care and comprenhension
+  + GenAI platforms are being assigned to repetitive tasks, meanwhile human agents keep the analytical ones
+  
+
++  **Privacy**
+
+  + Only  15 % of user mention any aspect about privacy topic
+  + Relevant topics are data security implementation, customer data protection
+  
+###
+
+  ![](Images/Find_Humanlikeness_2.png)
+  ![](Images/Find_Privacy_2.png)
+
+:::  
+
+## What we learned? - Privacy & Ethics {.smaller }
+
+::: {layout-ncol="2"}
+
+###
+
+  
+  ![](Images/Find_Compliant_2.png)
+  ![](Images/Find_Ethics_2.png)
+
+
+###
+
++ **Compliance**
+
+  + 10 % of implementers ask about regulation meets
+  + User mentioned that GenAI platforms help them meet industry standars regulations
+  + In chatbots, it is seek to provide precise answers, which are meet with validation processes
+
+  
++ **Ethics**
+
+  + 20 % of users mention ethical concerns
+  + Importance in augment human capacities rather than replace 
+  + Importance to mention to users they are interacting with AI provided solutions
+
+:::
+
+## What we learned? - Explainability & Transparency {.smaller }
+
+::: {layout-ncol="2"}
+
+###
+
++ **Explainability**
+
+  + 25 % of reviewers mention topics about Explainability
+  + But most of the topics were related on the good documentation of the GenAI platforms
+
++ **Transparency**
+  + 30 % of reviewers have mentioned transparency topics
+  + User value systems that explain the reasoning behind each action
+  + Users mention that GenAI platform communicate about how the system track and interpret customer behaviours
+  
+###
+
+  ![](Images/Find_Explainability_1.png)
+  ![](Images/Find_Transparency_2.png)
+  
+  ::: {style="text-align: center; margin-top: 1em"}
+  [Dashboard Report](https://app.powerbi.com/links/8A-0rxLQSD?ctid=1b305a80-f34a-496b-b8a7-8691fb1ec04b&pbi_source=linkShare&bookmarkGuid=ae79bd4e-5ef5-406b-a0b3-529e2fc4acfc){preview-link="true" style="text-align: center"}
+  :::
+
+::: 
+
+
+
+# Conclusion  {background-color="#006dae"}
+
+## Conclusion and Recommendations {.smaller .scrollable}
+
+| Conclusions | Recommendations  | Future Actions |
+|-------------|------------------|-----------|
+| - Organizations prefer hybrid deployment models rather than full automation | - Organizations are encouraged to follow the CDR framework guidelines, implementing robust data governance structures | - Investigate the impact of deep personalization using historical data and customer preferences |
+| - Implementation of Gen AI focuses on operational efficiency, offering continous availability and reducing response times | - Organizations should establish clear protocols for human oversight, define specific criteria for AI handoffs to humans | - Evaluate the real impact of AI on equity and justice in customer service |
+| - Use Cases are intended to augment, rather than replace, human capabilities | - Organizations should focus on aligning bias mitigation practices, data privacy, and transparency | -  Evaluate the real-world application of frameworks such as CARE and CDR |
+| - GenAI is being implemented in processes with predictable patterns as chatbots and customer support automation. | - | - | 
+
+##  Thank you!
+
++ What Questions do we have?
+

@@ -1,0 +1,734 @@
+,json_Process,Topic,Process_topics
+0,Website Chat Management,7,Label: Conversational Support
+1,Customer Support,1,Label: Customer Support
+2,Customer Interactions,3,Label: Customer Engagement
+3,Customer Service,2,Label: Customer Service Inquiries
+4,Customer Communication and Bookings,3,Label: Customer Engagement
+5,Chat Support,7,Label: Conversational Support
+6, Customer Service and Lead Generation,9,Label: Lead Generation and Qualification
+7,Website Chatbot,0,Label: Chatbot Development and Integration
+8,Website Interactions,5,Label: NLP Website Management
+9,Customer Support,1,Label: Customer Support
+10,Customer Support,1,Label: Customer Support
+11,Customer Service,2,Label: Customer Service Inquiries
+12,Customer Live Chat,7,Label: Conversational Support
+13,Customer Chat Notifications,7,Label: Conversational Support
+14,Customer Support,1,Label: Customer Support
+15,Client-Company Communication,3,Label: Customer Engagement
+16,Lead Generation and Conversion,9,Label: Lead Generation and Qualification
+17,Lead Generation and Qualification,9,Label: Lead Generation and Qualification
+18, No personalized interactions were mentioned by the reviewer,4,Label: Application Development and Testing
+19,Customer Support,1,Label: Customer Support
+20,Customer Inquiries and Lead Generation,9,Label: Lead Generation and Qualification
+21,Chatbot Setup and Deals Redemption,0,Label: Chatbot Development and Integration
+22,Customer Communication,3,Label: Customer Engagement
+23,Sales Conversations,6,Label: Sales Lead Generation
+24,Customer Support,1,Label: Customer Support
+25,Customer Service Workflows,3,Label: Customer Engagement
+26, No personalized interactions were mentioned by the reviewer,4,Label: Application Development and Testing
+27,Customer Conversions,3,Label: Customer Engagement
+28,Customer Support and Marketing,3,Label: Customer Engagement
+29,Website Chat Functionality,7,Label: Conversational Support
+30,Customer Service,2,Label: Customer Service Inquiries
+31,Customer Communication and Sales,3,Label: Customer Engagement
+32,No detail,4,Label: Application Development and Testing
+33,Customer Communication,3,Label: Customer Engagement
+34,Customer Communication and Support,3,Label: Customer Engagement
+35,Customer Service,2,Label: Customer Service Inquiries
+36,Customer Relationship Management,3,Label: Customer Engagement
+37,Customer Support,1,Label: Customer Support
+38,Customer Service,2,Label: Customer Service Inquiries
+39,Customer Support,1,Label: Customer Support
+40,Website Customer Communication,3,Label: Customer Engagement
+41,Customer Support,1,Label: Customer Support
+42,Chatbot Support for Online Jewelry Store,7,Label: Conversational Support
+43,Customer Support,1,Label: Customer Support
+44,Messaging and Lead Management,9,Label: Lead Generation and Qualification
+45,Chatbot Development,0,Label: Chatbot Development and Integration
+46,Customer Support,1,Label: Customer Support
+47,Customer Service/Support,1,Label: Customer Support
+48,Account Opening and Customer Data Capture,3,Label: Customer Engagement
+49,Customer Service,2,Label: Customer Service Inquiries
+50,Live Chat Support,7,Label: Conversational Support
+51,Customer Service,2,Label: Customer Service Inquiries
+52,Customer Communication,3,Label: Customer Engagement
+53,Domain Connection,5,Label: NLP Website Management
+54,Website Visitor Interactions and Chat Support,7,Label: Conversational Support
+55,Chatbot Development,0,Label: Chatbot Development and Integration
+56,Website Engagement,5,Label: NLP Website Management
+57,Customer Service,2,Label: Customer Service Inquiries
+58,Visitor Analytics and Chat Support,7,Label: Conversational Support
+59,Business CRM,3,Label: Customer Engagement
+60,Customer Support,1,Label: Customer Support
+61,Sales Leads,6,Label: Sales Lead Generation
+62,Customer Support,1,Label: Customer Support
+63,Customer Service,2,Label: Customer Service Inquiries
+64,Client Interaction,3,Label: Customer Engagement
+65,Visitor Monitoring,5,Label: NLP Website Management
+66,Customer Support,1,Label: Customer Support
+67,Client Communication,3,Label: Customer Engagement
+68,Chatbot Integration,0,Label: Chatbot Development and Integration
+69,Customer Service,2,Label: Customer Service Inquiries
+70,Customer Service Chat,7,Label: Conversational Support
+71,Website Support,1,Label: Customer Support
+72,Social Media Inquiries,5,Label: NLP Website Management
+73,Customer Support,1,Label: Customer Support
+74,Website Chat Support,7,Label: Conversational Support
+75,Chatbot/Virtual Assistant,0,Label: Chatbot Development and Integration
+76,Customer Support,1,Label: Customer Support
+77,Client Chat,7,Label: Conversational Support
+78,Customer Service,2,Label: Customer Service Inquiries
+79,Website Live Chat,7,Label: Conversational Support
+80,Website Lead Capture,5,Label: NLP Website Management
+81,Chat Customer Management,7,Label: Conversational Support
+82,Customer Communication,3,Label: Customer Engagement
+83,No detail,4,Label: Application Development and Testing
+84,Client Communication,3,Label: Customer Engagement
+85,Customer Service,2,Label: Customer Service Inquiries
+86,Customer Support,1,Label: Customer Support
+87,Customer Service,2,Label: Customer Service Inquiries
+88,Customer Service,2,Label: Customer Service Inquiries
+89,Customer Service,2,Label: Customer Service Inquiries
+90,Website Visitor Engagement,5,Label: NLP Website Management
+91," ""Lead Generation and Qualification"",",9,Label: Lead Generation and Qualification
+92,Customer Service,2,Label: Customer Service Inquiries
+93," ""Customer Service Inquiries"",",3,Label: Customer Engagement
+94,Lead Generation and Communication,9,Label: Lead Generation and Qualification
+95,Lead Capture and Qualification,9,Label: Lead Generation and Qualification
+96,Website Traffic Analysis and Engagement,5,Label: NLP Website Management
+97,Customer Support,1,Label: Customer Support
+98,Customer Service,2,Label: Customer Service Inquiries
+99,Sales Process,6,Label: Sales Lead Generation
+100,No detail,4,Label: Application Development and Testing
+101,Customer Support Queries,1,Label: Customer Support
+102,Lead Generation and Qualification,9,Label: Lead Generation and Qualification
+103,Website Chatbot,0,Label: Chatbot Development and Integration
+104,Customer Support,1,Label: Customer Support
+105,Website Chat Support,7,Label: Conversational Support
+106,Sales Leads,6,Label: Sales Lead Generation
+107,Customer Support,1,Label: Customer Support
+108,Customer Service/Lead Generation,9,Label: Lead Generation and Qualification
+109,Customer Communication and Lead Tracking,3,Label: Customer Engagement
+110,Lead Generation,9,Label: Lead Generation and Qualification
+111,Customer Support,1,Label: Customer Support
+112,Live Chat Support,7,Label: Conversational Support
+113,Website Chatbot,0,Label: Chatbot Development and Integration
+114,Customer Service,2,Label: Customer Service Inquiries
+115,Website Proposal Creation,5,Label: NLP Website Management
+116," ""Design Portfolio Launch"",",4,Label: Application Development and Testing
+117,Customer Engagement,3,Label: Customer Engagement
+118," ""Live Chat Support"",",7,Label: Conversational Support
+119,Chat Bot Development,0,Label: Chatbot Development and Integration
+120,Website Visitor Engagement,5,Label: NLP Website Management
+121,Customer Service,2,Label: Customer Service Inquiries
+122,Customer Service Messages,3,Label: Customer Engagement
+123,Customer Support,1,Label: Customer Support
+124,Customer Support,1,Label: Customer Support
+125,Subscription Service Management,5,Label: NLP Website Management
+126,Sales Leads,6,Label: Sales Lead Generation
+127,Customer Support,1,Label: Customer Support
+128,Customer Support and Marketing,3,Label: Customer Engagement
+129,Website Customer Engagement,3,Label: Customer Engagement
+130,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+131," ""Lead Generation and Customer Trust"",",9,Label: Lead Generation and Qualification
+132,Website and Live Chat Experience,7,Label: Conversational Support
+133,Sales Leads,6,Label: Sales Lead Generation
+134,Customer Support and Marketing Automation,3,Label: Customer Engagement
+135,Lead Qualification and Support,9,Label: Lead Generation and Qualification
+136,Website Visitor Tracking,5,Label: NLP Website Management
+137,Client Inquiries,3,Label: Customer Engagement
+138,Customer Service,2,Label: Customer Service Inquiries
+139,Live Chat Support,7,Label: Conversational Support
+140,Volunteer Management,5,Label: NLP Website Management
+141,Customer Service,2,Label: Customer Service Inquiries
+142,Customer Service/Support,1,Label: Customer Support
+143,Lead Generation and Customer Trust,9,Label: Lead Generation and Qualification
+144,Website Visitor Engagement,5,Label: NLP Website Management
+145,Lead Connection and Information Provision,9,Label: Lead Generation and Qualification
+146,Chatbot Functionality,0,Label: Chatbot Development and Integration
+147,Customer Support,1,Label: Customer Support
+148,Internal Reporting and Client Support,3,Label: Customer Engagement
+149,Support Requests,1,Label: Customer Support
+150,Customer Support,1,Label: Customer Support
+151,Customer Service,2,Label: Customer Service Inquiries
+152,Customer Inquiry,2,Label: Customer Service Inquiries
+153,Support and Customer Service,1,Label: Customer Support
+154,AI Workflow Management,4,Label: Application Development and Testing
+155,Customer Support and Self-Service,3,Label: Customer Engagement
+156,Product Launch and Customer Savings Calculations,4,Label: Application Development and Testing
+157,Customer Service,2,Label: Customer Service Inquiries
+158,Ticketing System,5,Label: NLP Website Management
+159,Customer Support Tickets,3,Label: Customer Engagement
+160,Sales Leads,6,Label: Sales Lead Generation
+161,Support Tickets,5,Label: NLP Website Management
+162,Customer Service,2,Label: Customer Service Inquiries
+163,Customer Service,2,Label: Customer Service Inquiries
+164,Customer Service,2,Label: Customer Service Inquiries
+165,Customer Service,2,Label: Customer Service Inquiries
+166,Customer Support,1,Label: Customer Support
+167,Customer Service,2,Label: Customer Service Inquiries
+168,Customer Service,2,Label: Customer Service Inquiries
+169,No detail,4,Label: Application Development and Testing
+170,No detail,4,Label: Application Development and Testing
+171,Customer Support,1,Label: Customer Support
+172,Customer Support,1,Label: Customer Support
+173,Customer Inquiries,2,Label: Customer Service Inquiries
+174,Customer Support,1,Label: Customer Support
+175,Customer Service,2,Label: Customer Service Inquiries
+176,Chatbot/Virtual Assistant,0,Label: Chatbot Development and Integration
+177,Customer Support,1,Label: Customer Support
+178,Implementation and Customization,4,Label: Application Development and Testing
+179,Chatbot Development,0,Label: Chatbot Development and Integration
+180,Customer Enquiries,2,Label: Customer Service Inquiries
+181,Customer Success Communication,3,Label: Customer Engagement
+182,Event Planning,5,Label: NLP Website Management
+183,Event Marketing,5,Label: NLP Website Management
+184," ""Customer Retention"",",3,Label: Customer Engagement
+185,Sales Process,6,Label: Sales Lead Generation
+186,Conference Management,5,Label: NLP Website Management
+187,Event Attendee Engagement,5,Label: NLP Website Management
+188,Insurance Renewal Procedures,4,Label: Application Development and Testing
+189,Product Demonstrations,4,Label: Application Development and Testing
+190,Ticket Booking Process,5,Label: NLP Website Management
+191,QA Service Delivery,4,Label: Application Development and Testing
+192,Onboarding and Customer Engagement,3,Label: Customer Engagement
+193,Customer Support,1,Label: Customer Support
+194,Customer Interactions,3,Label: Customer Engagement
+195,Chatbot Development,0,Label: Chatbot Development and Integration
+196,Marketing Automation,4,Label: Application Development and Testing
+197,Customer Engagement,3,Label: Customer Engagement
+198,Customer Interaction and Engagement,3,Label: Customer Engagement
+199,Marketing Outreach and Lead Nurturing,9,Label: Lead Generation and Qualification
+200,WhatsApp Marketing,5,Label: NLP Website Management
+201,Event Management,5,Label: NLP Website Management
+202,Chatbot Development,0,Label: Chatbot Development and Integration
+203,Customer Feedback,1,Label: Customer Support
+204,Post-Conference Communication,5,Label: NLP Website Management
+205,Conference Communication,3,Label: Customer Engagement
+206," ""Chat Inbox Automation"",",7,Label: Conversational Support
+207,QA Communication,4,Label: Application Development and Testing
+208,Startup Operations,4,Label: Application Development and Testing
+209,Event Workflows,4,Label: Application Development and Testing
+210,Customer Service,2,Label: Customer Service Inquiries
+211,Implementation and Testing Scripts,4,Label: Application Development and Testing
+212,Customer Service,2,Label: Customer Service Inquiries
+213,Interior Design,4,Label: Application Development and Testing
+214,Customer Support,1,Label: Customer Support
+215,Customer Success,3,Label: Customer Engagement
+216,QA Processes,4,Label: Application Development and Testing
+217,Lead Conversations and Customer Engagement,3,Label: Customer Engagement
+218,QA Workflows,4,Label: Application Development and Testing
+219,Customer Engagement and Operations,3,Label: Customer Engagement
+220,Conference Registration and Matchmaking,5,Label: NLP Website Management
+221,SAAS Management,4,Label: Application Development and Testing
+222,Customer Support,1,Label: Customer Support
+223," ""Database Integration"",",4,Label: Application Development and Testing
+224,Product Development,4,Label: Application Development and Testing
+225,Debt Collection,4,Label: Application Development and Testing
+226,Customer Interaction,3,Label: Customer Engagement
+227,Multiple Business Processes,4,Label: Application Development and Testing
+228,Customer Engagement,3,Label: Customer Engagement
+229,Marketing Outreach,5,Label: NLP Website Management
+230,Customer Service,2,Label: Customer Service Inquiries
+231,Digital Marketing,5,Label: NLP Website Management
+232,Outreach Campaigns,5,Label: NLP Website Management
+233,Sales Leads,6,Label: Sales Lead Generation
+234,Customer Communication,3,Label: Customer Engagement
+235,Sales Leads,6,Label: Sales Lead Generation
+236,Chatbot Development,0,Label: Chatbot Development and Integration
+237,Customer Support Tickets,3,Label: Customer Engagement
+238,No detail,4,Label: Application Development and Testing
+239,Bot Development,8,Label: Conversational Bot Development
+240,Website Integration,5,Label: NLP Website Management
+241,Chatbot Development,0,Label: Chatbot Development and Integration
+242,Sales Leads,6,Label: Sales Lead Generation
+243,Chatbot Creation,0,Label: Chatbot Development and Integration
+244,Chatbot Development,0,Label: Chatbot Development and Integration
+245,Sales Leads,6,Label: Sales Lead Generation
+246,Chatbot Development,0,Label: Chatbot Development and Integration
+247,No detail,4,Label: Application Development and Testing
+248,Customer Service/Support,1,Label: Customer Support
+249,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+250,Chatbot Development and Integration,0,Label: Chatbot Development and Integration
+251,Chatbot Development,0,Label: Chatbot Development and Integration
+252,Student Interview Practice,4,Label: Application Development and Testing
+253," ""Chatbot Development"",",0,Label: Chatbot Development and Integration
+254,Chatbot Development,0,Label: Chatbot Development and Integration
+255,Chatbot Development,0,Label: Chatbot Development and Integration
+256,The tool is used for customer inquiries and product information on the reviewer's website.,5,Label: NLP Website Management
+257,Bot Hosting and Integration,8,Label: Conversational Bot Development
+258,Customer Service,2,Label: Customer Service Inquiries
+259,Chatbot Development,0,Label: Chatbot Development and Integration
+260,Chatbot Development,0,Label: Chatbot Development and Integration
+261,Chatbot Development,0,Label: Chatbot Development and Integration
+262," The process identified is ""Sales Leads"".",6,Label: Sales Lead Generation
+263,Customer Service,2,Label: Customer Service Inquiries
+264,Customer Service,2,Label: Customer Service Inquiries
+265,Sales Leads,6,Label: Sales Lead Generation
+266," ""Chatbot Workflow"",",0,Label: Chatbot Development and Integration
+267," The reviewer likes the platform for its ease of use, user-friendliness, and the developer team's dedication to providing daily tutorials and support. They also appreciate the platform's ability to integrate with various websites and customize triggers. However, they wish there were ways to export conversation data for further analysis.",5,Label: NLP Website Management
+268,Data Access and User Interaction,5,Label: NLP Website Management
+269," The tool automates chatbot development and deployment, with features such as a visual flow editor for creating conversation flows, analytics tools for monitoring bot performance, and multi-channel support for deploying bots across different messaging platforms.
+",0,Label: Chatbot Development and Integration
+270,Virtual Assistant Development and Integration,4,Label: Application Development and Testing
+271,Sales Leads,6,Label: Sales Lead Generation
+272,Sales Leads,6,Label: Sales Lead Generation
+273,Support Tickets,5,Label: NLP Website Management
+274,Bot Building,8,Label: Conversational Bot Development
+275,Multiple Processes,4,Label: Application Development and Testing
+276,Issue-Solving Process,4,Label: Application Development and Testing
+277,Website Chatbots,7,Label: Conversational Support
+278,Bot Development,8,Label: Conversational Bot Development
+279,Chatbot creation and deployment,0,Label: Chatbot Development and Integration
+280,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+281,Lead Generation and Qualification,9,Label: Lead Generation and Qualification
+282,Customer Service,2,Label: Customer Service Inquiries
+283,Chatbot Development,0,Label: Chatbot Development and Integration
+284," The tool is used for customer engagement and support automation, specifically by automating responses to common questions and enhancing customer satisfaction.",3,Label: Customer Engagement
+285,Internal Communication,3,Label: Customer Engagement
+286,Chatbot Implementation,0,Label: Chatbot Development and Integration
+287,Chatbot Development,0,Label: Chatbot Development and Integration
+288," ""Lead Acquisition"",",9,Label: Lead Generation and Qualification
+289,Lead Generation,9,Label: Lead Generation and Qualification
+290,Chatbot Development,0,Label: Chatbot Development and Integration
+291,Chatbot Development,0,Label: Chatbot Development and Integration
+292,Marketing Automation,4,Label: Application Development and Testing
+293,Chatbot Development,0,Label: Chatbot Development and Integration
+294,Chatbot Development,0,Label: Chatbot Development and Integration
+295,Product Development,4,Label: Application Development and Testing
+296,Chatbot Development,0,Label: Chatbot Development and Integration
+297,Website Visitor Engagement,5,Label: NLP Website Management
+298,Educational Purposes,5,Label: NLP Website Management
+299,Website Chatbot,0,Label: Chatbot Development and Integration
+300,Chatbot Development,0,Label: Chatbot Development and Integration
+301,Chatbot Development and Management,0,Label: Chatbot Development and Integration
+302,Chatbot Development,0,Label: Chatbot Development and Integration
+303,AI Bot Development,8,Label: Conversational Bot Development
+304,Product Development,4,Label: Application Development and Testing
+305,Chatbot Development,0,Label: Chatbot Development and Integration
+306,AI Bot Creation,8,Label: Conversational Bot Development
+307,Bot Creation,8,Label: Conversational Bot Development
+308,Chatbot Design,0,Label: Chatbot Development and Integration
+309,Website Customization,5,Label: NLP Website Management
+310,Knowledge Base Article Mapping,5,Label: NLP Website Management
+311,Customer Support,1,Label: Customer Support
+312,Chatbot Development,0,Label: Chatbot Development and Integration
+313,Chatbot Development,0,Label: Chatbot Development and Integration
+314,Customer Support,1,Label: Customer Support
+315,Social Media Management,5,Label: NLP Website Management
+316,Bot Building,8,Label: Conversational Bot Development
+317,Customer Support,1,Label: Customer Support
+318,Application Development and Testing,4,Label: Application Development and Testing
+319,Customer Service,2,Label: Customer Service Inquiries
+320,Chatbot Customization and Integration,0,Label: Chatbot Development and Integration
+321,Customer Service,2,Label: Customer Service Inquiries
+322,Chatbot Development,0,Label: Chatbot Development and Integration
+323,Employee Question Answering,4,Label: Application Development and Testing
+324,Customer Service,2,Label: Customer Service Inquiries
+325,Website Navigation,5,Label: NLP Website Management
+326,Call Center Services,3,Label: Customer Engagement
+327,Website Chatbot Development,0,Label: Chatbot Development and Integration
+328,Development and Integration,4,Label: Application Development and Testing
+329,Chatbot Development,0,Label: Chatbot Development and Integration
+330,Customer Service,2,Label: Customer Service Inquiries
+331,Customer Conversations,3,Label: Customer Engagement
+332,Customer Support,1,Label: Customer Support
+333,Customer Support,1,Label: Customer Support
+334,Lead Qualification,9,Label: Lead Generation and Qualification
+335,Product Development and Customer Support,3,Label: Customer Engagement
+336,Customer Service Chats,7,Label: Conversational Support
+337, The review mentions the sales process as the area where the tool is used.,6,Label: Sales Lead Generation
+338,Client Resolution,4,Label: Application Development and Testing
+339,Client Communication,3,Label: Customer Engagement
+340,Customer Conversations,3,Label: Customer Engagement
+341,Customer Support,1,Label: Customer Support
+342,Customer Support,1,Label: Customer Support
+343,Website Integration,5,Label: NLP Website Management
+344,Customer Service,2,Label: Customer Service Inquiries
+345,Customer Support Interactions,3,Label: Customer Engagement
+346,Support/Customer Service,1,Label: Customer Support
+347,Customer Support,1,Label: Customer Support
+348,Customer Support,1,Label: Customer Support
+349,Customer Communication,3,Label: Customer Engagement
+350,Customer Support,1,Label: Customer Support
+351,Customer Support,1,Label: Customer Support
+352,Product Introduction and Support,4,Label: Application Development and Testing
+353,Customer Communication,3,Label: Customer Engagement
+354,Support/Onboarding,1,Label: Customer Support
+355,Website Chatbot Integration,0,Label: Chatbot Development and Integration
+356,Customer Support,1,Label: Customer Support
+357,Customer Service,2,Label: Customer Service Inquiries
+358,Sales Process,6,Label: Sales Lead Generation
+359,Customer Support,1,Label: Customer Support
+360,Chatbot Configuration and Reporting,0,Label: Chatbot Development and Integration
+361,Customer Service,2,Label: Customer Service Inquiries
+362,Customer Support,1,Label: Customer Support
+363,Client Support,1,Label: Customer Support
+364,Customer Service,2,Label: Customer Service Inquiries
+365,Patient Inquiries,5,Label: NLP Website Management
+366,Email Campaigns,5,Label: NLP Website Management
+367,"  The process identified in this review is ""Sales Leads.""",6,Label: Sales Lead Generation
+368,Customer Support Process,3,Label: Customer Engagement
+369,Customer Service,2,Label: Customer Service Inquiries
+370,  The tool helps with lead conversations and qualification in the sales process.,6,Label: Sales Lead Generation
+371,Customer Service and Support,1,Label: Customer Support
+372, The process identified in this review is sales leads.,6,Label: Sales Lead Generation
+373,Chatbot Integration,0,Label: Chatbot Development and Integration
+374,Healthcare Communication,3,Label: Customer Engagement
+375,Chat Support,7,Label: Conversational Support
+376,Sales Leads,6,Label: Sales Lead Generation
+377,Customer Support,1,Label: Customer Support
+378,Customer Service,2,Label: Customer Service Inquiries
+379, The process identified in this review is Sales Leads.,6,Label: Sales Lead Generation
+380,Customer Service,2,Label: Customer Service Inquiries
+381,Chatbot Development,0,Label: Chatbot Development and Integration
+382,Customer Support,1,Label: Customer Support
+383,Customer Service Tickets,3,Label: Customer Engagement
+384,Chatbot Development,0,Label: Chatbot Development and Integration
+385,Customer Support,1,Label: Customer Support
+386,Website Support,1,Label: Customer Support
+387,Customer Service,2,Label: Customer Service Inquiries
+388,Chatbot Development,0,Label: Chatbot Development and Integration
+389,Customer Service,2,Label: Customer Service Inquiries
+390,Customer Service,2,Label: Customer Service Inquiries
+391,Customer Support,1,Label: Customer Support
+392,Customer Service,2,Label: Customer Service Inquiries
+393,User Support,1,Label: Customer Support
+394,Customer Support,1,Label: Customer Support
+395,Customer Service,2,Label: Customer Service Inquiries
+396,Customer Service,2,Label: Customer Service Inquiries
+397,Veterinary Clinic Management,5,Label: NLP Website Management
+398,Customer Support and Training,3,Label: Customer Engagement
+399,Customer Support,1,Label: Customer Support
+400,Customer Service,2,Label: Customer Service Inquiries
+401,Front Office Work,4,Label: Application Development and Testing
+402,Customer Service,2,Label: Customer Service Inquiries
+403,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+404,Account Scaling,4,Label: Application Development and Testing
+405,Customer Service,2,Label: Customer Service Inquiries
+406,Customer Service,2,Label: Customer Service Inquiries
+407,Chatbot Development,0,Label: Chatbot Development and Integration
+408,Chatbot Development,0,Label: Chatbot Development and Integration
+409,Customer Support,1,Label: Customer Support
+410,Chatbot Development,0,Label: Chatbot Development and Integration
+411,Chatbot Development,0,Label: Chatbot Development and Integration
+412,Customer Support,1,Label: Customer Support
+413,Chatbot Development,0,Label: Chatbot Development and Integration
+414,Data Model Development,4,Label: Application Development and Testing
+415,Chatbot/Voice Assistant Development,0,Label: Chatbot Development and Integration
+416,Chatbot Development,0,Label: Chatbot Development and Integration
+417,Chatbot Development,0,Label: Chatbot Development and Integration
+418,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+419,Chatbot Creation,0,Label: Chatbot Development and Integration
+420,Chatbot Development,0,Label: Chatbot Development and Integration
+421,Customer Service,2,Label: Customer Service Inquiries
+422,Chatbot Development,0,Label: Chatbot Development and Integration
+423,Chatbot Development,0,Label: Chatbot Development and Integration
+424,Customer Service,2,Label: Customer Service Inquiries
+425,Chatbot Development,0,Label: Chatbot Development and Integration
+426,Chatbot Development,0,Label: Chatbot Development and Integration
+427,Natural Language Processing,5,Label: NLP Website Management
+428,Natural Language Processing Chatbot Development,0,Label: Chatbot Development and Integration
+429,Customer Support,1,Label: Customer Support
+430," ""Conversational Interface Development"",",4,Label: Application Development and Testing
+431,Chatbot Communication,0,Label: Chatbot Development and Integration
+432,Support Operations,1,Label: Customer Support
+433,Customer Service,2,Label: Customer Service Inquiries
+434,Conversational Experience Development,7,Label: Conversational Support
+435,Chatbot Development,0,Label: Chatbot Development and Integration
+436,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+437,Sales Leads,6,Label: Sales Lead Generation
+438," ""Documentation and Communication"",",4,Label: Application Development and Testing
+439,Chatbot and Voice Solution Development,0,Label: Chatbot Development and Integration
+440,Conversation Design,7,Label: Conversational Support
+441," The tool is used for AI automation, specifically for interpreting intents and tasks, as well as turning 10 mouse clicks into one.",4,Label: Application Development and Testing
+442,Conversation Building and Scaling,7,Label: Conversational Support
+443,Sales Leads,6,Label: Sales Lead Generation
+444,Customer Service,2,Label: Customer Service Inquiries
+445,Custom Software Development,4,Label: Application Development and Testing
+446,Customer Support,1,Label: Customer Support
+447,Chatbot Development,0,Label: Chatbot Development and Integration
+448,Chatbot Creation,0,Label: Chatbot Development and Integration
+449,Conversational Design Flows and Prototyping,4,Label: Application Development and Testing
+450,Chatbot Design,0,Label: Chatbot Development and Integration
+451,Design and Collaboration,4,Label: Application Development and Testing
+452,Chatbot Development,0,Label: Chatbot Development and Integration
+453,Chatbot Implementation,0,Label: Chatbot Development and Integration
+454,Prototyping,4,Label: Application Development and Testing
+455,Bot Conversations Management,8,Label: Conversational Bot Development
+456,Chatbot Development,0,Label: Chatbot Development and Integration
+457,Customer Support,1,Label: Customer Support
+458,Customer Support,1,Label: Customer Support
+459,Customer Service,2,Label: Customer Service Inquiries
+460,Customer Support,1,Label: Customer Support
+461,Customer Support,1,Label: Customer Support
+462,Customer Support,1,Label: Customer Support
+463,Product Explanation,4,Label: Application Development and Testing
+464,Ticket Handling,5,Label: NLP Website Management
+465,Customer Inquiries,2,Label: Customer Service Inquiries
+466,Customer Service,2,Label: Customer Service Inquiries
+467,Customer Support,1,Label: Customer Support
+468," ""Customer Service and Support"",",3,Label: Customer Engagement
+469,E-commerce Sales,6,Label: Sales Lead Generation
+470,Customer Support,1,Label: Customer Support
+471,Customer Support,1,Label: Customer Support
+472,Customer Service and Scalability,3,Label: Customer Engagement
+473,Support Conversations,7,Label: Conversational Support
+474,Customer Service Inquiries,2,Label: Customer Service Inquiries
+475,Customer Support,1,Label: Customer Support
+476,Chatbot Development,0,Label: Chatbot Development and Integration
+477,Customer Support,1,Label: Customer Support
+478,Customer Support,1,Label: Customer Support
+479,Customer Support,1,Label: Customer Support
+480,Customer Inquiries,2,Label: Customer Service Inquiries
+481,Community Management,5,Label: NLP Website Management
+482,Customer Service/Success,3,Label: Customer Engagement
+483,Customer Support,1,Label: Customer Support
+484,Document Management,4,Label: Application Development and Testing
+485,Customer Service,2,Label: Customer Service Inquiries
+486,Customer Support,1,Label: Customer Support
+487,Developer Support,1,Label: Customer Support
+488,Support,1,Label: Customer Support
+489,Client Support,1,Label: Customer Support
+490," ""Customer Support"",",1,Label: Customer Support
+491,Customer Support,1,Label: Customer Support
+492,Chatbot Development and Integration,0,Label: Chatbot Development and Integration
+493,Healthcare - Migraine Patients,5,Label: NLP Website Management
+494,Knowledge Management,5,Label: NLP Website Management
+495,Community Management,5,Label: NLP Website Management
+496,Support Tickets,5,Label: NLP Website Management
+497,Developer Support,1,Label: Customer Support
+498,Environmental Sustainability,4,Label: Application Development and Testing
+499,Sales Leads,6,Label: Sales Lead Generation
+500,Customer Support,1,Label: Customer Support
+501,Community Support,5,Label: NLP Website Management
+502,Lead Generation and Capture,9,Label: Lead Generation and Qualification
+503,Customer Query Handling,3,Label: Customer Engagement
+504,Customer Service,2,Label: Customer Service Inquiries
+505,Chat Support and Agent Tasks,7,Label: Conversational Support
+506,Chatbot Development,0,Label: Chatbot Development and Integration
+507,Fintech and Other Domains,4,Label: Application Development and Testing
+508,Bot Development,8,Label: Conversational Bot Development
+509," ""Customer/Employee Interactions"",",3,Label: Customer Engagement
+510,Chat Bot Development,0,Label: Chatbot Development and Integration
+511,Chatbot Development,0,Label: Chatbot Development and Integration
+512,Day-to-day Task Management,4,Label: Application Development and Testing
+513,Chat Support,7,Label: Conversational Support
+514,Chatbot Development and Implementation,0,Label: Chatbot Development and Integration
+515,Customer Support,1,Label: Customer Support
+516,Chatbot Design and Deployment,0,Label: Chatbot Development and Integration
+517,Chatbot Development,0,Label: Chatbot Development and Integration
+518,Chatbot Development,0,Label: Chatbot Development and Integration
+519,Chatbot Development,0,Label: Chatbot Development and Integration
+520,Collaboration and Productivity,4,Label: Application Development and Testing
+521,Enterprise Application Access,4,Label: Application Development and Testing
+522,Chatbot Development,0,Label: Chatbot Development and Integration
+523,Chatbot Development,0,Label: Chatbot Development and Integration
+524,Customer Support Operations,3,Label: Customer Engagement
+525,Chatbot Development,0,Label: Chatbot Development and Integration
+526,AI Basic Training,8,Label: Conversational Bot Development
+527,Chatbot Development,0,Label: Chatbot Development and Integration
+528,Training and Exam,4,Label: Application Development and Testing
+529,Chatbot Development,0,Label: Chatbot Development and Integration
+530,Chatbot Development,0,Label: Chatbot Development and Integration
+531,Business Processes,4,Label: Application Development and Testing
+532,Chatbot Development,0,Label: Chatbot Development and Integration
+533,Chatbot Building,0,Label: Chatbot Development and Integration
+534,Customer Interaction,3,Label: Customer Engagement
+535,Customer Service,2,Label: Customer Service Inquiries
+536,Bot Training,8,Label: Conversational Bot Development
+537,Chatbot Development,0,Label: Chatbot Development and Integration
+538,Chatbot Development and Interactions,0,Label: Chatbot Development and Integration
+539,Chatbot Development,0,Label: Chatbot Development and Integration
+540,Sales Process,6,Label: Sales Lead Generation
+541,Customer Support,1,Label: Customer Support
+542,Chat Support and Agent Tasks,7,Label: Conversational Support
+543,Conversational Bots Development,8,Label: Conversational Bot Development
+544,Development Tasks,4,Label: Application Development and Testing
+545,Chatbot Development,0,Label: Chatbot Development and Integration
+546,Chatbot Development,0,Label: Chatbot Development and Integration
+547,Customer Service,2,Label: Customer Service Inquiries
+548,Bot Development,8,Label: Conversational Bot Development
+549,Natural Language Processing (NLP),5,Label: NLP Website Management
+550,Chatbot Development,0,Label: Chatbot Development and Integration
+551,Chatbot Development and Integration,0,Label: Chatbot Development and Integration
+552,Chatbot Development and Integration,0,Label: Chatbot Development and Integration
+553,Sales Leads,6,Label: Sales Lead Generation
+554," ""Customer/Employee Interactions"",",3,Label: Customer Engagement
+555,Customer Service Requests,3,Label: Customer Engagement
+556,Chat Bot Development,0,Label: Chatbot Development and Integration
+557,Sales Leads,6,Label: Sales Lead Generation
+558,Chatbot Development,0,Label: Chatbot Development and Integration
+559,Customer Interactions,3,Label: Customer Engagement
+560,Building Solutions,4,Label: Application Development and Testing
+561,Chatbot Development,0,Label: Chatbot Development and Integration
+562,Bot Building and Customization,8,Label: Conversational Bot Development
+563,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+564,Workflow Automation,4,Label: Application Development and Testing
+565,Conversational AI,7,Label: Conversational Support
+566,Chat Support,7,Label: Conversational Support
+567,Customer Support,1,Label: Customer Support
+568,Customer Support,1,Label: Customer Support
+569,Chatbot/Virtual Assistant,0,Label: Chatbot Development and Integration
+570,Chatbot Development,0,Label: Chatbot Development and Integration
+571,Conversational Bot Development,8,Label: Conversational Bot Development
+572,Chatbot Deployment,0,Label: Chatbot Development and Integration
+573,Chatbot Development,0,Label: Chatbot Development and Integration
+574,Customer Engagement,3,Label: Customer Engagement
+575,RPA Development,4,Label: Application Development and Testing
+576,Chatbot Development,0,Label: Chatbot Development and Integration
+577,Natural Language Processing,5,Label: NLP Website Management
+578,Enterprise Application Access,4,Label: Application Development and Testing
+579,Chatbot Development,0,Label: Chatbot Development and Integration
+580,Bot Development,8,Label: Conversational Bot Development
+581,Chatbot Development,0,Label: Chatbot Development and Integration
+582,Customer Support,1,Label: Customer Support
+583,Customer Support Operations,3,Label: Customer Engagement
+584,Chatbot Design and Development,0,Label: Chatbot Development and Integration
+585,Chatbot Development,0,Label: Chatbot Development and Integration
+586,Customer Support,1,Label: Customer Support
+587,Chatbot Development,0,Label: Chatbot Development and Integration
+588,Client Conversations,3,Label: Customer Engagement
+589,Conversational Platform,7,Label: Conversational Support
+590,Bot Building,8,Label: Conversational Bot Development
+591,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+592,Chatbot Development,0,Label: Chatbot Development and Integration
+593,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+594,Application Development,4,Label: Application Development and Testing
+595,Application Development,4,Label: Application Development and Testing
+596,AI Basic Training,8,Label: Conversational Bot Development
+597,Development and Building,4,Label: Application Development and Testing
+598,Conversational AI Development,7,Label: Conversational Support
+599,Chatbot Development,0,Label: Chatbot Development and Integration
+600,Chatbot Development,0,Label: Chatbot Development and Integration
+601,Debugging and Testing,4,Label: Application Development and Testing
+602,Chatbot Development,0,Label: Chatbot Development and Integration
+603,Chatbot Development,0,Label: Chatbot Development and Integration
+604,Chatbot Development,0,Label: Chatbot Development and Integration
+605,Chatbot Development,0,Label: Chatbot Development and Integration
+606,Chatbot Development,0,Label: Chatbot Development and Integration
+607,Virtual Assistant Development and Integration,4,Label: Application Development and Testing
+608,Chatbot Development,0,Label: Chatbot Development and Integration
+609,Natural Language Processing Training and Development,5,Label: NLP Website Management
+610,Conversational Bot Building,8,Label: Conversational Bot Development
+611,Booking Tickets,5,Label: NLP Website Management
+612,Training Sessions,4,Label: Application Development and Testing
+613,Chatbot Development and Deployment,0,Label: Chatbot Development and Integration
+614,Chatbot Development,0,Label: Chatbot Development and Integration
+615,Bot Building,8,Label: Conversational Bot Development
+616,Chatbot Development,0,Label: Chatbot Development and Integration
+617,Bot Development,8,Label: Conversational Bot Development
+618,Chatbot Development,0,Label: Chatbot Development and Integration
+619,Chatbot Development,0,Label: Chatbot Development and Integration
+620,Design Process,4,Label: Application Development and Testing
+621,Bot Creation,8,Label: Conversational Bot Development
+622,Chatbot Development,0,Label: Chatbot Development and Integration
+623,Chatbot Development,0,Label: Chatbot Development and Integration
+624,Supply Chain Management,4,Label: Application Development and Testing
+625,Development and Interactive AI,4,Label: Application Development and Testing
+626,User Input,5,Label: NLP Website Management
+627,Chatbot Development,0,Label: Chatbot Development and Integration
+628,Customer Interaction,3,Label: Customer Engagement
+629,Chatbot Development,0,Label: Chatbot Development and Integration
+630,Customer Service,2,Label: Customer Service Inquiries
+631,Customer Service,2,Label: Customer Service Inquiries
+632,Chatbot or Virtual Assistant,0,Label: Chatbot Development and Integration
+633,Natural Language Processing (NLP),5,Label: NLP Website Management
+634,Conversational Bot Building,8,Label: Conversational Bot Development
+635,Natural Language Processing,5,Label: NLP Website Management
+636,Development,4,Label: Application Development and Testing
+637,Chatbot Development,0,Label: Chatbot Development and Integration
+638,Bot Training,8,Label: Conversational Bot Development
+639,Chatbot Development,0,Label: Chatbot Development and Integration
+640,Chatbot Development and Interactions,0,Label: Chatbot Development and Integration
+641,Chatbot Development,0,Label: Chatbot Development and Integration
+642,Customer Service,2,Label: Customer Service Inquiries
+643,Ticket Resolution,5,Label: NLP Website Management
+644,Customer Support,1,Label: Customer Support
+645,IT Support,1,Label: Customer Support
+646,Sales Leads,6,Label: Sales Lead Generation
+647,Issue Resolution,4,Label: Application Development and Testing
+648," ""Customer Support"",",1,Label: Customer Support
+649,Problem Solving,4,Label: Application Development and Testing
+650,Issue Resolution,4,Label: Application Development and Testing
+651,Customer Support,1,Label: Customer Support
+652,Sales Calls,6,Label: Sales Lead Generation
+653,Product Management,4,Label: Application Development and Testing
+654,Sales Process,6,Label: Sales Lead Generation
+655,Sales Calls,6,Label: Sales Lead Generation
+656,Project Management,4,Label: Application Development and Testing
+657,Sales and Marketing,6,Label: Sales Lead Generation
+658,Sales Process,6,Label: Sales Lead Generation
+659,Prospect Communication,4,Label: Application Development and Testing
+660,Sales Leads,6,Label: Sales Lead Generation
+661,Writing Personalized Emails,5,Label: NLP Website Management
+662,Outreach,5,Label: NLP Website Management
+663,Email Writing,5,Label: NLP Website Management
+664,Prospecting and Messaging,5,Label: NLP Website Management
+665," ""Sales Leads"",",6,Label: Sales Lead Generation
+666,Workflow Processes,4,Label: Application Development and Testing
+667,Customer Feedback Analysis,3,Label: Customer Engagement
+668,Customer Service,2,Label: Customer Service Inquiries
+669,Customer Service,2,Label: Customer Service Inquiries
+670," ""Customer Communications"",",3,Label: Customer Engagement
+671,Account Management,4,Label: Application Development and Testing
+672,Customer Service,2,Label: Customer Service Inquiries
+673,Customer Service and Sales Process,3,Label: Customer Engagement
+674,Customer Support,1,Label: Customer Support
+675,Customer Service,2,Label: Customer Service Inquiries
+676," ""Customer Communications"",",3,Label: Customer Engagement
+677,Facility Performance Data Collection,4,Label: Application Development and Testing
+678,Customer Service,2,Label: Customer Service Inquiries
+679,Contact Center Automation,3,Label: Customer Engagement
+680,Customer Service/Support,1,Label: Customer Support
+681,Customer Support and Sales,3,Label: Customer Engagement
+682,Customer Support,1,Label: Customer Support
+683,Customer Support,1,Label: Customer Support
+684,Customer Service,2,Label: Customer Service Inquiries
+685,Customer Support,1,Label: Customer Support
+686,Customer Service,2,Label: Customer Service Inquiries
+687,Customer Support,1,Label: Customer Support
+688,Customer Support,1,Label: Customer Support
+689,Customer Service,2,Label: Customer Service Inquiries
+690,Chatbot Management,0,Label: Chatbot Development and Integration
+691," ""Customer Service Operations"",",3,Label: Customer Engagement
+692,Customer Service Operations,3,Label: Customer Engagement
+693,Customer Service,2,Label: Customer Service Inquiries
+694,Customer Support,1,Label: Customer Support
+695," ""Customer Communication"",",3,Label: Customer Engagement
+696,Customer Service,2,Label: Customer Service Inquiries
+697,Customer Service,2,Label: Customer Service Inquiries
+698,Customer Communication,3,Label: Customer Engagement
+699,Product Development,4,Label: Application Development and Testing
+700,Customer Service,2,Label: Customer Service Inquiries
+701,Customer Service Support,1,Label: Customer Support
+702,Software Development and Deployment,4,Label: Application Development and Testing
+703,Customer Service and Self-Service,3,Label: Customer Engagement
+704,Customer Support,1,Label: Customer Support
+705,Customer Support,1,Label: Customer Support
+706,Customer Support,1,Label: Customer Support
+707,Customer Service Operations,3,Label: Customer Engagement
+708," ""Customer Experience"",",3,Label: Customer Engagement
+709,Customer Experience,2,Label: Customer Service Inquiries
+710,Customer Service,2,Label: Customer Service Inquiries
+711,Customer Service,2,Label: Customer Service Inquiries
+712,Chatbot Management,0,Label: Chatbot Development and Integration
+713,Sales Process,6,Label: Sales Lead Generation
+714,Customer Service and Support,1,Label: Customer Support
+715,Contact Center Operations,3,Label: Customer Engagement
+716,Customer Service,2,Label: Customer Service Inquiries
+717,Customer Service,2,Label: Customer Service Inquiries
+718,Customer Service,2,Label: Customer Service Inquiries
+719,Chatbot Support,7,Label: Conversational Support
+720,Chatbot Development,0,Label: Chatbot Development and Integration
+721," ""Customer Service"",",3,Label: Customer Engagement
+722,Customer Service,2,Label: Customer Service Inquiries
+723,Customer Service,2,Label: Customer Service Inquiries
+724,Customer Support,1,Label: Customer Support
+725,Customer Support,1,Label: Customer Support
+726,Chatbot Development,0,Label: Chatbot Development and Integration
+727,Customer Service,2,Label: Customer Service Inquiries
+728,Bot Setup and Issue Resolution,8,Label: Conversational Bot Development
+729,Lead Generation and Management,9,Label: Lead Generation and Qualification
+730," ""Sales Leads"",",6,Label: Sales Lead Generation
+731,Sales Leads,6,Label: Sales Lead Generation

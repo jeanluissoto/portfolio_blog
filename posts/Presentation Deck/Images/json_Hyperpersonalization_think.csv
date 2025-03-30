@@ -1,0 +1,733 @@
+,json_Hyperpersonalization_think,Topic,Hyperpersonalization_think_topics
+0,User mentions personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+1,User has experienced personalized interactions with customers,1,Label: Personalized Interactions with Customers
+2,Customizable chatbots allow for personalized interactions,2,Label: Customizable Chatbot Responses
+3,User mentions ability to personalize few chat features,2,Label: Customizable Chatbot Responses
+4,Ability to communicate with customers through chatbox and visitor notifications,4,Label: Personalized Conversational Interactions
+5,User mentions ability to customize chatbot responses based on their brand's tone and style,2,Label: Customizable Chatbot Responses
+6, Chatbot tailors responses based on user input providing personalized experiences,8,Label: Personalized Chatbot Responses
+7,User wants to learn more about AI elements to customize responses for their business,3,Label: Personalized Response Automation
+8,User mentions personalized interactions with customers,1,Label: Personalized Interactions with Customers
+9,User mentions customizable chatbot responses,2,Label: Customizable Chatbot Responses
+10,Personalized interactions with customers through chat functionality,4,Label: Personalized Conversational Interactions
+11,User mentions that the tool is able to answer customer questions without interference,0,Label: Personalization Tool for Non-Technical Users
+12,Personalized interactions with customers mentioned,1,Label: Personalized Interactions with Customers
+13,User mentions that the tool provides personalized responses based on their previous chat history.,2,Label: Customizable Chatbot Responses
+14,User appreciates personalized interactions with AI,1,Label: Personalized Interactions with Customers
+15,User mentions the app's ability to personalize communication based on their preferences,1,Label: Personalized Interactions with Customers
+16,User has found ways to customize the tool for their specific needs,0,Label: Personalization Tool for Non-Technical Users
+17,User mentions ability to personalize interactions based on client needs,1,Label: Personalized Interactions with Customers
+18,No detail,9,"Label: ""No Detail"""
+19,User mentions personalized communication with the business via chat,1,Label: Personalized Interactions with Customers
+20,Customizable chatbot features allow for personalized interactions,2,Label: Customizable Chatbot Responses
+21,User mentions customization of chatbot based on their daily usage and integration with other platforms,2,Label: Customizable Chatbot Responses
+22,Customers receive personalized responses based on their queries,3,Label: Personalized Response Automation
+23,Customers can train Lyro to answer questions and provide personalized responses,3,Label: Personalized Response Automation
+24,No personalized interactions mentioned,7,Label: Personalized Interactions
+25,"User mentions ready answers that are one word away, implying some personalization",0,Label: Personalization Tool for Non-Technical Users
+26,No detail,9,"Label: ""No Detail"""
+27,Personalized interactions with customers through chatbot AI,8,Label: Personalized Chatbot Responses
+28,Chatbot provides personalized responses based on user input,8,Label: Personalized Chatbot Responses
+29,Customizable default messages with emojis allow for some personalization,4,Label: Personalized Conversational Interactions
+30,Chatbot customization options available,2,Label: Customizable Chatbot Responses
+31,User mentions personalized interactions with customers,1,Label: Personalized Interactions with Customers
+32,No detail,9,"Label: ""No Detail"""
+33,Customization options are available and user has mentioned specific design needs,0,Label: Personalization Tool for Non-Technical Users
+34,User highlights tool's intuitive interface and personalized interactions,0,Label: Personalization Tool for Non-Technical Users
+35,Offers personalized messaging and chatbot customization options,2,Label: Customizable Chatbot Responses
+36,User mentions the tool's ability to personalize responses based on their previous interactions,1,Label: Personalized Interactions with Customers
+37,User mentions personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+38,"User mentions the ability to communicate with customers in their preferred language, demonstrating a high level of personalization.",1,Label: Personalized Interactions with Customers
+39,Chatbot responses are tailored to individual customers based on their previous interactions,8,Label: Personalized Chatbot Responses
+40,User mentions personalized interactions with potential customers,1,Label: Personalized Interactions with Customers
+41,User mentions that the tool helps them solve client queries more easily.,0,Label: Personalization Tool for Non-Technical Users
+42,Personalized responses based on customer inquiries,3,Label: Personalized Response Automation
+43,No personalized interactions mentioned,7,Label: Personalized Interactions
+44,User mentions personalized interactions with the AI chat,1,Label: Personalized Interactions with Customers
+45,"User mentions ability to create chatbot without coding, indicating some level of personalization",2,Label: Customizable Chatbot Responses
+46,Chatbot uses natural language processing to understand and respond to customer queries,8,Label: Personalized Chatbot Responses
+47,"User mentions the chatbot feels like they are speaking with a live agent, indicating some level of personalization.",1,Label: Personalized Interactions with Customers
+48,Personalized interactions with customers through chat communication,4,Label: Personalized Conversational Interactions
+49,Chatbot provides personalized responses based on user input,8,Label: Personalized Chatbot Responses
+50,Customizable chatbot responses based on business services and information provided,8,Label: Personalized Chatbot Responses
+51,User mentions personalized interactions with customers,1,Label: Personalized Interactions with Customers
+52,User highlights customizable chatbot responses tailored to individual customers,2,Label: Customizable Chatbot Responses
+53,User mentions personalized interactions with live chat support,1,Label: Personalized Interactions with Customers
+54,Customizable options and solutions offered to businesses,6,Label: Customization Workflow Solutions
+55,User has full control over chatbot's responses and can tailor them to their needs,2,Label: Customizable Chatbot Responses
+56,Personalized notifications based on user behavior,3,Label: Personalized Response Automation
+57,User mentions personalized interactions with customers,1,Label: Personalized Interactions with Customers
+58,User mentions personalized interactions with visitors,1,Label: Personalized Interactions with Customers
+59,User mentions customization of chatbot responses based on their business needs,2,Label: Customizable Chatbot Responses
+60,Chatbot system tailors responses based on customer data,8,Label: Personalized Chatbot Responses
+61,"User mentions the ability to segment contacts and export lists, showing a high level of personalization",0,Label: Personalization Tool for Non-Technical Users
+62,App appears to offer customizable responses based on user input,3,Label: Personalized Response Automation
+63,Widget customization allows for personalized experiences,6,Label: Customization Workflow Solutions
+64,User highlights ability to personalize interactions in real-time,1,Label: Personalized Interactions with Customers
+65,No personalized interactions mentioned,7,Label: Personalized Interactions
+66,"User mentions customizable canned responses and Facebook/Instagram integration, indicating some level of personalization",0,Label: Personalization Tool for Non-Technical Users
+67,User appreciates the ability to personalize interactions with clients,1,Label: Personalized Interactions with Customers
+68,Customizable responses and interactions tailored to user preferences and needs.,3,Label: Personalized Response Automation
+69,Personalized interactions with customers through chatbot,8,Label: Personalized Chatbot Responses
+70,User mentions the ability to personalize interactions through the mobile app,1,Label: Personalized Interactions with Customers
+71,No personalized interactions mentioned,7,Label: Personalized Interactions
+72,Chatbot uses natural language processing to understand and respond to user queries,8,Label: Personalized Chatbot Responses
+73,User mentions that the tool provides personalized interactions based on their previous questions and needs.,1,Label: Personalized Interactions with Customers
+74,User mentions ability to personalize interactions based on visitor behavior,1,Label: Personalized Interactions with Customers
+75,User mentions personalized interactions with lyro ai,1,Label: Personalized Interactions with Customers
+76,User mentions the ability to personalize chatbot responses based on client interactions,2,Label: Customizable Chatbot Responses
+77,Personalized interactions with clients mentioned,1,Label: Personalized Interactions with Customers
+78,Product provides personalized responses based on customer data and preferences.,3,Label: Personalized Response Automation
+79,No personalized interactions mentioned,7,Label: Personalized Interactions
+80,"User mentions the ability to have direct contact with website visitors, suggesting some level of personalization",1,Label: Personalized Interactions with Customers
+81,User mentions that chatbots recognize and respond to customers' queries,8,Label: Personalized Chatbot Responses
+82,Customizable templates and automated responses suggest high degree of personalization,3,Label: Personalized Response Automation
+83,No detail,9,"Label: ""No Detail"""
+84,Tool offers customizable chatbot responses based on user input,8,Label: Personalized Chatbot Responses
+85,App provides personalized responses based on user input,3,Label: Personalized Response Automation
+86,User appreciates customizable chatbot responses,2,Label: Customizable Chatbot Responses
+87,Chatbot provides personalized responses based on customer inputs,8,Label: Personalized Chatbot Responses
+88,Developers have listened to suggestions and continued to improve product,0,Label: Personalization Tool for Non-Technical Users
+89,Tool provides personalized responses based on user input,3,Label: Personalized Response Automation
+90,User wants to provide personalized customer service,1,Label: Personalized Interactions with Customers
+91," Chatbot uses natural language processing to understand customer needs and respond accordingly,",8,Label: Personalized Chatbot Responses
+92,User mentions ability to personalize interactions with customers,1,Label: Personalized Interactions with Customers
+93," Chatbot uses natural language processing to understand and respond to customer inquiries in a personalized manner,",8,Label: Personalized Chatbot Responses
+94,Customizable chatbot sequences and email address collection for lead segmentation and monitoring,4,Label: Personalized Conversational Interactions
+95,"User-friendly interface allows for easy customization of chat widget, enabling personalized interactions",4,Label: Personalized Conversational Interactions
+96,"User mentions ability to engage with customers in real-time, suggesting some level of personalization.",1,Label: Personalized Interactions with Customers
+97,The tool provides personalized interactions based on user feedback and requests.,3,Label: Personalized Response Automation
+98,Chatbot interactions are personalized based on user behavior,8,Label: Personalized Chatbot Responses
+99,User mentions that the tool provides personalized interactions,1,Label: Personalized Interactions with Customers
+100,No detail,9,"Label: ""No Detail"""
+101,User mentions ease of use and quick setup as positive aspects of personalization,0,Label: Personalization Tool for Non-Technical Users
+102,User mentions ability to personalize chatbot interactions based on their specific use case.,2,Label: Customizable Chatbot Responses
+103,Offers customization options tailored to small businesses,6,Label: Customization Workflow Solutions
+104,User mentions ability to personalize responses based on customer queries,1,Label: Personalized Interactions with Customers
+105,Customization options available for tailoring the chatbot to the user's needs,2,Label: Customizable Chatbot Responses
+106,Personalized interactions and tailored responses based on customer data,3,Label: Personalized Response Automation
+107,User mentions ability to customize plugin and service settings for Swedish language,0,Label: Personalization Tool for Non-Technical Users
+108,User mentions ease of use and effectiveness in personalizing interactions,0,Label: Personalization Tool for Non-Technical Users
+109,Tool provides personalized interactions based on user data,3,Label: Personalized Response Automation
+110,Customizable templates and personalized messaging for each visitor,4,Label: Personalized Conversational Interactions
+111,User mentions customization possibilities are endless,0,Label: Personalization Tool for Non-Technical Users
+112,User mentions the tool's ability to understand their needs and preferences,0,Label: Personalization Tool for Non-Technical Users
+113,No personalized interactions mentioned,7,Label: Personalized Interactions
+114,User mentions personalized interactions with clients outside of regular business hours.,1,Label: Personalized Interactions with Customers
+115,User mentions ability to personalize proposals based on customer interactions,1,Label: Personalized Interactions with Customers
+116," Customizable greetings and responses tailored to individual visitors,",3,Label: Personalized Response Automation
+117,Personalized responses and automated lead qualification based on customer interactions,3,Label: Personalized Response Automation
+118," User has configured the bot to respond to specific triggers and actions based on customer inputs,",5,Label: Personalized Chatbot Development
+119,User mentions that the tool helps them build exactly what they want,0,Label: Personalization Tool for Non-Technical Users
+120,Customizable messages and responses based on visitor behavior,3,Label: Personalized Response Automation
+121,"User mentions the tool's ability to automatically respond to customer messages, indicating some level of personalization.",1,Label: Personalized Interactions with Customers
+122,User mentions the ability to personalize responses based on their brand voice and tone,2,Label: Customizable Chatbot Responses
+123,No personalization aspects mentioned,7,Label: Personalized Interactions
+124,User mentions customized responses based on their needs,3,Label: Personalized Response Automation
+125,User mentions personalized chatbot responses,2,Label: Customizable Chatbot Responses
+126,No detail,9,"Label: ""No Detail"""
+127,No personalized interactions mentioned,7,Label: Personalized Interactions
+128,Customizable chatbot responses based on visitor data,8,Label: Personalized Chatbot Responses
+129,No personalized interactions mentioned,7,Label: Personalized Interactions
+130,User has mentioned customization options for chatbot responses,2,Label: Customizable Chatbot Responses
+131," Customizable pre-chat surveys and AI assistant help personalize interactions,",4,Label: Personalized Conversational Interactions
+132,User mentions interest in personalized interactions,1,Label: Personalized Interactions with Customers
+133,User mentions customization based on content security policy and customer support,0,Label: Personalization Tool for Non-Technical Users
+134,User mentions personalized interactions with customers,1,Label: Personalized Interactions with Customers
+135,Customizable chatbot paths and photo integration allow for personalized interactions,2,Label: Customizable Chatbot Responses
+136,Reviewer mentions ability to personalize interactions with website visitors through live chat feature.,4,Label: Personalized Conversational Interactions
+137,User mentions ability to customize chatbot responses based on client's questions,2,Label: Customizable Chatbot Responses
+138,Platform provides personalized interactions based on user data,3,Label: Personalized Response Automation
+139,Customizable AI chatbot provides personalized responses based on user input,8,Label: Personalized Chatbot Responses
+140,Customized chat platform tailored to volunteer management needs,4,Label: Personalized Conversational Interactions
+141,Customizable look and feel of chat on front-end sets this apart,4,Label: Personalized Conversational Interactions
+142,User mentions personalized interactions with clients through chatbot and capturing leads.,1,Label: Personalized Interactions with Customers
+143,User mentions that the tool provides personalized interactions with customers,1,Label: Personalized Interactions with Customers
+144,Customizable automation allows for tailored experiences,6,Label: Customization Workflow Solutions
+145,No personalization aspects mentioned,7,Label: Personalized Interactions
+146,No personalized interactions mentioned,7,Label: Personalized Interactions
+147,User mentions customization options for chatbot FAQs,2,Label: Customizable Chatbot Responses
+148,User appreciates customizable experiences across 200+ clients and mult-org setups.,0,Label: Personalization Tool for Non-Technical Users
+149,Personalized interactions with users through UX/UI appeal,3,Label: Personalized Response Automation
+150,Ai suggests articles and creates flows for customers to find answers on their own,3,Label: Personalized Response Automation
+151,Representatives take time to understand business needs and implement solutions,6,Label: Customization Workflow Solutions
+152,No personalized interactions mentioned,7,Label: Personalized Interactions
+153,No personalized interactions mentioned,7,Label: Personalized Interactions
+154,Product provides personalized experiences based on user input and feedback,3,Label: Personalized Response Automation
+155,Tool provides personalized answers and assistance based on customer data,3,Label: Personalized Response Automation
+156,User mentions personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+157,"Users have reported personalized interactions with the AI assistant, tailoring to their needs and preferences.",1,Label: Personalized Interactions with Customers
+158,Customizable workflows and fields allow for tailored experiences,6,Label: Customization Workflow Solutions
+159,Customized dashboard and reporting features allow for tailored insights and tracking,6,Label: Customization Workflow Solutions
+160,User mentions the ability to personalize interactions with customers through the use of an autonomous agent,1,Label: Personalized Interactions with Customers
+161,User mentions that Assist is learning and improving over time,0,Label: Personalization Tool for Non-Technical Users
+162,Team provides personalized support and care,6,Label: Customization Workflow Solutions
+163,Customized responses based on user queries,3,Label: Personalized Response Automation
+164,User demonstrates understanding of personalized interactions,1,Label: Personalized Interactions with Customers
+165,User mentions personalized interactions with the team,1,Label: Personalized Interactions with Customers
+166,"User mentions that the tool helps contain easy-to-resolve customer inquiries, freeing up more time for agents to handle more complex issues.",0,Label: Personalization Tool for Non-Technical Users
+167,"Personalized interactions mentioned, such as solving customer problems without needing to contact a person",4,Label: Personalized Conversational Interactions
+168,User wants customizable dashboard and bold/italic text options,0,Label: Personalization Tool for Non-Technical Users
+169,No detail,9,"Label: ""No Detail"""
+170,No detail,9,"Label: ""No Detail"""
+171,Customers can ask specific questions and receive tailored responses,3,Label: Personalized Response Automation
+172,User has mentioned the ability to personalize interactions based on data received.,1,Label: Personalized Interactions with Customers
+173,Customized intake points and FAQs for specific data,3,Label: Personalized Response Automation
+174,Tool personalizes interactions based on client feedback and innovation,3,Label: Personalized Response Automation
+175,User mentions the team's helpfulness and willingness to collaborate and develop creative solutions,0,Label: Personalization Tool for Non-Technical Users
+176,Customizable conversational flows and API integrations allow for tailored experiences,4,Label: Personalized Conversational Interactions
+177,Personalized interactions with customers through AI-powered chatbot,8,Label: Personalized Chatbot Responses
+178,Customized implementation based on user's needs and requirements,6,Label: Customization Workflow Solutions
+179,No personalization aspects mentioned,7,Label: Personalized Interactions
+180,User mentions the ability of GenAI to differentiate between simple and complex queries and provide appropriate responses.,0,Label: Personalization Tool for Non-Technical Users
+181,Personalized communication efforts for each customer based on collected knowledge,4,Label: Personalized Conversational Interactions
+182,Customized use cases and NLP for personalized engagement,4,Label: Personalized Conversational Interactions
+183,"User mentions the ability to target a broader audience through multiple channels, indicating some level of personalization",0,Label: Personalization Tool for Non-Technical Users
+184," Personalized messages and use case ideas are generated based on customer data,",3,Label: Personalized Response Automation
+185,User highlights ability to craft personalized customer success strategies,1,Label: Personalized Interactions with Customers
+186,Customization based on attendee behavior and engagement data,3,Label: Personalized Response Automation
+187,"Personalized messages and updates are effortlessly sent to attendees, making them feel valued and informed.",4,Label: Personalized Conversational Interactions
+188,"Tailored features upgrade workflows, leading to seamless client experiences.",6,Label: Customization Workflow Solutions
+189,User mentions ability to configure multiple use cases across industries and on-the-fly data usage capabilities.,0,Label: Personalization Tool for Non-Technical Users
+190,Personalized interactions and language preferences mentioned,4,Label: Personalized Conversational Interactions
+191,Customized conversational AI tailored to client needs,4,Label: Personalized Conversational Interactions
+192,Customers receive personalized responses based on their queries,3,Label: Personalized Response Automation
+193,"User highlights the hybrid agent assist feature as their favorite, which combines AI and human touch for creating AI chatbots.",2,Label: Customizable Chatbot Responses
+194,Advanced messaging and automation capabilities enable personalized customer interactions,4,Label: Personalized Conversational Interactions
+195,User mentions ability to create complex conversational solutions with personalized interactions,4,Label: Personalized Conversational Interactions
+196,User mentions the ability to personalize marketing messages across different channels,1,Label: Personalized Interactions with Customers
+197,User values customized content and personalized support,1,Label: Personalized Interactions with Customers
+198,Advanced features allow for tailored experiences based on customer data and preferences.,6,Label: Customization Workflow Solutions
+199,"Platform offers nuanced data-driven communication capabilities, enabling tailored messages and visual content that resonates with the target audience.",4,Label: Personalized Conversational Interactions
+200,User has demonstrated ability to create personalized customer journeys with interactive elements and tailored offers.,1,Label: Personalized Interactions with Customers
+201,Customization options allow for tailored communication and engagement strategies,4,Label: Personalized Conversational Interactions
+202,User mentions ability to design conversational flows and train bots with accurate information.,5,Label: Personalized Chatbot Development
+203,Customers receive personalized experiences based on real-time data,3,Label: Personalized Response Automation
+204,Customized messages and continued interaction features demonstrate personalized approach,4,Label: Personalized Conversational Interactions
+205,User mentions customizable communication templates and ability to tailor messages to specific audiences,0,Label: Personalization Tool for Non-Technical Users
+206," User mentions ability to customize platform according to business objectives,",0,Label: Personalization Tool for Non-Technical Users
+207,Customized features for client interactions,6,Label: Customization Workflow Solutions
+208,Platform offers personalized interactions based on user data and preferences,3,Label: Personalized Response Automation
+209,Personalized conversations and interactions with event attendees and stakeholders,4,Label: Personalized Conversational Interactions
+210,Customization templates offer additional options,6,Label: Customization Workflow Solutions
+211,Customization of testing scripts based on user needs and preferences,6,Label: Customization Workflow Solutions
+212,"Training process was easy to grasp, allowing for more personalized conversational AI efforts",4,Label: Personalized Conversational Interactions
+213,Customized responses based on client preferences and design choices,3,Label: Personalized Response Automation
+214,"User highlights the ability to tailor conversations to specific clients or situations, demonstrating a high level of personalization.",4,Label: Personalized Conversational Interactions
+215,User mentions the ability to create customized visual images using real-time data,0,Label: Personalization Tool for Non-Technical Users
+216,Specialized features cater to nuanced needs of QA testing environments,6,Label: Customization Workflow Solutions
+217,Interactions are personalized based on customer information and preferences,3,Label: Personalized Response Automation
+218,Personalized conversations for client needs,4,Label: Personalized Conversational Interactions
+219,Customizable workflows and insights into customer interactions allow for tailored experiences,6,Label: Customization Workflow Solutions
+220,Algorithm analyzes attendee profiles and interests to facilitate meaningful connections,4,Label: Personalized Conversational Interactions
+221,Customization options allow for tailoring platform to specific business needs,6,Label: Customization Workflow Solutions
+222,User mentions customizable workflows and tailored communication strategies,4,Label: Personalized Conversational Interactions
+223," User has expressed interest in customizing the tool to their specific needs,",0,Label: Personalization Tool for Non-Technical Users
+224,"User mentions the ability to create new product portfolios and integrate with other applications, indicating some level of personalization.",0,Label: Personalization Tool for Non-Technical Users
+225,Customizable workflows and integrations allow for tailored experiences,6,Label: Customization Workflow Solutions
+226,Customization options available to fit organization's needs,6,Label: Customization Workflow Solutions
+227,User recognizes the potential for personalized interactions,1,Label: Personalized Interactions with Customers
+228,Custom integration components built for legacy platforms and age-old technologies,6,Label: Customization Workflow Solutions
+229,User mentions customizable training modules and videos for self-training,0,Label: Personalization Tool for Non-Technical Users
+230,Toolkit offers personalized conversational solutions based on customer data,4,Label: Personalized Conversational Interactions
+231,"The tool offers some personalization capabilities, but the reviewer suggests that more templated solutions should be available.",0,Label: Personalization Tool for Non-Technical Users
+232,User mentions desire for more personalized interactions,1,Label: Personalized Interactions with Customers
+233,Product provides personalized interactions based on user data,3,Label: Personalized Response Automation
+234,User highlights ability to customize messages for customers,1,Label: Personalized Interactions with Customers
+235,No personalized interactions mentioned,7,Label: Personalized Interactions
+236,User mentions the ability to customize chatbot responses based on user input,2,Label: Customizable Chatbot Responses
+237,User mentions ability to customize chatbot responses based on their brand's tone and style.,2,Label: Customizable Chatbot Responses
+238,No detail,9,"Label: ""No Detail"""
+239,User mentions ability to create sophisticated bots with ease,5,Label: Personalized Chatbot Development
+240,No personalization aspects mentioned,7,Label: Personalized Interactions
+241,"User mentions ability to design conversational flows with drag-and-drop functionality, indicating high degree of personalization.",4,Label: Personalized Conversational Interactions
+242,User highlights the tool's ability to create customized bots that can engage with customers in a personalized manner.,5,Label: Personalized Chatbot Development
+243,User was able to customize chatbot's responses and actions through a simple interface,2,Label: Customizable Chatbot Responses
+244,User mentions ability to customize chatbot responses based on user questions,2,Label: Customizable Chatbot Responses
+245,No personalized interactions mentioned,7,Label: Personalized Interactions
+246,User mentions ability to customize bot responses based on their needs,5,Label: Personalized Chatbot Development
+247,No detail,9,"Label: ""No Detail"""
+248,User mentions the ability to personalize responses based on user input,1,Label: Personalized Interactions with Customers
+249,User mentions ability to integrate data from various services and tailor chatbot to their needs.,2,Label: Customizable Chatbot Responses
+250,User mentions that the tool provides customized chatbot solutions for their business,2,Label: Customizable Chatbot Responses
+251,"User mentions ability to use their own code and APIs, indicating high level of customization",0,Label: Personalization Tool for Non-Technical Users
+252,Personalized learning experience based on user's input,3,Label: Personalized Response Automation
+253," Custom coding and integration capabilities allow for tailored experiences,",6,Label: Customization Workflow Solutions
+254,"User mentions ability to create chatbot with simple rules, indicating some degree of personalization",2,Label: Customizable Chatbot Responses
+255,No personalized interactions mentioned,7,Label: Personalized Interactions
+256,No detail,9,"Label: ""No Detail"""
+257,"User mentions that the tool provides a lot of integrations with different platforms, allowing for personalized experiences.",0,Label: Personalization Tool for Non-Technical Users
+258,No personalized interactions mentioned,7,Label: Personalized Interactions
+259,User highlights chatbot's customizable nature and ability to tailor experiences according to specific needs,2,Label: Customizable Chatbot Responses
+260,User mentions ability to customize chatbot responses based on their brand's tone and style,2,Label: Customizable Chatbot Responses
+261,User mentions that the tool allows for customized interactions and personalized responses,1,Label: Personalized Interactions with Customers
+262,No detail,9,"Label: ""No Detail"""
+263,User wants the AI to be able to customize responses based on their preferences and previous interactions.,3,Label: Personalized Response Automation
+264,User mentions ability to train the bot with their own data and customize responses.,5,Label: Personalized Chatbot Development
+265,User has mentioned personalized interactions with the chatbot.,2,Label: Customizable Chatbot Responses
+266," User recognizes the tool's ability to adapt to different use cases and personalize interactions based on user preferences,",0,Label: Personalization Tool for Non-Technical Users
+267,No detail,9,"Label: ""No Detail"""
+268,User has configured custom interactions and behaviors beyond basic interactions,1,Label: Personalized Interactions with Customers
+269,No detail,9,"Label: ""No Detail"""
+270,User highlights platform's ability to accommodate diverse needs and preferences through customizable integrations and AI services,0,Label: Personalization Tool for Non-Technical Users
+271,No personalized interactions mentioned,7,Label: Personalized Interactions
+272,User mentions that the tool provides personalized interactions and adapts to their preferences,1,Label: Personalized Interactions with Customers
+273,"User mentions the ability to create custom workflows and bots, indicating a high level of personalization.",5,Label: Personalized Chatbot Development
+274,"User has full control over customizing bot's knowledge base, including changing document names and adding new ones.",5,Label: Personalized Chatbot Development
+275,Allows for customized workflows and integration with external systems,6,Label: Customization Workflow Solutions
+276,User mentions personalized interactions with AI assistant,1,Label: Personalized Interactions with Customers
+277,"User mentions ability to create custom chatbot flows with variables and execute code directly in chat sequence, indicating high degree of personalization.",2,Label: Customizable Chatbot Responses
+278,User demonstrates ability to customize and create unique bot experiences,5,Label: Personalized Chatbot Development
+279,No personalized interactions mentioned,7,Label: Personalized Interactions
+280,"User highlights several personalized features such as knowledge base learning, flow management, and variable data collection.",0,Label: Personalization Tool for Non-Technical Users
+281,User mentions liking the ability to customize the bot for their needs,5,Label: Personalized Chatbot Development
+282,User mentions the ability to personalize services in a natural way,1,Label: Personalized Interactions with Customers
+283,User mentions the tool's ability to create customized chatbot experiences based on their needs.,2,Label: Customizable Chatbot Responses
+284,No detail,9,"Label: ""No Detail"""
+285,"User mentions the tool's ability to build something complicated and helpful, suggesting some degree of personalization.",0,Label: Personalization Tool for Non-Technical Users
+286,User mentions customization and tailoring the chatbot to their needs,2,Label: Customizable Chatbot Responses
+287,"User mentions the ability to integrate different OpenAI models, indicating a high level of personalization.",0,Label: Personalization Tool for Non-Technical Users
+288," User mentions the ability to personalize the bot's responses based on the conversation,",2,Label: Customizable Chatbot Responses
+289,User highlights the tool's ability to personalize lead conversations based on customer support interactions.,4,Label: Personalized Conversational Interactions
+290,User mentions ability to customize chatbot's personality and tone,2,Label: Customizable Chatbot Responses
+291,User wants to customize chatbot with their branding and make it more attractive,2,Label: Customizable Chatbot Responses
+292,No personalized interactions mentioned,7,Label: Personalized Interactions
+293,User mentions the ability to create customized chatbot experiences through the platform's advanced features.,2,Label: Customizable Chatbot Responses
+294,User wants customizable bot operations with node addition and linking capabilities,5,Label: Personalized Chatbot Development
+295,User mentions ease of use and customization possibilities,0,Label: Personalization Tool for Non-Technical Users
+296,"Platform provides easy-to-follow YouTube tutorials and weekly Discord streams for developers and non-coders alike, allowing for personalized learning experiences.",4,Label: Personalized Conversational Interactions
+297,"User mentions that the tool provides accurate responses 60% of the time, with potential for improvement.",0,Label: Personalization Tool for Non-Technical Users
+298,"User has created custom bots for historical characters and fictional characters, allowing students to interact with them.",5,Label: Personalized Chatbot Development
+299,User mentions customization of bot conversations based on their preferences,2,Label: Customizable Chatbot Responses
+300,"User highlights the tool's ability to create custom conversational flows and support multiple languages, including Arabic.",4,Label: Personalized Conversational Interactions
+301,Allows for customized coding options and integration with SaaS,6,Label: Customization Workflow Solutions
+302,User mentions ability to create variety of bots for multiple clients,5,Label: Personalized Chatbot Development
+303,User has full control over their AI bot's development and customization,5,Label: Personalized Chatbot Development
+304,User mentions the platform's ability to provide customizable solutions based on their needs,0,Label: Personalization Tool for Non-Technical Users
+305,User has demonstrated ability to customize and personalize the chatbot's responses,2,Label: Customizable Chatbot Responses
+306,No personalized interactions mentioned,7,Label: Personalized Interactions
+307,User mentions personalized interactions with customer service team,1,Label: Personalized Interactions with Customers
+308,Customized designs for chatbox and buttons options to attach links,4,Label: Personalized Conversational Interactions
+309,User mentions ability to customize website without needing a real person present,0,Label: Personalization Tool for Non-Technical Users
+310,"Customizable bot creation based on knowledge base articles, allowing for personalized responses.",5,Label: Personalized Chatbot Development
+311,"Customers can interact with chatbot in various ways, including natural language processing and adaptive responses.",8,Label: Personalized Chatbot Responses
+312,User mentions ability to customize bot without chat functionality,5,Label: Personalized Chatbot Development
+313,User wants more personalized interactions,1,Label: Personalized Interactions with Customers
+314,User mentions the ability to customize menus on Telegram,0,Label: Personalization Tool for Non-Technical Users
+315,User mentions ability to create custom bots for different social media platforms,5,Label: Personalized Chatbot Development
+316,User mentions helpful guides and feature-rich experience,0,Label: Personalization Tool for Non-Technical Users
+317,User mentions AI assistant helps build chatbot and provides easy documentation for customer support.,2,Label: Customizable Chatbot Responses
+318,User wants to customize multiple-choice inputs and disable normal input,0,Label: Personalization Tool for Non-Technical Users
+319,No personalized interactions mentioned,7,Label: Personalized Interactions
+320,Custom coding and web application integration allows for highly personalized chatbot experiences,2,Label: Customizable Chatbot Responses
+321,User mentions personalized interactions with the bot,1,Label: Personalized Interactions with Customers
+322,User wants more control over knowledge base answers,0,Label: Personalization Tool for Non-Technical Users
+323,"User has expressed interest in creating custom chat experiences using the bot through a mobile app, indicating a desire for personalization.",2,Label: Customizable Chatbot Responses
+324,No personalized interactions mentioned,7,Label: Personalized Interactions
+325,No personalized interactions mentioned,7,Label: Personalized Interactions
+326,User mentions personalized interactions with customers through WhatsApp bot,1,Label: Personalized Interactions with Customers
+327,"User mentions the tool's ability to create bots in multiple languages, indicating a high level of personalization.",5,Label: Personalized Chatbot Development
+328,"User mentions that the SDK is still in development mode, but they were able to develop a restaurant ordering bot easily and save time, cost, and resources.",5,Label: Personalized Chatbot Development
+329,User wants to create a chatbot tailored to their school website,2,Label: Customizable Chatbot Responses
+330,User mentions the ability to customize the chatbot's responses based on their business needs,2,Label: Customizable Chatbot Responses
+331,Tool provides personalized responses based on user input,3,Label: Personalized Response Automation
+332,No personalized interactions mentioned,7,Label: Personalized Interactions
+333,User mentions need for personalized bot to answer questions on certain topics,5,Label: Personalized Chatbot Development
+334,User mentions ease of use and ability to connect data without coding,0,Label: Personalization Tool for Non-Technical Users
+335,Customizable product walkthroughs and AI chatbot responses tailored to individual users.,3,Label: Personalized Response Automation
+336,Chatbot uses natural language processing to understand customer queries and respond accordingly,8,Label: Personalized Chatbot Responses
+337,No detail,9,"Label: ""No Detail"""
+338,Tool provides personalized interactions based on client information gathered in single platform,3,Label: Personalized Response Automation
+339,Customizable responses based on user input,3,Label: Personalized Response Automation
+340,User mentions ability to train chatbot for specific needs,2,Label: Customizable Chatbot Responses
+341,User mentions ability to customize and achieve goals,0,Label: Personalization Tool for Non-Technical Users
+342,Customers receive personalized responses based on their queries,3,Label: Personalized Response Automation
+343,User mentions customization of chatbot responses based on their questions,2,Label: Customizable Chatbot Responses
+344,Customization options and workflow creation allow for tailored experiences,6,Label: Customization Workflow Solutions
+345,User mentions using saved replies and macros to personalize interactions,1,Label: Personalized Interactions with Customers
+346,Tool offers personalized experiences based on user behavior and preferences,3,Label: Personalized Response Automation
+347,Customizable chatbot responses and filtering options for customer issues,8,Label: Personalized Chatbot Responses
+348,Customers receive personalized in-app support based on their preferences and previous interactions,3,Label: Personalized Response Automation
+349,User mentions that the tool provides personalized interactions with customers,1,Label: Personalized Interactions with Customers
+350,Customized interactions and solutions based on customer data and preferences.,3,Label: Personalized Response Automation
+351,Tool provides personalized responses based on customer data,3,Label: Personalized Response Automation
+352,Customizable workflows and product team integration,6,Label: Customization Workflow Solutions
+353,User highlights customization options and integration with third-party tools,0,Label: Personalization Tool for Non-Technical Users
+354,No personalized interactions or recommendations mentioned,7,Label: Personalized Interactions
+355,User finds chatbot easy to use and navigate,2,Label: Customizable Chatbot Responses
+356,Customers receive personalized support based on their previous interactions,3,Label: Personalized Response Automation
+357,User has the ability to customize the app based on their needs,0,Label: Personalization Tool for Non-Technical Users
+358,User mentions customization options and ease of communication with support team,0,Label: Personalization Tool for Non-Technical Users
+359,Tool provides personalized responses based on customer input,3,Label: Personalized Response Automation
+360,Customizable responses and workflows tailored to our needs,6,Label: Customization Workflow Solutions
+361,Product provides customizable chatbot responses based on user input.,8,Label: Personalized Chatbot Responses
+362,"User segments customers based on their behavior and preferences, providing tailored support.",3,Label: Personalized Response Automation
+363,Customized responses based on FAQs and previous interactions,3,Label: Personalized Response Automation
+364,User mentions ability to personalize conversations based on customer needs,1,Label: Personalized Interactions with Customers
+365,Interactive chatbot provides personalized answers to patient questions,8,Label: Personalized Chatbot Responses
+366,Customizable email templates and A/B testing capabilities allow for personalized campaigns,6,Label: Customization Workflow Solutions
+367,No detail,9,"Label: ""No Detail"""
+368,Personalized interactions and adaptive responses based on user data and feedback.,3,Label: Personalized Response Automation
+369,User mentions that the tool provides personalized interactions based on their preferences,1,Label: Personalized Interactions with Customers
+370,No detail,9,"Label: ""No Detail"""
+371,Chatbot uses natural language processing to understand and respond to customer queries in a personalized manner,8,Label: Personalized Chatbot Responses
+372,No detail,9,"Label: ""No Detail"""
+373,Customizable personality traits and knowledge bases for chatbot,2,Label: Customizable Chatbot Responses
+374,"User wants personalized virtual assistance for healthcare-related tasks, such as making appointments and answering dental-specific questions.",1,Label: Personalized Interactions with Customers
+375,Personalized responses and advice provided based on user input.,3,Label: Personalized Response Automation
+376,"User mentions the tool provides clear instructions and can web scrape and AI search, indicating some level of personalization",0,Label: Personalization Tool for Non-Technical Users
+377,Customizable chatbot responses based on user input,8,Label: Personalized Chatbot Responses
+378,User believes that the tool provides personalized interactions based on their understanding of customer needs,1,Label: Personalized Interactions with Customers
+379,No detail,9,"Label: ""No Detail"""
+380,Chatbot provides personalized answers based on customer queries,8,Label: Personalized Chatbot Responses
+381,User mentions the tool's ability to create customized chatbot responses based on their preferences.,2,Label: Customizable Chatbot Responses
+382,"User mentions the company's personalized approach to customer service, citing their professionalism, energy, and effectiveness in communicating their business strategy.",4,Label: Personalized Conversational Interactions
+383,User mentions the ability to personalize responses based on customer needs,1,Label: Personalized Interactions with Customers
+384,User mentions that the GPT-powered pulse product is customizable with knowledge and instructions,0,Label: Personalization Tool for Non-Technical Users
+385,User mentions that the tool helps personalize responses to customers,1,Label: Personalized Interactions with Customers
+386,Chatbot tailors responses based on visitor's queries,8,Label: Personalized Chatbot Responses
+387,Tool provides personalized responses based on user input,3,Label: Personalized Response Automation
+388,Customized responses based on user input,3,Label: Personalized Response Automation
+389,No personalized interactions mentioned,7,Label: Personalized Interactions
+390,Chatbot uses customer data to personalize responses,8,Label: Personalized Chatbot Responses
+391,Personalized interactions with customers through ChatGPT integration,4,Label: Personalized Conversational Interactions
+392,Chatbot is tailored to each customer's needs and preferences,8,Label: Personalized Chatbot Responses
+393,Chatbot provides personalized responses based on user input,8,Label: Personalized Chatbot Responses
+394,"User mentions'really easy and intuitive user flow' and 'optimizes our whole customer support', indicating a high level of personalization",0,Label: Personalization Tool for Non-Technical Users
+395,Tool provides personalized responses based on user input,3,Label: Personalized Response Automation
+396,No personalized interactions mentioned,7,Label: Personalized Interactions
+397,User has personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+398,Personalized responses and training tailored to individual customers,3,Label: Personalized Response Automation
+399,Chatbot learns from user interactions and adapts responses accordingly,8,Label: Personalized Chatbot Responses
+400,User mentions that the tool helps customers search for the best possible team-building solutions tailored to their needs.,0,Label: Personalization Tool for Non-Technical Users
+401,No personalized interactions mentioned,7,Label: Personalized Interactions
+402,Chatbot provides personalized responses based on user input,8,Label: Personalized Chatbot Responses
+403,User has ability to customize chatbot responses based on their preferences,2,Label: Customizable Chatbot Responses
+404,System provides personalized explanations and demos based on user's needs.,3,Label: Personalized Response Automation
+405,User appreciates customizable conversations and personalized responses,1,Label: Personalized Interactions with Customers
+406,User mentions personalization and humor in their response,0,Label: Personalization Tool for Non-Technical Users
+407,Product offers customizable conversation flows and integrations with platforms like messenger,4,Label: Personalized Conversational Interactions
+408,Customization options available for pre-built responses,3,Label: Personalized Response Automation
+409,User highlights ease of use and customization options,0,Label: Personalization Tool for Non-Technical Users
+410,User mentions ability to train intents and integrate with existing applications,0,Label: Personalization Tool for Non-Technical Users
+411,User highlights the ability to create custom chatbot responses tailored to specific use cases.,2,Label: Customizable Chatbot Responses
+412,User mentions the ability to leverage inbuilt agents to build chatbots and other customer support oriented applications,2,Label: Customizable Chatbot Responses
+413,Customizable templates and drag-and-drop interface allow for personalized interactions,4,Label: Personalized Conversational Interactions
+414,User has experienced personalized interactions with the AI chatbot.,1,Label: Personalized Interactions with Customers
+415,User highlights NLP engine's ability to understand and respond to complex queries in a natural and engaging way.,0,Label: Personalization Tool for Non-Technical Users
+416,"User mentions feeling like they are crafting chatbots that feel like talking to a friend, highlighting the tool's ability to create personalized conversations.",2,Label: Customizable Chatbot Responses
+417,User mentions ability to build easy and effective chatbots for small projects with rich responses,2,Label: Customizable Chatbot Responses
+418,User highlights ease of use and customization options,0,Label: Personalization Tool for Non-Technical Users
+419,User mentions that the tool provides personalized interactions based on their knowledge of chatbots and NLP basics.,2,Label: Customizable Chatbot Responses
+420,User mentions customizable pre-built agents and templates,0,Label: Personalization Tool for Non-Technical Users
+421,Chatbots are tailored to individual customers based on their past interactions and preferences,8,Label: Personalized Chatbot Responses
+422,User has experienced personalized interactions with the tool,1,Label: Personalized Interactions with Customers
+423,User mentions ability to easily create sets of conversations,4,Label: Personalized Conversational Interactions
+424,User mentions the ability to create custom chatbots and interfaces using the inbuilt agents.,2,Label: Customizable Chatbot Responses
+425,User mentions ease of use and ability to learn even with little experience,0,Label: Personalization Tool for Non-Technical Users
+426,User mentions the ability to create chatbots and virtual assistants that are tailored to specific needs and preferences,2,Label: Customizable Chatbot Responses
+427,No personalized interactions mentioned,7,Label: Personalized Interactions
+428,User mentions ability to configure intents and utterances,0,Label: Personalization Tool for Non-Technical Users
+429,Customizable chatbot responses based on user input.,8,Label: Personalized Chatbot Responses
+430," Algorithms adapt to user's preferences and behavior,",3,Label: Personalized Response Automation
+431,User mentions the tool's ability to personalize chatbot interactions based on user input.,2,Label: Customizable Chatbot Responses
+432,"User mentions the ability to customize their support experience, such as selecting two agents and comparing their responses.",0,Label: Personalization Tool for Non-Technical Users
+433,User mentions ability to build multiple conversational flows and create sophisticated experiences,4,Label: Personalized Conversational Interactions
+434,"Customizations available in CMS, proactive messaging, and extensions",6,Label: Customization Workflow Solutions
+435,User mentions ability to customize chatbot experiences through visual builder,2,Label: Customizable Chatbot Responses
+436,User highlights the tool's ability to create customized chatbot flows based on their logic steps,2,Label: Customizable Chatbot Responses
+437,"User mentions the tool's ability to accommodate both power users and casual viewers, and the well-designed layout of the app.",0,Label: Personalization Tool for Non-Technical Users
+438," User mentions customizable templates and organized design,",0,Label: Personalization Tool for Non-Technical Users
+439,User demonstrates understanding of personalization capabilities,0,Label: Personalization Tool for Non-Technical Users
+440,User mentions that the tool provides personalized interactions based on their preferences.,1,Label: Personalized Interactions with Customers
+441,No detail,9,"Label: ""No Detail"""
+442,User highlights the tool's ability to handle complex security and compliance requirements through collaboration with a large group of stakeholders.,0,Label: Personalization Tool for Non-Technical Users
+443,"User mentions ability to build custom AI agents and integrate them into various channels such as WhatsApp, Instagram, and more.",0,Label: Personalization Tool for Non-Technical Users
+444,User highlights the tool's ability to personalize interactions based on customer data and preferences.,1,Label: Personalized Interactions with Customers
+445,User highlights customizable functions for clients,0,Label: Personalization Tool for Non-Technical Users
+446,User mentions that the tool provides personalized responses based on their previous interactions,1,Label: Personalized Interactions with Customers
+447,Templates and documentation provided for customization,6,Label: Customization Workflow Solutions
+448,User highlights ability to customize chatbot flows and integrate with third-party apps,2,Label: Customizable Chatbot Responses
+449,"User mentions ability to quickly create low-fi prototypes for team review, indicating some level of personalization",0,Label: Personalization Tool for Non-Technical Users
+450,Product allows for customization and personalization of chatbot responses,2,Label: Customizable Chatbot Responses
+451,User highlights personalized interactions with GenAI tool,1,Label: Personalized Interactions with Customers
+452,User mentions the ability to create chatbots with advanced AI components and integration with third-party tools like ManyChat.,2,Label: Customizable Chatbot Responses
+453,Allows for customization of chatbot responses based on user input,2,Label: Customizable Chatbot Responses
+454,"User mentions the tool's ability to create high-quality prototypes quickly and consistently, indicating some level of personalization.",0,Label: Personalization Tool for Non-Technical Users
+455,User mentions customizable templates and intuitive canvas for designing bot conversations,5,Label: Personalized Chatbot Development
+456,User mentions ability to customize chatbot responses based on their needs,2,Label: Customizable Chatbot Responses
+457,Advanced AI capabilities provide real-time insights for personalized interactions,4,Label: Personalized Conversational Interactions
+458,Product allows for personalized customer experiences based on user data,3,Label: Personalized Response Automation
+459,Customizable workflows allow for tailoring to specific needs and processes,6,Label: Customization Workflow Solutions
+460,Personalized support through AI vision feature allows for tailored advice based on plant pictures uploaded by customers.,3,Label: Personalized Response Automation
+461,"Ai handles simple and sometimes more complex tickets, providing personalized responses",3,Label: Personalized Response Automation
+462,Personalized interactions mentioned,1,Label: Personalized Interactions with Customers
+463,Ai assistant provides personalized explanations based on customer needs,3,Label: Personalized Response Automation
+464,Personalized interactions with account manager and regular calls for improvement,4,Label: Personalized Conversational Interactions
+465,Custom integrations and tailored responses for each inquiry,3,Label: Personalized Response Automation
+466,Customizable responses based on brand language,3,Label: Personalized Response Automation
+467,Personalized interactions and guidance offered through regular calls and support,4,Label: Personalized Conversational Interactions
+468," Solution offers tailored approach based on client needs and preferences,",6,Label: Customization Workflow Solutions
+469,Product tailored to user's needs and preferences,6,Label: Customization Workflow Solutions
+470,"User mentions AI-powered support handling 80% of inquiries, indicating high level of personalization",1,Label: Personalized Interactions with Customers
+471,Product tailors responses based on user input,3,Label: Personalized Response Automation
+472,Ai provides personalized responses and improvements based on user data,3,Label: Personalized Response Automation
+473,AI provides personalized answers based on context of relevant support conversation.,4,Label: Personalized Conversational Interactions
+474,User recognizes potential for personalized interactions with AI,1,Label: Personalized Interactions with Customers
+475,Support team personalizes responses based on user feedback and requests,3,Label: Personalized Response Automation
+476,User has experience with programming and customization of the bot.,5,Label: Personalized Chatbot Development
+477,"The tool is able to understand customers' questions and provide relevant responses, demonstrating a high level of personalization.",3,Label: Personalized Response Automation
+478,User mentions the ability to maintain their knowledge base and improve the quality of their documentation through AI.,0,Label: Personalization Tool for Non-Technical Users
+479,"Ai's responses are tailored to individual customers, demonstrating understanding of their needs and preferences",3,Label: Personalized Response Automation
+480,"The tool studies all available information about the store and potential customers, providing personalized responses and product recommendations.",3,Label: Personalized Response Automation
+481,User has personalized the chatbot's personality to match their community's tone and style.,2,Label: Customizable Chatbot Responses
+482,User mentions AI's ability to seamlessly integrate with customers and provide personalized experiences,1,Label: Personalized Interactions with Customers
+483,Asking product-related questions and serving as a virtual sales assistant for customers,4,Label: Personalized Conversational Interactions
+484,No personalization options mentioned,7,Label: Personalized Interactions
+485,"User highlights the high accuracy of Glean AI, which is personalized to their specific needs.",0,Label: Personalization Tool for Non-Technical Users
+486,Chatbot tailors responses based on user input and context,8,Label: Personalized Chatbot Responses
+487,Ai tailors support to specific needs of developers working with data embeddings,6,Label: Customization Workflow Solutions
+488,Customized responses and actions based on user inputs,3,Label: Personalized Response Automation
+489,Adaptive responses based on user queries,3,Label: Personalized Response Automation
+490," User mentions customization based on customer preferences,",0,Label: Personalization Tool for Non-Technical Users
+491,User mentions personalized interactions with AI assistant,1,Label: Personalized Interactions with Customers
+492,User mentions ability to create custom chatbot responses through the playground feature,2,Label: Customizable Chatbot Responses
+493,Customized integrative care solutions for patient wellness,6,Label: Customization Workflow Solutions
+494,Customized responses based on user input,3,Label: Personalized Response Automation
+495,"Ai's personality is tailored to community's language and preferences, creating engaging interactions",4,Label: Personalized Conversational Interactions
+496,Product tailors responses based on user input,3,Label: Personalized Response Automation
+497,AIs assist developers and users with customized solutions,6,Label: Customization Workflow Solutions
+498,User highlights the tool's ability to personalize environmental impact reduction based on individual needs,0,Label: Personalization Tool for Non-Technical Users
+499,"User mentions AI tool's ability to adapt to new modifications in their documents without needing actual maintenance, indicating a high level of personalization.",0,Label: Personalization Tool for Non-Technical Users
+500,"User recognizes AI's ability to learn and adapt to new changes in documents, demonstrating a high level of personalization.",0,Label: Personalization Tool for Non-Technical Users
+501,"Users can rate AI and human responses, increasing relevance",3,Label: Personalized Response Automation
+502,User mentions the ability of the tool to create a chatbot based on the information gathered from multiple pages and presentations.,2,Label: Customizable Chatbot Responses
+503,"Personalized interactions mentioned, e.g., 'convert GenAI haters into true believers'",4,Label: Personalized Conversational Interactions
+504,User mentions that AI chatbot provides personalized responses,2,Label: Customizable Chatbot Responses
+505,User mentions customization of AI models for specific use cases,0,Label: Personalization Tool for Non-Technical Users
+506,No personalized interactions mentioned,7,Label: Personalized Interactions
+507,"Ai-powered conversational benefits for end users, tailored to specific domains",4,Label: Personalized Conversational Interactions
+508,Platform provides customizable templates for bot development,5,Label: Personalized Chatbot Development
+509," User wants more personalized interactions with the bot,",5,Label: Personalized Chatbot Development
+510,User has personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+511,"User mentions ability to design narrative and control conversation flow, indicating some level of personalization.",4,Label: Personalized Conversational Interactions
+512,Customizable workflows for dialog tasks allow for tailored experiences.,4,Label: Personalized Conversational Interactions
+513,Customized chatbot with personalized responses based on user input,8,Label: Personalized Chatbot Responses
+514,"Platform offers various personalization options such as customizable chatbot responses, sentiment analysis, and tailored customer experiences.",2,Label: Customizable Chatbot Responses
+515,User mentions ability to create chatbot for personalized support,2,Label: Customizable Chatbot Responses
+516,Platform allows for customization and personalization of chatbot interactions,2,Label: Customizable Chatbot Responses
+517,Allows for customization and personalization of conversations,4,Label: Personalized Conversational Interactions
+518,No personalized interactions mentioned,7,Label: Personalized Interactions
+519,User mentions customizable templates and easy design flow for beginners,0,Label: Personalization Tool for Non-Technical Users
+520,Platform offers personalized chatbot building capabilities,2,Label: Customizable Chatbot Responses
+521,Personalized interactions and recommendations based on user behavior and preferences,3,Label: Personalized Response Automation
+522,User mentions ease of use and customization options,0,Label: Personalization Tool for Non-Technical Users
+523,User mentions ability to personalize chatbot responses based on user input.,2,Label: Customizable Chatbot Responses
+524,No personalized interactions mentioned,7,Label: Personalized Interactions
+525,User found the platform's predefined templates and features helpful in creating a medical appointment chatbot with minimal programming knowledge.,2,Label: Customizable Chatbot Responses
+526,User mentions customizable templates and personalized interactions,1,Label: Personalized Interactions with Customers
+527,User has full control over bot's features and can customize it according to client needs.,5,Label: Personalized Chatbot Development
+528,User gained practical knowledge during training and exam,0,Label: Personalization Tool for Non-Technical Users
+529,No personalized interactions mentioned,7,Label: Personalized Interactions
+530,User mentions pre-built entities' training with room for improvement,0,Label: Personalization Tool for Non-Technical Users
+531,Advanced customization options available,6,Label: Customization Workflow Solutions
+532,User mentions personalized interactions with the chatbot,2,Label: Customizable Chatbot Responses
+533,User mentions enjoying the process and finding it easy to build chatbots.,2,Label: Customizable Chatbot Responses
+534,"User finds the tool to be highly personalized, with customized solutions tailored to their needs.",0,Label: Personalization Tool for Non-Technical Users
+535,Chatbot uses natural language processing to understand and respond to customer queries,8,Label: Personalized Chatbot Responses
+536,User has the option to train the bot with custom options and preferences,5,Label: Personalized Chatbot Development
+537,User mentions ability to create chatbot easily without any personalized interactions,2,Label: Customizable Chatbot Responses
+538,User appreciates the ability to create chatbots with personalized interactions,2,Label: Customizable Chatbot Responses
+539,"User mentions that the tool provides accurate results even for non-technical users, suggesting some level of personalization",0,Label: Personalization Tool for Non-Technical Users
+540,Custom variables and dialogue management enable tailored conversations,4,Label: Personalized Conversational Interactions
+541,User mentions that the platform provides inbuilt capabilities to implement dialog flows and integrate with other platforms.,4,Label: Personalized Conversational Interactions
+542,User mentions customization of AI models for specific use cases,0,Label: Personalization Tool for Non-Technical Users
+543,User highlights the tool's ability to provide customized experiences based on individual preferences and needs,0,Label: Personalization Tool for Non-Technical Users
+544,User appreciates customizable modules and organized structure,0,Label: Personalization Tool for Non-Technical Users
+545,Platform allows for customization and personalization of chatbot interactions based on user data and preferences.,2,Label: Customizable Chatbot Responses
+546,No personalized interactions mentioned,7,Label: Personalized Interactions
+547,User highlights the ability to customize the chatbot's responses based on client queries.,2,Label: Customizable Chatbot Responses
+548,Platform provides customizable templates for bot development,5,Label: Personalized Chatbot Development
+549,User mentions exploring various models and finding ones they like.,0,Label: Personalization Tool for Non-Technical Users
+550,User mentions the platform's ability to help them create a human-friendly chatbot with personalized interactions.,2,Label: Customizable Chatbot Responses
+551,"User mentions ease of integrating chatbot with different channels, indicating high personalization potential.",2,Label: Customizable Chatbot Responses
+552,Allows for customizable chatbot flows and interactions,2,Label: Customizable Chatbot Responses
+553,"User mentions the ability to develop bots with a user-friendly interface, indicating some level of personalization.",5,Label: Personalized Chatbot Development
+554," User wants more personalized interactions with the bot,",5,Label: Personalized Chatbot Development
+555,User mentions ability to customize bot responses based on their brand's tone and style,5,Label: Personalized Chatbot Development
+556,User has personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+557,User mentions that AI helped them solve a complex issue and provided solutions related to it.,0,Label: Personalization Tool for Non-Technical Users
+558,"User mentions ability to train bot using external APIs, indicating high degree of personalization",5,Label: Personalized Chatbot Development
+559,User finds the drag-and-drop interface for creating conversational flows helpful for personalizing interactions,4,Label: Personalized Conversational Interactions
+560,"User mentions ability to design bots and automatically convert designs to development flows, indicating some degree of personalization.",5,Label: Personalized Chatbot Development
+561,"User mentions ability to design narrative and control conversation flow, indicating some level of personalization.",4,Label: Personalized Conversational Interactions
+562,User mentions ability to customize bots easily and handle intent capture with ease.,5,Label: Personalized Chatbot Development
+563,User mentions learning new things during basic training and being excited to learn more.,0,Label: Personalization Tool for Non-Technical Users
+564,User mentions ability to create custom workflows without coding,0,Label: Personalization Tool for Non-Technical Users
+565,"User mentions that the tool provides personalized conversations near to human interactions, which makes business more customer-attractive and friendly.",4,Label: Personalized Conversational Interactions
+566,Customized chatbot with personalized responses based on user input,8,Label: Personalized Chatbot Responses
+567,Platform allows for customization and personalization of bot interactions based on customer data and preferences.,5,Label: Personalized Chatbot Development
+568,User mentions ability to create chatbot for personalized support,2,Label: Customizable Chatbot Responses
+569,"User mentions that the bot is'very easy to understand things in AI', indicating a high level of personalization.",5,Label: Personalized Chatbot Development
+570,User mentions the ability to create custom conversations and interactions with the chatbot,2,Label: Customizable Chatbot Responses
+571,User mentions that the platform allows for personalized interactions,1,Label: Personalized Interactions with Customers
+572,User mentions the ability to customize chatbot responses based on different customers and requirements.,2,Label: Customizable Chatbot Responses
+573,No personalized interactions mentioned,7,Label: Personalized Interactions
+574,User highlights customizable features and unique functionality that sets the platform apart.,0,Label: Personalization Tool for Non-Technical Users
+575,User demonstrates interest in personalizing the AI tool through API calls and Java scripts.,1,Label: Personalized Interactions with Customers
+576,User mentions customizable templates and easy design flow for beginners,0,Label: Personalization Tool for Non-Technical Users
+577,User mentions customizable entity level training and exposure of complex features,0,Label: Personalization Tool for Non-Technical Users
+578,Personalized interactions and recommendations based on user behavior and preferences,3,Label: Personalized Response Automation
+579,User has mentioned the ability to customize and personalize the chatbot according to their needs,2,Label: Customizable Chatbot Responses
+580,No personalized interactions or recommendations mentioned,7,Label: Personalized Interactions
+581,User mentions ease of use and customization options,0,Label: Personalization Tool for Non-Technical Users
+582,User has created custom bot and received responses,5,Label: Personalized Chatbot Development
+583,No personalized interactions mentioned,7,Label: Personalized Interactions
+584,User mentions ability to design custom conversational flows,4,Label: Personalized Conversational Interactions
+585,User has high praise for customization capabilities without needing to write code,0,Label: Personalization Tool for Non-Technical Users
+586,User recognizes potential for personalized interactions based on learning model,1,Label: Personalized Interactions with Customers
+587,User found the platform's predefined templates and features helpful in creating a medical appointment chatbot with minimal programming knowledge.,2,Label: Customizable Chatbot Responses
+588,User mentions exploring more features to understand least used ones,0,Label: Personalization Tool for Non-Technical Users
+589,User wants more customizable user interfaces,0,Label: Personalization Tool for Non-Technical Users
+590,Trainer's helpfulness and politeness were mentioned as personalized interactions.,4,Label: Personalized Conversational Interactions
+591,Customizable chatbot modules and pre-built functions allow for tailored experiences,2,Label: Customizable Chatbot Responses
+592,No personalized interactions mentioned,7,Label: Personalized Interactions
+593,Customizable chatbot flows and integration with existing systems allow for personalized experiences,2,Label: Customizable Chatbot Responses
+594,User highlights personalized interactions and tailored solutions,1,Label: Personalized Interactions with Customers
+595,No personalized interactions or tailoring mentioned,7,Label: Personalized Interactions
+596,User mentions customizable templates,0,Label: Personalization Tool for Non-Technical Users
+597,"Platform offers customizable dashboards and metrics for different user levels, including developers, managers, and C-level executives.",6,Label: Customization Workflow Solutions
+598,User has the ability to customize and tailor the conversational AI bot to their specific needs and preferences,5,Label: Personalized Chatbot Development
+599,User has full control over bot's features and can customize it according to client needs.,5,Label: Personalized Chatbot Development
+600,Reviewer mentions that the tool provides personalized interactions based on their input.,1,Label: Personalized Interactions with Customers
+601,User mentions personalized interactions with the AI tool,1,Label: Personalized Interactions with Customers
+602,"User mentions that Ai Xo platform provides'very good user interface NLP engine training etc', indicating a high level of personalization",0,Label: Personalization Tool for Non-Technical Users
+603,User mentions customizable options for bot development,5,Label: Personalized Chatbot Development
+604,User mentions ability to create chatbots without coding knowledge,2,Label: Customizable Chatbot Responses
+605,Product allows for customization and personalization of chatbot interactions based on user requirements,2,Label: Customizable Chatbot Responses
+606,No personalized interactions mentioned,7,Label: Personalized Interactions
+607,User mentions personalized interactions with the platform,1,Label: Personalized Interactions with Customers
+608,Customization solutions from existing bot,5,Label: Personalized Chatbot Development
+609,User mentions personalized interactions with the platform,1,Label: Personalized Interactions with Customers
+610,Platform provides personalized suggestions and examples for bot development,5,Label: Personalized Chatbot Development
+611,No personalized interaction concerns,7,Label: Personalized Interactions
+612,User mentions that the tool helps them develop conversational IVR experiences.,4,Label: Personalized Conversational Interactions
+613,User mentions that the tool provides personalized chatbot experiences,2,Label: Customizable Chatbot Responses
+614,"User mentions ability to create customized responses to consumer intents, indicating some level of personalization",1,Label: Personalized Interactions with Customers
+615,User mentions ability to create customized and robust bots with ease.,5,Label: Personalized Chatbot Development
+616,User mentions customization options for chatbot responses based on customer data.,2,Label: Customizable Chatbot Responses
+617,"User mentions that the platform provides feature-rich environment to create bots, indicating a high level of personalization.",5,Label: Personalized Chatbot Development
+618,User mentions ability to train bot accordingly for better results,5,Label: Personalized Chatbot Development
+619,User mentions pre-built entities' training with room for improvement,0,Label: Personalization Tool for Non-Technical Users
+620,User highlights the tool's ability to create personalized conversational flows based on their design inputs.,4,Label: Personalized Conversational Interactions
+621,User has mentioned personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+622,User mentions personalized interactions with the chatbot,2,Label: Customizable Chatbot Responses
+623,User mentions ease of building chatbot designs with AI tool,2,Label: Customizable Chatbot Responses
+624,Customized features and improvements based on user feedback,3,Label: Personalized Response Automation
+625,"User highlights the tool's ability to learn and adapt to their needs, indicating high personalization potential.",0,Label: Personalization Tool for Non-Technical Users
+626,Bot responds to user inputs with customized responses,5,Label: Personalized Chatbot Development
+627,User mentions ability to customize chatbot responses based on NLP engine,2,Label: Customizable Chatbot Responses
+628,"User finds the tool to be highly personalized, with customized solutions tailored to their needs.",0,Label: Personalization Tool for Non-Technical Users
+629,User mentions ability to customize bot responses based on their preferences,5,Label: Personalized Chatbot Development
+630,Chatbot uses natural language processing to understand and respond to customer queries,8,Label: Personalized Chatbot Responses
+631,User has personalized interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+632,Customized responses based on user's queries,3,Label: Personalized Response Automation
+633,User mentions ability to customize their own NL engine or deploy in their own platform,0,Label: Personalization Tool for Non-Technical Users
+634,User mentions that the tool provides personalized interactions,1,Label: Personalized Interactions with Customers
+635,No personalized interactions or recommendations mentioned,7,Label: Personalized Interactions
+636,User mentions ability to customize bot during development,5,Label: Personalized Chatbot Development
+637,User mentions ability to customize chatbot responses based on user input,2,Label: Customizable Chatbot Responses
+638,User has the option to train the bot with custom options and preferences,5,Label: Personalized Chatbot Development
+639,User mentions ability to create chatbot easily without any personalized interactions,2,Label: Customizable Chatbot Responses
+640,User appreciates the ability to create chatbots with personalized interactions,2,Label: Customizable Chatbot Responses
+641,"User mentions that the tool provides accurate results even for non-technical users, suggesting some level of personalization",0,Label: Personalization Tool for Non-Technical Users
+642,User mentions personalized interactions with chatbot,2,Label: Customizable Chatbot Responses
+643,Customizations are possible and can be incorporated into the tool,6,Label: Customization Workflow Solutions
+644,Customers receive personalized responses based on their inquiries,3,Label: Personalized Response Automation
+645,Chatbot can understand and respond to user needs more effectively,8,Label: Personalized Chatbot Responses
+646,"User mentions that the tool can improve further based on usage, suggesting some level of personalization is possible.",0,Label: Personalization Tool for Non-Technical Users
+647,Customizes workflow based on user input and provides relevant articles,6,Label: Customization Workflow Solutions
+648," Personalized interactions and recommendations based on user behavior and preferences,",3,Label: Personalized Response Automation
+649,System provides personalized solutions based on user's inputted problems.,3,Label: Personalized Response Automation
+650,Ai provides personalized suggestions based on user input,3,Label: Personalized Response Automation
+651,No personalized interactions mentioned,7,Label: Personalized Interactions
+652,"User highlights the tool's ability to provide valuable insights into sales calls, indicating a high level of personalization.",0,Label: Personalization Tool for Non-Technical Users
+653,User has high expectations for personalized interactions,1,Label: Personalized Interactions with Customers
+654,"User mentions that the tool is 'tr?? intuitif' and'simple d'utilisation', indicating a high level of personalization and human-like interactions.",0,Label: Personalization Tool for Non-Technical Users
+655,"User mentions personalized interactions with the tool, such as tailoring the summary after each sales call.",1,Label: Personalized Interactions with Customers
+656,User mentions the tool providing a 'fresh perspective' and 'going the extra mile' to resolve issues,0,Label: Personalization Tool for Non-Technical Users
+657,User recognizes the tool's ability to personalize customer interactions and improve relationships.,1,Label: Personalized Interactions with Customers
+658,Ai generative copywriting and disc personality analysis provide personalized content and communication styles tailored to individual prospects.,4,Label: Personalized Conversational Interactions
+659,User highlights the tool's ability to create highly personalized and contextualized messages based on each prospect.,4,Label: Personalized Conversational Interactions
+660,User mentions ability to personalize lead information and interactions,1,Label: Personalized Interactions with Customers
+661,"User recognizes the potential of the tool for personalized emails, but has high expectations for future development.",0,Label: Personalization Tool for Non-Technical Users
+662,Well-built AI model that adapts to user behavior and preferences,3,Label: Personalized Response Automation
+663,Tool allows for customization of emails based on contacts,4,Label: Personalized Conversational Interactions
+664,User mentions ability to personalize messages while saving time,0,Label: Personalization Tool for Non-Technical Users
+665," Personalized icebreakers, buying signals, and sales reports based on LinkedIn profiles, companies, and interests.,",3,Label: Personalized Response Automation
+666,User highlights the software's ability to adapt to their specific needs and preferences,0,Label: Personalization Tool for Non-Technical Users
+667,Platform uses AI to personalize customer interactions,3,Label: Personalized Response Automation
+668,User highlights personalized interactions with AI assistant,1,Label: Personalized Interactions with Customers
+669,Chatbot allows for customization and configuration based on user needs,2,Label: Customizable Chatbot Responses
+670," User mentions that the tool allows for personalized interactions with customers,",1,Label: Personalized Interactions with Customers
+671,User wants more customization options for their business line,6,Label: Customization Workflow Solutions
+672,Personalized interactions and issue resolution mentioned,4,Label: Personalized Conversational Interactions
+673,Customizable responses based on user input,3,Label: Personalized Response Automation
+674,"User mentions that some features are hidden, but overall experience is positive",0,Label: Personalization Tool for Non-Technical Users
+675,User highlights personalized interactions with AI assistant,1,Label: Personalized Interactions with Customers
+676," User mentions that the tool allows for personalized interactions with customers,",1,Label: Personalized Interactions with Customers
+677,No personalized interactions or recommendations mentioned,7,Label: Personalized Interactions
+678,Personalized responses based on customer data,3,Label: Personalized Response Automation
+679,Moderate personalization through visitor statistics and WhatsApp integration,4,Label: Personalized Conversational Interactions
+680,Product offers personalized interactions based on user data and preferences.,3,Label: Personalized Response Automation
+681,Customizable responses based on customer data,3,Label: Personalized Response Automation
+682,Customizable responses to match brand tone and style,3,Label: Personalized Response Automation
+683,Customizable responses based on previous interactions,3,Label: Personalized Response Automation
+684,User has full control over tool's functionality and content,0,Label: Personalization Tool for Non-Technical Users
+685,User mentions the tool's ability to understand their specific needs and preferences,0,Label: Personalization Tool for Non-Technical Users
+686,"Adaptive AI tailors responses based on previous encounters, providing personalized experiences for clients.",3,Label: Personalized Response Automation
+687,Customized responses based on customer inquiries,3,Label: Personalized Response Automation
+688,Customizable workflows and integrations allow for tailored experiences,6,Label: Customization Workflow Solutions
+689,User highlights the ability to make live changes to the bot without any obstacles,5,Label: Personalized Chatbot Development
+690,User has mentioned customization and tailoring of content based on their brand and market needs.,0,Label: Personalization Tool for Non-Technical Users
+691," User mentions the ability to design complex customer pathways, indicating high personalization potential,",0,Label: Personalization Tool for Non-Technical Users
+692,Customization options available depending on platform's capabilities,6,Label: Customization Workflow Solutions
+693,Customers can personalize their interactions with the AI assistant,1,Label: Personalized Interactions with Customers
+694,No personalized interactions mentioned,7,Label: Personalized Interactions
+695," User highlights the tool's ability to personalize interactions based on customer preferences and history,",1,Label: Personalized Interactions with Customers
+696,No personalized interactions mentioned,7,Label: Personalized Interactions
+697,Customizable messages tailored to individual customers,3,Label: Personalized Response Automation
+698,"Personalized interactions mentioned, such as language translator feature",4,Label: Personalized Conversational Interactions
+699,User mentions ability to make changes on the fly and see them reflected on the company website immediately,0,Label: Personalization Tool for Non-Technical Users
+700,Customizable decision trees allow for personalized experiences,6,Label: Customization Workflow Solutions
+701,"User highlights the tool's ability to handle repetitive and time-consuming tasks, allowing agents to focus on more complex inquiries.",0,Label: Personalization Tool for Non-Technical Users
+702,User has successfully customized the software for their company's needs,6,Label: Customization Workflow Solutions
+703,User highlights tool's ability to provide personalized and actionable responses,0,Label: Personalization Tool for Non-Technical Users
+704,Chatbot provides personalized responses based on user input,8,Label: Personalized Chatbot Responses
+705,Tool provides personalized suggestions and automation based on customer requests,3,Label: Personalized Response Automation
+706,"User has mentioned customizable workflows and automated repetitive tasks, indicating high potential for personalization",0,Label: Personalization Tool for Non-Technical Users
+707,User mentions desire for more personalized interactions,1,Label: Personalized Interactions with Customers
+708," Chatbot platform allows for personalized interactions with customers,",8,Label: Personalized Chatbot Responses
+709,User mentions ability to create customized workflows for enhancing customer experience,0,Label: Personalization Tool for Non-Technical Users
+710,Chatbot provides personalized responses based on user input,8,Label: Personalized Chatbot Responses
+711,User has some control over personalization,0,Label: Personalization Tool for Non-Technical Users
+712,Customizable automated responses based on industry and product complexity,3,Label: Personalized Response Automation
+713,User mentions that the tool provides personalized interactions and solutions tailored to their needs.,1,Label: Personalized Interactions with Customers
+714,User highlights the ability of Replicant's AI to understand intent and personalize the IVR experience.,0,Label: Personalization Tool for Non-Technical Users
+715,Customized solution based on industry expertise and AI conversational thinking,4,Label: Personalized Conversational Interactions
+716,User mentions personalized interactions with the AI tool,1,Label: Personalized Interactions with Customers
+717,Customized approach for each staff member to learn business quickly,6,Label: Customization Workflow Solutions
+718,Adaptive to business needs,6,Label: Customization Workflow Solutions
+719,User appreciates customizable intents and gradual AI adoption,0,Label: Personalization Tool for Non-Technical Users
+720,Customizable chatbot with personalized responses based on user data,8,Label: Personalized Chatbot Responses
+721," Customized responses based on business needs,",6,Label: Customization Workflow Solutions
+722,Personalized responses based on user input,3,Label: Personalized Response Automation
+723,User mentions the bot recognizes user issues and sends appropriate responses or performs actions based on their input.,5,Label: Personalized Chatbot Development
+724,"Personalized interactions mentioned, such as excellent customer support and new features being added continuously",4,Label: Personalized Conversational Interactions
+725,Customized solutions for specific business needs,6,Label: Customization Workflow Solutions
+726,Users received personalized support throughout the process,6,Label: Customization Workflow Solutions
+727,Customers receive tailored guidance and support based on their needs,6,Label: Customization Workflow Solutions
+728,User mentions customization options during bot setup,5,Label: Personalized Chatbot Development
+729,User mentions personalized interactions with AI,1,Label: Personalized Interactions with Customers
+730," The tool provides personalized responses based on the lead's behavior and engagement history,",3,Label: Personalized Response Automation
+731,"Ai assistant takes up responsibility of handling long initial conversation with leads, providing personalized interactions",4,Label: Personalized Conversational Interactions
