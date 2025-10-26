@@ -21,6 +21,7 @@ format:
     highlight-style: arrow
 execute:
   echo: true
+freeze: true
 ---
 
 ---

@@ -10,6 +10,7 @@ format:
     - text: Code file
       icon: file-code
       href: https://www.kaggle.com/code/jeanluissotovidal/nlp-corovirus-tweets
+freeze: true
 ---
 
 # Context

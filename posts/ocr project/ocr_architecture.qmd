@@ -1,0 +1,48 @@
+---
+title: "OCR system pour factures"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+    notebook-links: false
+    code-links:
+    - text: Code file
+      icon: file-code
+freeze: true 
+---
+# Architecture
+
+## Cloud Run
+Le development ce a deploye sur un artefect Cloud Run. Dans il y a deux images, une pour dev et autre de prod:
+    + sintad-dev-inv-ocr-us-central1-run qui a le lien: https://sintad-dev-inv-ocr-us-central1-run-818657574841.us-central1.run.app
+
+    + sintad-prod-inv-ocr-us-central1-run
+
+Le service du API point ce a genere sur le architecture FastAPI. Ici est le notebook du le conexion:
+![](Images/Screenshot 2025-10-15 110206.jpg)
+
+## Cloud Storage
+
+Ce a cree un bucket sur Cloud Storage qui contiend les documents (factures) a tester et trainer le model OCR.
+
+![](Images/cloud_storage.jpg)
+
+
+# Document AI
+
+ Ce utilise pour le projet un boite noire outil du GCP qui s'apelle Document AI, qui est un auto-modeller du OCR pour la detection de textes dans images et documents.
+
+ Le environment du test et train s'apelled: invoice-demo
+Pour ce model, ce a utilise le model personalise  du "invoice parser"
+
+Toutes les results son requis sur ce api: 
+
+Il y de environ 800 factures pour trainer et unes 200 pour tester
+
+![](Images/invoice_parser_general.jpg)
+
+Les results du model son du 91 %
+Si nous lirons les details il y a de conceptos qui sont bien reconnus (> 92%). Mais le defi reste sur le item 'description' qui est 70 % et trigger autres processes apres.
+
+![](Images/invoice_parser_general.jpg)

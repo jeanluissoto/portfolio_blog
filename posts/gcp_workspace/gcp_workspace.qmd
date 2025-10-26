@@ -1,0 +1,31 @@
+---
+title: "App Script pour automitser des taches mail et agenda"
+format: 
+    html:
+        toc: true
+        html-math-method: katex
+        css: styles.css
+        notebook-links: false
+        code-links:
+        - text: Code file
+        icon: file-code
+freeze: true 
+---
+
+# Introduction
+
+
+
+{{< video https://youtu.be/0YhiLahDY-U >}}
+
+Dans ce post, je vais vous montrer comment utiliser App Script pour automitser des taches mail et agenda.
+
+
+
+# App Script
+
+App Script est un outil de Google qui permet de créer des applications web sans code.
+
+# Mail
+
+# Agenda

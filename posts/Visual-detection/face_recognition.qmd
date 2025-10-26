@@ -10,6 +10,7 @@ format:
     - text: Code file
       icon: file-code
       href: https://www.kaggle.com/code/jeanluissotovidal/face-recognition
+freeze: true
 ---
 # About
 # Face Detection

@@ -3,6 +3,7 @@ title: "Graphs_RStudio"
 format: 
   dashboard:
     scrolling: true
+freeze: true
 --- 
 
 ```{r}
