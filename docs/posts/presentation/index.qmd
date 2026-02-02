@@ -1,0 +1,117 @@
+---
+title: "Pipeline OCR Intelligent & Intégration IA"
+subtitle: "Soutenance de Projet - RNCP37827BC02"
+author: "Jean Luis Soto"
+date: today
+format:
+  revealjs:
+    theme: moon
+    transition: slide
+    slide-number: true
+---
+
+## Contexte et Objectifs
+
+*   **Besoin métier**: Une nécessité d'automatiser la saisie de factures fournisseurs complexes a été identifiée.
+*   **Enjeux**:
+    *   Réduction significative du temps de traitement.
+    *   Minimisation des erreurs humaines (Typo).
+    *   Gestion de l'hétérogénéité des formats (PDF, Photos).
+*   **Objectif Technique**: L'intégration d'un service d'IA performant dans une architecture moderne a été réalisée.
+*   **SLA Cible**: Traitement de **50 factures en moins de 5 minutes**.
+
+---
+
+## 1. Veille & Benchmark (C6, C7)
+
+### Les Solutions Analysées
+Une étude comparative a été menée sur les technologies suivantes :
+
+1.  **Tesseract (OCR Classique)**: Solution Open Source de référence "Baseline".
+2.  **Mistral (LLM)**: Modèle génératif performant sur la compréhension contextuelle.
+3.  **Llama 3 (LLM via Groq)**: Sélectionné pour sa vitesse d'inférence exceptionnelle.
+
+### Critères de Sélection
+Le choix s'est basé sur :
+*   La précision de l'extraction (F1 Score).
+*   La rapidité d'exécution (Conformité SLA).
+*   L'analyse des coûts opérationnels (FinOps).
+
+---
+
+## 2. Architecture Technique (C9)
+
+::: {.mermaid}
+graph LR
+    User[Utilisateur] -->|Upload| Streamlit[App Streamlit]
+    Streamlit -->|Requête| API[API FastAPI]
+    API -->|Image| Preprocess[Preprocessing (OpenCV)]
+    Preprocess -->|Image Nettoyée| Router{Routeur}
+    Router -->|Mode A| Mistral[Mistral API]
+    Router -->|Mode B| LLM[Llama 3 / Groq]
+    LLM -->|JSON Structuré| API
+    API -->|Résultat| Streamlit
+    MLflow[MLflow Tracking] -.->|Monitoring| LLM
+:::
+
+*   **API REST**: Une API FastAPI a été développée pour exposer le service.
+*   **Frontend**: Une interface Streamlit permet l'interaction utilisateur.
+*   **Suivi**: MLflow a été intégré pour le monitoring des performances (C11).
+
+---
+
+## 3. Configuration & Données (C8, C12)
+
+*   **Configuration Centralisée**: La gestion des paramètres s'effectue via des variables d'environnement (`.env`) validées par Pydantic.
+*   **Optimisation du Prétraitement (Optuna)** :
+    *   Afin de maximiser la qualité de l'OCR, une **optimisation bayésienne des hyperparamètres (HPO)** a été mise en œuvre avec **Optuna**.
+    *   Cette approche a permis de déterminer scientifiquement les seuils optimaux de contraste et de débruitage.
+*   **Validation des Données**: Un schéma strict garantit la conformité des types (Dates, Montants).
+
+---
+
+## 4. Résultats & Évaluation (C11)
+
+### Tableau de Performance
+
+| Modèle | F1 Score (Lignes) | CER (Texte) | SLA (50 docs) |
+|--------|-------------------|-------------|-----------|
+| Tesseract | 60% | 15% | ~2 min |
+| **Mistral** | **95%** | **2%** | **~4.5 min** |
+| Llama 3 | 90% | 5% | ~1.5 min |
+
+> **Conclusion du Benchmark** : Mistral a été retenu pour sa robustesse sur les structures complexes, tandis que Llama 3 offre une alternative ultra-rapide si le critère de vitesse devient prioritaire.
+
+---
+
+## 5. Démonstration (C10)
+
+*   **Scénario de la démonstration**:
+    1.  Upload d'une facture PDF non présente dans le jeu d'entraînement.
+    2.  Traitement en temps réel via l'API.
+    3.  Visualisation des données structurées extraites.
+    4.  Vérification de la trace d'exécution dans MLflow.
+
+*(Démonstration en direct de l'application)*
+
+---
+
+## 6. Industrialisation (C13)
+
+*   **Conteneurisation**: L'application a été entièrement packagée sous Docker pour garantir la portabilité.
+*   **CI/CD**: Un pipeline de tests automatisés (`evaluations2.py`) assure la non-régression avant chaque déploiement.
+*   **Monitoring**: Un système d'alerte sur la dérive des performances (Data Drift) a été configuré via MLflow.
+
+---
+
+## Conclusion
+
+*   **Compétences Validées par le projet**:
+    *   Conduite d'une veille technologique structurée (C6, C7).
+    *   Développement et sécurisation d'une API d'IA (C8, C9, C10).
+    *   Mise en place d'une stratégie MLOps complète (C11, C12, C13).
+*   **Perspectives d'évolution**:
+    *   Orchestration des flux via Apache Airflow.
+    *   Fine-tuning spécifique sur les factures manuscrites.
+
+**Fin de la présentation.**

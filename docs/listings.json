@@ -2,8 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/docs/posts/Transfer Learning/GenAI_Final_Project.html",
-      "/docs/posts/Transfer Learning/GenAI_Final_Project.out.html",
       "/posts/delivery/Delivery_app_group_project.html",
       "/posts/gcp_workspace/gcp_workspace.html",
       "/posts/LLM/Sentiment_analysis_classification.html",
