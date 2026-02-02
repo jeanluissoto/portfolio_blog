@@ -1,3 +1,6 @@
 /.quarto/
 posts/LLM/
 **/*.quarto_ipynb
+*_files/
+*_cache/
+.DS_Store

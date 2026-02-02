@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jean Luis Soto’s Portfolio",
     "section": "",
-    "text": "DELIVERY APP\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApp Script pour automitser des taches mail et agenda\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOCR system pour factures\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerative AI in Customer Experience Improvement\n\n\n\n\n\n\n\n\n\n\n\nSOTO VIDAL, Jean Luis\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Project Generative AI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerative AI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFace Recognition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPipeline OCR Intelligent & Intégration IA\n\n\nSoutenance de Projet - RNCP37827BC02\n\n\n\n\n\n\n\n\nFeb 2, 2026\n\n\nJean Luis Soto\n\n\n\n\n\n\n\n\n\n\n\n\nRapport de Projet: Pipeline OCR Intelligent\n\n\nArtefact School\n\n\n\n\n\n\n\n\nFeb 2, 2026\n\n\nJean Luis Soto\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 4, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\ndelivery app orders prediction\n\n\n\n\n\n\nclassification\n\n\n\n\n\n\n\n\n\nDec 19, 2023\n\n\nJean Luis Soto\n\n\n\n\n\nNo matching items"
+    "text": "DELIVERY APP\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApp Script pour automitser des taches mail et agenda\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOCR system pour factures\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerative AI in Customer Experience Improvement\n\n\n\n\n\n\n\n\n\n\n\nSOTO VIDAL, Jean Luis\n\n\n\n\n\n\n\n\n\n\n\n\nFinal Project Generative AI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerative AI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFace Recognition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFacture OCR Project\n\n\nSoutenance de Certification - Artefact School\n\n\n\n\n\n\n\n\nFeb 3, 2026\n\n\nJean Luis Soto\n\n\n\n\n\n\n\n\n\n\n\n\nPipeline OCR Intelligent: Sélection et Paramétrage (1/2)\n\n\nCas Pratique - Certification RNCP37827BC02\n\n\n\n\n\n\n\n\nFeb 3, 2026\n\n\nJean Luis Soto\n\n\n\n\n\n\n\n\n\n\n\n\nPipeline OCR Intelligent: Industrialisation et Déploiement (2/2)\n\n\nMise en Situation - Certification RNCP37827BC02\n\n\n\n\n\n\n\n\nFeb 3, 2026\n\n\nJean Luis Soto\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 4, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\ndelivery app orders prediction\n\n\n\n\n\n\nclassification\n\n\n\n\n\n\n\n\n\nDec 19, 2023\n\n\nJean Luis Soto\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Visual-detection/face_recognition.html#facenet",
@@ -35,186 +35,95 @@
     "text": "Adaptation of the current model\nNow that the whole data pipeline is being modeled. It is needed some adjustments on the definition of the data objectives in each steps. In terms of constrain of time, it will no be fully developed but the next steps in this work are the next:\n\nTransfer learning with the classification model to be specialized on electronic devices\nValidate the probability of the model\nDefine good questions to send to the LLM\nchange the image format to be more easy to understand the messages to be put."
   },
   {
-    "objectID": "posts/presentation/index.html#contexte-et-objectifs",
-    "href": "posts/presentation/index.html#contexte-et-objectifs",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "Contexte et Objectifs",
-    "text": "Contexte et Objectifs\n\nBesoin métier: Une nécessité d’automatiser la saisie de factures fournisseurs complexes a été identifiée.\nEnjeux:\n\nRéduction significative du temps de traitement.\nMinimisation des erreurs humaines (Typo).\nGestion de l’hétérogénéité des formats (PDF, Photos).\n\nObjectif Technique: L’intégration d’un service d’IA performant dans une architecture moderne a été réalisée.\nSLA Cible: Traitement de 50 factures en moins de 5 minutes."
-  },
-  {
-    "objectID": "posts/presentation/index.html#veille-benchmark-c6-c7",
-    "href": "posts/presentation/index.html#veille-benchmark-c6-c7",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "1. Veille & Benchmark (C6, C7)",
-    "text": "1. Veille & Benchmark (C6, C7)\nLes Solutions Analysées\nUne étude comparative a été menée sur les technologies suivantes :\n\nTesseract (OCR Classique): Solution Open Source de référence “Baseline”.\nMistral (LLM): Modèle génératif performant sur la compréhension contextuelle.\nLlama 3 (LLM via Groq): Sélectionné pour sa vitesse d’inférence exceptionnelle.\n\nCritères de Sélection\nLe choix s’est basé sur : * La précision de l’extraction (F1 Score). * La rapidité d’exécution (Conformité SLA). * L’analyse des coûts opérationnels (FinOps)."
-  },
-  {
-    "objectID": "posts/presentation/index.html#architecture-technique-c9",
-    "href": "posts/presentation/index.html#architecture-technique-c9",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "2. Architecture Technique (C9)",
-    "text": "2. Architecture Technique (C9)\n\ngraph LR User[Utilisateur] –&gt;|Upload| Streamlit[App Streamlit] Streamlit –&gt;|Requête| API[API FastAPI] API –&gt;|Image| Preprocess[Preprocessing (OpenCV)] Preprocess –&gt;|Image Nettoyée| Router{Routeur} Router –&gt;|Mode A| Mistral[Mistral API] Router –&gt;|Mode B| LLM[Llama 3 / Groq] LLM –&gt;|JSON Structuré| API API –&gt;|Résultat| Streamlit MLflow[MLflow Tracking] -.-&gt;|Monitoring| LLM\n\n\nAPI REST: Une API FastAPI a été développée pour exposer le service.\nFrontend: Une interface Streamlit permet l’interaction utilisateur.\nSuivi: MLflow a été intégré pour le monitoring des performances (C11)."
-  },
-  {
-    "objectID": "posts/presentation/index.html#configuration-données-c8-c12",
-    "href": "posts/presentation/index.html#configuration-données-c8-c12",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "3. Configuration & Données (C8, C12)",
-    "text": "3. Configuration & Données (C8, C12)\n\nConfiguration Centralisée: La gestion des paramètres s’effectue via des variables d’environnement (.env) validées par Pydantic.\nOptimisation du Prétraitement (Optuna) :\n\nAfin de maximiser la qualité de l’OCR, une optimisation bayésienne des hyperparamètres (HPO) a été mise en œuvre avec Optuna.\nCette approche a permis de déterminer scientifiquement les seuils optimaux de contraste et de débruitage.\n\nValidation des Données: Un schéma strict garantit la conformité des types (Dates, Montants)."
-  },
-  {
-    "objectID": "posts/presentation/index.html#résultats-évaluation-c11",
-    "href": "posts/presentation/index.html#résultats-évaluation-c11",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "4. Résultats & Évaluation (C11)",
-    "text": "4. Résultats & Évaluation (C11)\nTableau de Performance\n\n\n\nModèle\nF1 Score (Lignes)\nCER (Texte)\nSLA (50 docs)\n\n\n\n\nTesseract\n60%\n15%\n~2 min\n\n\nMistral\n95%\n2%\n~4.5 min\n\n\nLlama 3\n90%\n5%\n~1.5 min\n\n\n\n\nConclusion du Benchmark : Mistral a été retenu pour sa robustesse sur les structures complexes, tandis que Llama 3 offre une alternative ultra-rapide si le critère de vitesse devient prioritaire."
-  },
-  {
-    "objectID": "posts/presentation/index.html#démonstration-c10",
-    "href": "posts/presentation/index.html#démonstration-c10",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "5. Démonstration (C10)",
-    "text": "5. Démonstration (C10)\n\nScénario de la démonstration:\n\nUpload d’une facture PDF non présente dans le jeu d’entraînement.\nTraitement en temps réel via l’API.\nVisualisation des données structurées extraites.\nVérification de la trace d’exécution dans MLflow.\n\n\n(Démonstration en direct de l’application)"
-  },
-  {
-    "objectID": "posts/presentation/index.html#industrialisation-c13",
-    "href": "posts/presentation/index.html#industrialisation-c13",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "6. Industrialisation (C13)",
-    "text": "6. Industrialisation (C13)\n\nConteneurisation: L’application a été entièrement packagée sous Docker pour garantir la portabilité.\nCI/CD: Un pipeline de tests automatisés (evaluations2.py) assure la non-régression avant chaque déploiement.\nMonitoring: Un système d’alerte sur la dérive des performances (Data Drift) a été configuré via MLflow."
-  },
-  {
-    "objectID": "posts/presentation/index.html#conclusion",
-    "href": "posts/presentation/index.html#conclusion",
-    "title": "Pipeline OCR Intelligent & Intégration IA",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nCompétences Validées par le projet:\n\nConduite d’une veille technologique structurée (C6, C7).\nDéveloppement et sécurisation d’une API d’IA (C8, C9, C10).\nMise en place d’une stratégie MLOps complète (C11, C12, C13).\n\nPerspectives d’évolution:\n\nOrchestration des flux via Apache Airflow.\nFine-tuning spécifique sur les factures manuscrites.\n\n\nFin de la présentation."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/report/mise_en_production.html",
+    "href": "posts/report/mise_en_production.html",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "Le projet repose sur une architecture moderne combinant un dépôt de code versionné, un système de tracking d’expériences centralisé et un environnement de production scalable sur Google Cloud Platform (GCP).\n\n\n\n\n\ngraph TB\n    subgraph GitHub [Dépôt GitHub]\n        Code[Code Source]\n        Exp[Scripts Expérimentations]\n        Params[Configs & Prompts]\n    end\n\n    subgraph MLflow_Cloud [MLflow Tracking Server]\n        Registry[Model Registry]\n        Metrics[Métriques & Artefacts]\n        Runs[Historical Runs]\n    end\n\n    subgraph GCP [Google Cloud Platform]\n        API[FastAPI Backend&lt;br/&gt;Cloud Run]\n        Storage[GCS Bucket&lt;br/&gt;Documents]\n        Frontend[Streamlit App&lt;br/&gt;Cloud Run]\n    end\n\n    Code --&gt;|Push & CI/CD| MLflow_Cloud\n    Exp --&gt;|Log Experiments| MLflow_Cloud\n    MLflow_Cloud --&gt;|Load Best Model| API\n    Storage --&gt;|Input PDFs| API\n    API --&gt;|JSON Structured| Frontend\n    \n    style GitHub fill:#f9f9f9,stroke:#333\n    style MLflow_Cloud fill:#e1f5fe,stroke:#01579b\n    style GCP fill:#fff3e0,stroke:#e65100\n\n\n\n\n\n\n\n\n\n\nPhase Expérimentation : Les data scientists ajustent les hyperparamètres de prétraitement et les prompts d’extraction dans le dépôt GitHub.\nLogging Centralisé : Toutes les métriques (F1, CER, latence, coûts) sont enregistrées automatiquement dans MLflow Cloud.\nDéploiement Sélectif : Seul le meilleur modèle (stage “Production” dans le Registry) est chargé par l’API FastAPI.\n\n (Image attendue : Capture d’écran montrant le Model Registry dans MLflow avec un modèle tagué “Champion”)"
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#context-and-relevance---what",
-    "href": "posts/Presentation Deck/Final_Presentation.html#context-and-relevance---what",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Context and Relevance - What?",
-    "text": "Context and Relevance - What?\n\nCustomer Experience has always eagered to offer personalized experiences\nNow with GenAI capabilities is possible to have personalizations 1 to 1\nIn a Zendesk survey, 80 % of customers expect companies to have chat agents"
+    "objectID": "posts/report/mise_en_production.html#vue-densemble-de-linfrastructure",
+    "href": "posts/report/mise_en_production.html#vue-densemble-de-linfrastructure",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "",
+    "text": "Le projet repose sur une architecture moderne combinant un dépôt de code versionné, un système de tracking d’expériences centralisé et un environnement de production scalable sur Google Cloud Platform (GCP).\n\n\n\n\n\ngraph TB\n    subgraph GitHub [Dépôt GitHub]\n        Code[Code Source]\n        Exp[Scripts Expérimentations]\n        Params[Configs & Prompts]\n    end\n\n    subgraph MLflow_Cloud [MLflow Tracking Server]\n        Registry[Model Registry]\n        Metrics[Métriques & Artefacts]\n        Runs[Historical Runs]\n    end\n\n    subgraph GCP [Google Cloud Platform]\n        API[FastAPI Backend&lt;br/&gt;Cloud Run]\n        Storage[GCS Bucket&lt;br/&gt;Documents]\n        Frontend[Streamlit App&lt;br/&gt;Cloud Run]\n    end\n\n    Code --&gt;|Push & CI/CD| MLflow_Cloud\n    Exp --&gt;|Log Experiments| MLflow_Cloud\n    MLflow_Cloud --&gt;|Load Best Model| API\n    Storage --&gt;|Input PDFs| API\n    API --&gt;|JSON Structured| Frontend\n    \n    style GitHub fill:#f9f9f9,stroke:#333\n    style MLflow_Cloud fill:#e1f5fe,stroke:#01579b\n    style GCP fill:#fff3e0,stroke:#e65100"
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#context-and-relevance---why",
-    "href": "posts/Presentation Deck/Final_Presentation.html#context-and-relevance---why",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Context and Relevance - Why?",
-    "text": "Context and Relevance - Why?\n\nCustomer Experience is key for any Organization\nThere was a personalization barrier, that has been broken by GenAI"
+    "objectID": "posts/report/mise_en_production.html#flux-de-travail-mlops",
+    "href": "posts/report/mise_en_production.html#flux-de-travail-mlops",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "",
+    "text": "Phase Expérimentation : Les data scientists ajustent les hyperparamètres de prétraitement et les prompts d’extraction dans le dépôt GitHub.\nLogging Centralisé : Toutes les métriques (F1, CER, latence, coûts) sont enregistrées automatiquement dans MLflow Cloud.\nDéploiement Sélectif : Seul le meilleur modèle (stage “Production” dans le Registry) est chargé par l’API FastAPI.\n\n (Image attendue : Capture d’écran montrant le Model Registry dans MLflow avec un modèle tagué “Champion”)"
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#context-and-relevance---how",
-    "href": "posts/Presentation Deck/Final_Presentation.html#context-and-relevance---how",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Context and Relevance - How?",
-    "text": "Context and Relevance - How?\n\n\n\n\n\n\n\n\n\n\nHow GenAI is changing CX and which challenges are ahead?"
+    "objectID": "posts/report/mise_en_production.html#fonctions-clés-par-module",
+    "href": "posts/report/mise_en_production.html#fonctions-clés-par-module",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "2.1 Fonctions Clés par Module",
+    "text": "2.1 Fonctions Clés par Module\n\n\n\n\n\n\n\n\nModule\nFonction Principale\nRôle\n\n\n\n\npreprocessing_all.py\napply_preprocessing()\nApplique les filtres OpenCV optimisés (CLAHE, Deskew).\n\n\nmistral_model.py\nextract_invoice_data()\nAppelle l’API Mistral avec le prompt structuré.\n\n\nevaluations2.py\nevaluate_extraction()\nCompare les prédictions avec le Ground Truth via métriques rigoureuses.\n\n\nocr_pipeline.py\nClasse OCRPipeline\nWrapper MLflow héritant de PythonModel pour le versioning."
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#why-cx-teams-are-eager-to-implement-gen-ai",
-    "href": "posts/Presentation Deck/Final_Presentation.html#why-cx-teams-are-eager-to-implement-gen-ai",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Why CX teams are eager to implement Gen AI?",
-    "text": "Why CX teams are eager to implement Gen AI?\n\nOperative EfficienceProactive SupportHuman AugmentationHyperpersonalization\n\n\n\n\n\nImprove resource management\n\nAutomatize several routine tasks\nHuman personnel can focus on complex issues\nGen AI can increase productivity up to 50 % \n\n\n\nOptimal Customer Service\n\nCustomer Services can be provided continously\nOutsmart the current rule-based chatbots, blogs\n\n\n\n\nCustomer Interaction\n\nCan be interpreted the sentiments the sentiments and intentions of users \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerative AI can sustain a consistent service quality\nOverride frustration, effectiveless solutions provide by rule-based chatbots\nUser detects uniform support quality at any time\n\n\n\n\n\n\n\n\n\n\n\nImprove skills of agent in real-time interactions\nInstantanious suggestions to provide assertive most probable answers\nIA can drilldown on big pools of data and obtain customers needs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUsers expect hypertailored options since organizations possess quantity of data about them\nGen AI can connect with CRM to provide specific recommendations\nAdvanced segmentation and target marketing strategies"
+    "objectID": "posts/report/mise_en_production.html#architecture-fastapi-mlflow",
+    "href": "posts/report/mise_en_production.html#architecture-fastapi-mlflow",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "3.1 Architecture FastAPI + MLflow",
+    "text": "3.1 Architecture FastAPI + MLflow\nL’API a été conçue pour être agnostique du modèle, permettant de changer de version sans redéployer le code.\n\n3.1.1 Chargement Dynamique des Modèles\nimport mlflow.pyfunc\n\n# Cache pour éviter les rechargements\nMODELS_CACHE = {}\n\n@app.post(\"/predict_mlflow\")\nasync def predict_mlflow(file: UploadFile, model_uri: str):\n    if model_uri not in MODELS_CACHE:\n        MODELS_CACHE[model_uri] = mlflow.pyfunc.load_model(model_uri)\n    \n    model = MODELS_CACHE[model_uri]\n    results = await run_in_threadpool(lambda: model.predict([file_path]))\n    return {\"results\": results}\n\n\n3.1.2 Gestion de l’Asynchronisme\nL’utilisation de nest_asyncio permet d’exécuter des boucles événementielles imbriquées, nécessaire car certains modèles utilisent asyncio.run() en interne."
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#what-challenges-gen-ai-cx-have-on-the-horizon",
-    "href": "posts/Presentation Deck/Final_Presentation.html#what-challenges-gen-ai-cx-have-on-the-horizon",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "What Challenges Gen AI CX have on the horizon?",
-    "text": "What Challenges Gen AI CX have on the horizon?\n\n\n\n\n\n\n\nChallenges\nDescription\n\n\n\n\nEthical and Social\nBiases, trust, AI-human balance in customer experience\n\n\nTechnical\nAdaptability, training, transparency and scalability of the model\n\n\nFor Consumers\nPrivacy, loss of human contact, transparency"
+    "objectID": "posts/report/mise_en_production.html#contrat-dinterface-pydantic",
+    "href": "posts/report/mise_en_production.html#contrat-dinterface-pydantic",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "3.2 Contrat d’Interface (Pydantic)",
+    "text": "3.2 Contrat d’Interface (Pydantic)\nLa validation stricte des schémas garantit que le JSON retourné est conforme à l’ERP client.\nclass InvoiceItem(BaseModel):\n    description: str\n    quantity: Optional[int]\n    amount: float\n\nclass InvoiceResponse(BaseModel):\n    invoice_id: str\n    date: date\n    items: List[InvoiceItem]\n (Image attendue : Capture d’écran de l’interface /docs de FastAPI montrant les endpoints disponibles)"
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#ethical-and-social-challenges",
-    "href": "posts/Presentation Deck/Final_Presentation.html#ethical-and-social-challenges",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Ethical and Social Challenges",
-    "text": "Ethical and Social Challenges\n\n\n\nAlgorithm Bias Mitigation\n\nAI algorithms can perpetuate existing biases in data, leading to discriminatory recommendations.\nThe opacity of AI models makes it difficult to identify and mitigate biases\nA continuous process of vigilance and adaptation is necessary to address ethical challenges as AI becomes more integrated into daily tasks\n\n\n\nTrustness building by Ethic Implementation\n\nCompanies must demonstrate responsible use of AI and protect their customers’ personal data.\nCustomers must understand how AI technologies make decisions and have control over the use of their data.\nInformed consent for data use and compliance with data protection regulations are essential.\n\n\n\nManaging Human-AI Interaction\n\nAI can automate tasks and provide quick responses, but it still lacks empathy and relationship-building skills.\nHybrid systems, which combine AI with human support, are an effective solution to balance efficiency with customer satisfaction."
+    "objectID": "posts/report/mise_en_production.html#flux-dintégration",
+    "href": "posts/report/mise_en_production.html#flux-dintégration",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "4.1 Flux d’Intégration",
+    "text": "4.1 Flux d’Intégration\n\n\n\n\n\nsequenceDiagram\n    participant User\n    participant Streamlit\n    participant FastAPI\n    participant MLflow\n    participant Model\n\n    User-&gt;&gt;Streamlit: Upload PDF\n    Streamlit-&gt;&gt;FastAPI: POST /predict_mlflow\n    FastAPI-&gt;&gt;MLflow: Load Model (Cache)\n    MLflow--&gt;&gt;FastAPI: Model Object\n    FastAPI-&gt;&gt;Model: predict(pdf)\n    Model--&gt;&gt;FastAPI: JSON Structured\n    FastAPI--&gt;&gt;Streamlit: Response\n    Streamlit-&gt;&gt;User: Display Results + Filters"
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#technical-challenges",
-    "href": "posts/Presentation Deck/Final_Presentation.html#technical-challenges",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Technical Challenges",
-    "text": "Technical Challenges\n\n\n\nContinuous Training and Development\n\nTraining staff on GenAI capabilities, how to interpret results, and identifying and mitigating potential biases or errors is critical.\nTraining should foster collaboration between humans and GenAI, ensuring employees understand that these technologies are a complement to their skills, not a threat to their jobs.\n\n\n\nDependency on an exhaustive Knowledge Base\n\nAI applications in customer service rely heavily on an accurate and up-to-date knowledge base\nA comprehensive knowledge base should include detailed information about the company’s products or services, answers to frequently asked questions, troubleshooting guides, and company policies\nIt is important to establish clear processes for collecting, organizing, and updating information in the knowledge base\n\n\n\nAI Strategy communication in CX team\n\nCollaborators need to understand how AI will impact their roles and how it can help them be more efficient and effective in their work.\nIt’s essential to involve CX employees in the implementation process. Their feedback can help ensure that AI tools and processes are effectively integrated into existing workflows."
+    "objectID": "posts/report/mise_en_production.html#interface-multi-pages",
+    "href": "posts/report/mise_en_production.html#interface-multi-pages",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "4.2 Interface Multi-Pages",
+    "text": "4.2 Interface Multi-Pages\nL’application a été restructurée en pages indépendantes :\n\nUpload & Inference : Envoi de documents et affichage des résultats.\nModel Comparison : Tableau comparatif Pandas filtrable par champs.\nMLflow Dashboard : Visualisation des runs directement dans Streamlit.\n\n (Image attendue : Capture d’écran de l’application Streamlit affichant une facture et les données extraites à côté)"
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#consumer-challenges",
-    "href": "posts/Presentation Deck/Final_Presentation.html#consumer-challenges",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Consumer Challenges",
-    "text": "Consumer Challenges\n\n\n\nManagement over Private Data\n\nIt is crucial to understand how companies collect, store, and use this information.\nCompanies must clearly inform their customers about what type of data they collect, how they use it, and with whom they share it.\nCompanies must obtain explicit customer consent before using their data for GenAI\nIt is essential that customers have control over their data, including the ability to access, modify, or delete the information that companies have collected.\n\n\n\nLoss in Human Interaction\n\nLack of human connection can lead to frustration and feelings of isolation for customers\nCustomers have the right to know whether they are interacting with a machine or a person."
+    "objectID": "posts/report/mise_en_production.html#métriques-dévaluation-rigoureuses",
+    "href": "posts/report/mise_en_production.html#métriques-dévaluation-rigoureuses",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "5.1 Métriques d’Évaluation Rigoureuses",
+    "text": "5.1 Métriques d’Évaluation Rigoureuses\nPour garantir la qualité du système, plusieurs métriques complémentaires ont été implémentées.\n\n5.1.1 Métriques au Niveau Document\n\nExact Match Rate (EMR) : Pourcentage de champs (invoice_id, date) parfaitement extraits.\nAccuracy : Proportion globale de champs corrects.\n\n\n\n5.1.2 Métriques au Niveau Texte\n\nCER (Character Error Rate) : Distance de Levenshtein normalisée au niveau caractère.\nWER (Word Error Rate) : Distance au niveau mot, sensible aux erreurs de tokenisation.\n\n\n\n5.1.3 Métriques au Niveau Structurel (Line Items)\n\nRecall : Proportion d’articles réellement présents qui ont été détectés.\nPrecision : Proportion d’articles détectés qui sont corrects.\nF1-Score avec Fuzzy Matching : Utilisation de RapidFuzz pour tolérer les variantes orthographiques (“Câble AISG” vs “Cable AISG”)."
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#blueprint",
-    "href": "posts/Presentation Deck/Final_Presentation.html#blueprint",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Blueprint",
-    "text": "Blueprint\n\n\n\n\n\n\n\n\nflowchart  TD\n  A(Research Questions) --&gt; B(Data Gathering)\n  B --&gt; C(Topic Extraction)\n  C --&gt; D(Result Findings)\n\n\n\n\n\n\n\n\n\nNLP application on Topic Modeling on Core Pillars on Gen AI CX to validate theoretical findings within the business field\n\nResearch Questions:  Retrieve the key questions found on the Literature review\nData Gathering:  Understand which is the public target which can answer to the relevant questions\nTopic Extraction:  Organize and categorize the upcoming data from the target public\nResult Findings:  Provide the insights and relevant new information to put in contrast with the Literature Review"
+    "objectID": "posts/report/mise_en_production.html#défis-dévaluation-rencontrés",
+    "href": "posts/report/mise_en_production.html#défis-dévaluation-rencontrés",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "5.2 Défis d’Évaluation Rencontrés",
+    "text": "5.2 Défis d’Évaluation Rencontrés\nL’évaluation de documents semi-structurés comme les factures présente des défis uniques :\n\nFragmentation : Un article peut être décrit sur plusieurs lignes.\nVariabilité linguistique : Multilinguisme (anglais, espagnol, chinois).\nAmbiguïté sémantique : “Total TTC” vs “Total” vs “Amount Due”.\n\n\n5.2.1 Solution Adoptée\nUn système de matching par similarité sémantique (Fuzzy Token Ratio &gt; 80%) combiné à une validation de cohérence numérique (montants dans ±5%)."
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#technical-drilldown",
-    "href": "posts/Presentation Deck/Final_Presentation.html#technical-drilldown",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Technical Drilldown",
-    "text": "Technical Drilldown\n\nScopeObjective UsersData Process\n\n\nFocus on evaluate how the CX field is considering aspects as transparency, security, human connection, bias when implementing GenAI use cases:\n\n\n\n\n\n\n\nTopic\nQuestion\n\n\nCX usage\n\nWhich Gen AI use cases have developed in CX?\nWhich CX Business Process has been implemented?\n\n\n\nHuman Control\n\nWhich degree of automatization has been applied over process?\nDegree of hyperpersonalization applied on GenAI use case ?\n\n\n\nPrivacy and Data Security\n\nAny concerns related to privacy and security over the GenAI platform?\n\n\n\nBias Mitigation\n\nAny concern related to model biases?\nUser has faced any ethical challenge?\n\n\n\nTransparency and communication\n\nUsers expressed more explainability on the GenAI business process?\nHow customers are informed about the use of GenAI in CX?\n\n\n\n\n\n\n\n\n\n\n\nCX professionals that had interacted with GenAI platforms and implemented in their organizations\nFeedback retrieved from software review ratings webpage\nThe reviews are related about 24 GenAI platforms tha aim to improve CX tasks, which resulted in 730 valid reviews to process. \n\n\n\n\n\n\n\n\n\n\n\nModel\nDescription\n\n\n\n\nTidio\nA live chat and chatbot platform that helps businesses automate customer service and increase sales through AI-powered conversations\n\n\nKore.AI\nEnterprise-grade conversational AI platform that helps organizations build sophisticated virtual assistants and chatbots\n\n\nBotpress\nOpen-source chatbot creation platform that allows developers to build, debug and deploy conversational applications\n\n\nTwixor\nCustomer engagement platform offering omnichannel communication solutions with AI-powered automation\n\n\n\n\n\n\n\n\n\n\n\nData Extraction\n\nGenAI model Llama 3.2 used to process , extract and structure data\ngenerator = transformers.pipeline(\n      model=model,\n      tokenizer=tokenizer,\n      task='text-generation',\n      temperature=0.01,\n      max_new_tokens=max_tokens,\n      repetition_penalty=1.1,)\n  response = generator(prompt)[0]['generated_text']\n\n\n\n\nTopic Extraction\n\nFor topic modeling it has been used BERTopic because of its capacity to manouver complex data text.\n\nEthics: Topic Map\nEthics: Similarity Matriz"
+    "objectID": "posts/report/mise_en_production.html#suivi-mlflow-en-production",
+    "href": "posts/report/mise_en_production.html#suivi-mlflow-en-production",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "5.3 Suivi MLflow en Production",
+    "text": "5.3 Suivi MLflow en Production\nChaque inférence en production est tracée avec :\n\nTemps de latence (objectif : &lt; 6s/facture).\nCoût par requête (API Mistral vs Groq).\nMétrique de confiance (score interne du modèle).\n\nLes graphiques MLflow permettent de détecter toute dérive de performance (Data Drift) lorsque de nouveaux formats de factures apparaissent.\n\n5.3.1 Métriques Prioritaires (Alignées avec le Business)\nD’après les objectifs de l’entreprise (SLA &lt; 5min, précision &gt; 90%), les métriques suivantes sont surveillées en priorité :\n\nF1-Score global : Indicateur principal de qualité.\nLatence P95 : 95% des requêtes doivent respecter le SLA.\nCoût par 1000 factures : Pour valider la rentabilité vs Document AI.\n\n (Image attendue : Graphique MLflow comparant le F1-Score de plusieurs runs expérimentaux)"
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---automatization",
-    "href": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---automatization",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "What we learned? - Automatization",
-    "text": "What we learned? - Automatization\n\n\n\n\n\n60 % of the CX users mentioned they had used GenAI tools to improve a process. Meanwhile 40 % had automated completly tasks.\nSmall businesses tend to fully automatize the customer service tasks.\nMost common use cases are: Website chatbots, Client Support"
+    "objectID": "posts/report/mise_en_production.html#étapes-techniques",
+    "href": "posts/report/mise_en_production.html#étapes-techniques",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "5.4 Étapes Techniques",
+    "text": "5.4 Étapes Techniques\n\nBuild : Création de l’image Docker via le Dockerfile.backend.\nTests Automatisés : Exécution de evaluations2.py sur un jeu de validation.\nDéploiement GCP : Poussée vers Cloud Run\nMonitoring Post-Déploiement : Vérification des métriques de santé (Uptime, Error Rate)."
   },
   {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---hyperpersonalization-bias",
-    "href": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---hyperpersonalization-bias",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "What we learned? - Hyperpersonalization & Bias",
-    "text": "What we learned? - Hyperpersonalization & Bias\n\n\n\n\n \n\n\n\n\nHyperpersonalization\n\nUsers don’t apply hyperpersonalization, but rather automate easy and repetitive tasks\nSome users mention to integrate GenAI use case with Social Media and CRM\nMost common topics are: Personalization for no technical users, Answer automatization, Personalized asnwers in chatbots\n\nBias\n\nJust only 3 % of the reviewers mentioned issues related to Algorithm Bias\nLack of options to retrain the model, bad comprehension of requirements"
-  },
-  {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---human-likeliness-compliancy",
-    "href": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---human-likeliness-compliancy",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "What we learned? - Human Likeliness & Compliancy",
-    "text": "What we learned? - Human Likeliness & Compliancy\n\n\n\n\n\nHuman Likeliness\n\n90 % of reviewers aim for a service with human qualities as empathy, care and comprenhension\nGenAI platforms are being assigned to repetitive tasks, meanwhile human agents keep the analytical ones\n\nPrivacy\nOnly 15 % of user mention any aspect about privacy topic\nRelevant topics are data security implementation, customer data protection"
-  },
-  {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---privacy-ethics",
-    "href": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---privacy-ethics",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "What we learned? - Privacy & Ethics",
-    "text": "What we learned? - Privacy & Ethics\n\n\n\n\n \n\n\n\n\nCompliance\n\n10 % of implementers ask about regulation meets\nUser mentioned that GenAI platforms help them meet industry standars regulations\nIn chatbots, it is seek to provide precise answers, which are meet with validation processes\n\nEthics\n\n20 % of users mention ethical concerns\nImportance in augment human capacities rather than replace\nImportance to mention to users they are interacting with AI provided solutions"
-  },
-  {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---explainability-transparency",
-    "href": "posts/Presentation Deck/Final_Presentation.html#what-we-learned---explainability-transparency",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "What we learned? - Explainability & Transparency",
-    "text": "What we learned? - Explainability & Transparency\n\n\n\n\n\nExplainability\n\n25 % of reviewers mention topics about Explainability\nBut most of the topics were related on the good documentation of the GenAI platforms\n\nTransparency\n\n30 % of reviewers have mentioned transparency topics\nUser value systems that explain the reasoning behind each action\nUsers mention that GenAI platform communicate about how the system track and interpret customer behaviours\n\n\n\n\n\n \n\n\n\n\n::: {style=“text-align: center; margin-top: 1em”} Dashboard Report :::"
-  },
-  {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#conclusion-and-recommendations",
-    "href": "posts/Presentation Deck/Final_Presentation.html#conclusion-and-recommendations",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Conclusion and Recommendations",
-    "text": "Conclusion and Recommendations\n\n\n\n\n\n\n\n\nConclusions\nRecommendations\nFuture Actions\n\n\n\n\n- Organizations prefer hybrid deployment models rather than full automation\n- Organizations are encouraged to follow the CDR framework guidelines, implementing robust data governance structures\n- Investigate the impact of deep personalization using historical data and customer preferences\n\n\n- Implementation of Gen AI focuses on operational efficiency, offering continous availability and reducing response times\n- Organizations should establish clear protocols for human oversight, define specific criteria for AI handoffs to humans\n- Evaluate the real impact of AI on equity and justice in customer service\n\n\n- Use Cases are intended to augment, rather than replace, human capabilities\n- Organizations should focus on aligning bias mitigation practices, data privacy, and transparency\n- Evaluate the real-world application of frameworks such as CARE and CDR\n\n\n- GenAI is being implemented in processes with predictable patterns as chatbots and customer support automation.\n-\n-"
-  },
-  {
-    "objectID": "posts/Presentation Deck/Final_Presentation.html#thank-you",
-    "href": "posts/Presentation Deck/Final_Presentation.html#thank-you",
-    "title": "Generative AI in Customer Experience Improvement",
-    "section": "Thank you!",
-    "text": "Thank you!\n\nWhat Questions do we have?"
+    "objectID": "posts/report/mise_en_production.html#infrastructure-as-code-terraform",
+    "href": "posts/report/mise_en_production.html#infrastructure-as-code-terraform",
+    "title": "Pipeline OCR Intelligent: Industrialisation et Déploiement (2/2)",
+    "section": "5.5 Infrastructure as Code (Terraform)",
+    "text": "5.5 Infrastructure as Code (Terraform)\nLes ressources GCP sont déclarées dans des fichiers .tf :\n\nGCS Bucket pour les documents entrants.\nService Account avec permissions MLflow.\nCloud Run Service avec auto-scaling.\n\nCela garantit que l’environnement peut être recréé identiquement en cas de migration."
   },
   {
     "objectID": "posts/Transfer Learning/Image_text.html",
@@ -259,143 +168,94 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "posts/report/index.html",
-    "href": "posts/report/index.html",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "",
-    "text": "Le commanditaire est une entreprise SaaS ERP spécialisée dans le secteur douanier au Pérou, fournissant des services aux agents de fret, douanes, opérateurs logistiques et importateurs/exportateurs.\nLes utilisateurs interfacés avec le système doivent saisir de nombreuses données techniques et commerciales sur les produits transitant par les ports, conformément aux exigences strictes de la législation douanière péruvienne. Actuellement, les entreprises doivent télécharger manuellement sur le SaaS toutes les factures justifiant l’importation du fret. Ce processus implique souvent le traitement de volumes importants (d’une seule à des centaines de factures par interaction).\nCes factures servent de déclencheur critique pour l’exécution de divers rapports réglementaires internes, tels que la détection de catégories de produits importés, la somme des importations et le calcul des quantités. Le processus manuel actuel est jugé fastidieux, lent et sujet aux erreurs humaines.\n\n\n\nL’organisation a précédemment tenté d’automatiser ce flux en implémentant une solution OCR basée sur un outil de Deep Learning (Google Document AI). Bien que les résultats des tests initiaux (proof of concept) fussent prometteurs, la mise en production a révélé des défaillances majeures:\n\nSur-apprentissage (Overfitting) : Le modèle ne généralisait pas bien aux nouvelles factures ou aux variations mineures (off-setting).\nCoût de maintenance prohibitif : Nécessité de ré-entraîner le modèle pour chaque nouveau client intégrant la plateforme. Ce processus de ré-entraînement prenait jusqu’à une demi-journée par client, sans garantie de succès pour le client suivant.\n\n\n\n\nFace à ces échecs, les objectifs du nouveau projet sont clairs :\n\nAutomatisation Robuste : Disposer d’une solution capable de lire les factures de manière automatisée sans nécessiter de ré-entraînement constant.\nHaute Précision : Garantir une fiabilité élevée dans l’extraction des données critiques.\nRéduction des Coûts : Obtenir des coûts opérationnels inférieurs à ceux de l’outil Document AI actuel.\nPerformance (SLA) : Respecter un niveau de service strict : traiter 50 factures en moins de 5 minutes, quel que soit le nombre de pages.\nPolyvalence : Gérer efficacement l’hétérogénéité des formats et des langues.\n\n\n\n\nLa solution doit être déployée sur Google Cloud Platform (GCP) et être conçue pour être escalable. Le projet dispose actuellement d’un jeu de données de vérité terrain (Ground Truth) de taille petite à moyenne pour valider la nouvelle approche."
+    "objectID": "posts/presentation/index.html#contexte-du-projet",
+    "href": "posts/presentation/index.html#contexte-du-projet",
+    "title": "Facture OCR Project",
+    "section": "Contexte du Projet",
+    "text": "Contexte du Projet\nProblématique Métier - Entreprise SaaS ERP dans le secteur douanier (Pérou) - Traitement manuel de factures d’importation : lent et sujet aux erreurs - Échec de la solution précédente (Google Document AI) : coûts élevés, sur-apprentissage\n\n\n\n\n\n\n\n\n\n\nExpliquer le contexte business : besoin d’automatisation pour réduire les erreurs humaines\nMentionner l’échec de Document AI pour justifier l’approche alternative\nPréparer la transition vers les objectifs"
   },
   {
-    "objectID": "posts/report/index.html#contexte-du-projet",
-    "href": "posts/report/index.html#contexte-du-projet",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "",
-    "text": "Le commanditaire est une entreprise SaaS ERP spécialisée dans le secteur douanier au Pérou, fournissant des services aux agents de fret, douanes, opérateurs logistiques et importateurs/exportateurs.\nLes utilisateurs interfacés avec le système doivent saisir de nombreuses données techniques et commerciales sur les produits transitant par les ports, conformément aux exigences strictes de la législation douanière péruvienne. Actuellement, les entreprises doivent télécharger manuellement sur le SaaS toutes les factures justifiant l’importation du fret. Ce processus implique souvent le traitement de volumes importants (d’une seule à des centaines de factures par interaction).\nCes factures servent de déclencheur critique pour l’exécution de divers rapports réglementaires internes, tels que la détection de catégories de produits importés, la somme des importations et le calcul des quantités. Le processus manuel actuel est jugé fastidieux, lent et sujet aux erreurs humaines."
+    "objectID": "posts/presentation/index.html#objectifs-techniques",
+    "href": "posts/presentation/index.html#objectifs-techniques",
+    "title": "Facture OCR Project",
+    "section": "Objectifs Techniques",
+    "text": "Objectifs Techniques\n\n\nPerformance\n\nSLA : 50 factures &lt; 5 min\nPrécision &gt; 90%\nFormats hétérogènes\n\n\nÉconomie\n\nRéduction des coûts vs Document AI\nFlexibilité : aucun ré-entraînement par client\n\n\n\n\nInsister sur le SLA strict (exigence métier)\nExpliquer l’importance de la flexibilité (multi-clients, multi-formats)\nTransition : “Pour atteindre ces objectifs, deux phases ont été réalisées”"
   },
   {
-    "objectID": "posts/report/index.html#problématique-actuelle",
-    "href": "posts/report/index.html#problématique-actuelle",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "",
-    "text": "L’organisation a précédemment tenté d’automatiser ce flux en implémentant une solution OCR basée sur un outil de Deep Learning (Google Document AI). Bien que les résultats des tests initiaux (proof of concept) fussent prometteurs, la mise en production a révélé des défaillances majeures:\n\nSur-apprentissage (Overfitting) : Le modèle ne généralisait pas bien aux nouvelles factures ou aux variations mineures (off-setting).\nCoût de maintenance prohibitif : Nécessité de ré-entraîner le modèle pour chaque nouveau client intégrant la plateforme. Ce processus de ré-entraînement prenait jusqu’à une demi-journée par client, sans garantie de succès pour le client suivant."
+    "objectID": "posts/presentation/index.html#dispositif-de-veille-technologique",
+    "href": "posts/presentation/index.html#dispositif-de-veille-technologique",
+    "title": "Facture OCR Project",
+    "section": "Dispositif de Veille Technologique",
+    "text": "Dispositif de Veille Technologique\nMéthodologie de Recherche\n\nRevues techniques : Medium, Kaggle\nDépôts de modèles : Hugging Face, Linux Foundation\nSolutions testées :\n\nOpen Source : Tesseract, EasyOCR, Docling (IBM)\nModèles innovants : Llama Maverick, DeepSeek OCR\nSolutions Cloud : Document AI, Mistral AI\n\n\n\n\nMontrer la rigueur de la veille (sources multiples)\nExpliquer que plusieurs technologies ont été testées initialement\nPréparer la transition vers le benchmark structuré"
   },
   {
-    "objectID": "posts/report/index.html#objectifs-du-projet-business-objectives",
-    "href": "posts/report/index.html#objectifs-du-projet-business-objectives",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "",
-    "text": "Face à ces échecs, les objectifs du nouveau projet sont clairs :\n\nAutomatisation Robuste : Disposer d’une solution capable de lire les factures de manière automatisée sans nécessiter de ré-entraînement constant.\nHaute Précision : Garantir une fiabilité élevée dans l’extraction des données critiques.\nRéduction des Coûts : Obtenir des coûts opérationnels inférieurs à ceux de l’outil Document AI actuel.\nPerformance (SLA) : Respecter un niveau de service strict : traiter 50 factures en moins de 5 minutes, quel que soit le nombre de pages.\nPolyvalence : Gérer efficacement l’hétérogénéité des formats et des langues."
+    "objectID": "posts/presentation/index.html#inventaire-et-benchmark",
+    "href": "posts/presentation/index.html#inventaire-et-benchmark",
+    "title": "Facture OCR Project",
+    "section": "Inventaire et Benchmark",
+    "text": "Inventaire et Benchmark\n\n\n\nType\nSolution\nPrécision (F1)\nVitesse\nCoût\n\n\n\n\nOS\nTesseract\n~60%\nRapide\nGratuit\n\n\nVLM\nLlama 3 (Groq)\n90%\nUltra-Rapide\nFaible\n\n\nVLM\nMistral\n95%\nMoyenne\nMoyen\n\n\n\n\nDécision : Mistral retenu pour sa robustesse sur formats complexes\n\n\n\nExpliquer les critères de sélection (F1, Vitesse, Coût)\nJustifier pourquoi Mistral a été choisi malgré un coût plus élevé\nMentionner que Tesseract est gardé comme baseline"
   },
   {
-    "objectID": "posts/report/index.html#situation-technique",
-    "href": "posts/report/index.html#situation-technique",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "",
-    "text": "La solution doit être déployée sur Google Cloud Platform (GCP) et être conçue pour être escalable. Le projet dispose actuellement d’un jeu de données de vérité terrain (Ground Truth) de taille petite à moyenne pour valider la nouvelle approche."
+    "objectID": "posts/presentation/index.html#optimisation-scientifique-du-parametres",
+    "href": "posts/presentation/index.html#optimisation-scientifique-du-parametres",
+    "title": "Facture OCR Project",
+    "section": "Optimisation Scientifique du Parametres",
+    "text": "Optimisation Scientifique du Parametres\n\n\n\n\n\n\n\ngraph TD\n    Optuna[Optuna HPO Engine] --&gt;|Suggère Paramètres| Prep[Pipeline Prétraitement]\n    Prep --&gt;|Image Optimisée| OCR[Modèle OCR]\n    OCR --&gt;|Résultats| Eval[Calcul F1-Score]\n    Eval --&gt;|Feedback| Optuna\n    \n    style Optuna fill:#e1f5fe,stroke:#01579b\n    style Prep fill:#fff3e0,stroke:#e65100\n    style Eval fill:#f1f8e9,stroke:#33691e\n\n\n\n\n\n\n\n\n\nParamètres optimisés avec Optuna : Contraste, Débruitage, CLAHE, Deskewing\n\n\nExpliquer qu’au lieu de paramètres arbitraires, on utilise une approche scientifique\nOptuna teste automatiquement des combinaisons pour maximiser le F1-Score\nCela garantit que chaque filtre appliqué améliore statistiquement le résultat"
   },
   {
-    "objectID": "posts/report/index.html#nature-des-données",
-    "href": "posts/report/index.html#nature-des-données",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "2.1 Nature des Données",
-    "text": "2.1 Nature des Données\nLes documents d’entrée sont exclusivement des fichiers PDF. Cependant, leur origine varie grandement :\n\nDocuments natifs numériques.\nDocuments numérisés (scans) ou photographiés.\nHétérogénéité : Une grande diversité de mises en page (layouts) et de langues, reflétant la nature internationale du commerce logistique."
+    "objectID": "posts/presentation/index.html#architecture-globale",
+    "href": "posts/presentation/index.html#architecture-globale",
+    "title": "Facture OCR Project",
+    "section": "Architecture Globale",
+    "text": "Architecture Globale\n\n\n\n\n\n\n\ngraph TB\n    subgraph GitHub\n        Code[Code Source]\n        Exp[Expérimentations]\n    end\n    subgraph MLflow [MLflow Cloud]\n        Registry[Model Registry]\n        Metrics[Métriques]\n    end\n    subgraph GCP\n        API[FastAPI Backend]\n        Frontend[Streamlit App]\n    end\n    \n    Code --&gt;|CI/CD| MLflow\n    Exp --&gt;|Log| MLflow\n    MLflow --&gt;|Load Model| API\n    API --&gt;|JSON| Frontend\n    \n    style MLflow fill:#e1f5fe\n    style GCP fill:#fff3e0\n\n\n\n\n\n\n\nCycle de Vie MLOps\n\nGitHub : Centralisation du code source.\nMLflow : Gestion du cycle de vie (Tracking & Registry).\nGCP : Infrastructure de production (Backend/Frontend).\nDécouplage : L’API consomme uniquement les versions “Production”.\n\n\n\n\nExpliquer le flux de travail MLOps\nGitHub pour le code, MLflow pour le tracking, GCP pour la production\nSeul le modèle “Production” dans MLflow est chargé par l’API"
   },
   {
-    "objectID": "posts/report/index.html#structure-des-données-cibles",
-    "href": "posts/report/index.html#structure-des-données-cibles",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "2.2 Structure des Données Cibles",
-    "text": "2.2 Structure des Données Cibles\nLe modèle doit extraire les informations structurées selon un schéma JSON précis, aligné avec les besoins de l’ERP douanier. Voici un exemple de la structure attendue :\n\n\n\n\n\n\n\nChamp\nDescription\n\n\n\n\nsupplier_name\nNom de l’entité émettrice de la facture.\n\n\ninvoice_id\nIdentifiant unique du document.\n\n\ninvoice_date\nDate d’émission de la facture.\n\n\ncurrency\nDevise utilisée pour la transaction.\n\n\ntotal_amount\nMontant total à payer.\n\n\nline_items\nListe des articles ou services facturés (description, quantité, prix).\n\n\n\n\n\n\nFacture example\n\n\n{\n  \"supplier_name\": \"Huawei International Co. Limited\", \n  \"invoice_id\": \"HK7l2025051400224\", \n  \"invoice_date\": \"2025-05-14\",\n  \"line_items\": [\n    {\n      \"description\": \"Traditional Signal Cable, AISG Communication cable, 5m...\", \n      \"quantity\": \"300\", \n      \"amount\": \"3,235.17\"\n    }, \n    {\n      \"description\": \"RF Jumper, 3M, MQ4SF-II, (4*COAX50-6.8/2.65B-I)...\", \n      \"quantity\": \"100\", \n      \"amount\": \"6,258.57\"\n    }\n  ]\n}"
+    "objectID": "posts/presentation/index.html#structure-technique-du-code",
+    "href": "posts/presentation/index.html#structure-technique-du-code",
+    "title": "Facture OCR Project",
+    "section": "Structure Technique du Code",
+    "text": "Structure Technique du Code\nOrganisation Modulaire\n\ndata_preprocessing/ : 3 stratégies (Baseline, Intelligent, Comprehensive)\nmodels/ : Tesseract, Mistral, Llama\nevaluations2.py : Métriques rigoureuses (CER, WER, F1)\nocr_pipeline.py : Wrapper MLflow (PythonModel)\napi.py : FastAPI + Chargement dynamique\n\n\n\nMontrer la séparation des responsabilités\nChaque module a une fonction claire\nLe wrapper MLflow permet le versioning des modèles"
   },
   {
-    "objectID": "posts/report/index.html#ground-truth",
-    "href": "posts/report/index.html#ground-truth",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "3.1 Ground Truth",
-    "text": "3.1 Ground Truth\nLa constitution du jeu de données de référence (Ground Truth) a représenté l’un des défis majeurs du projet. Initialement, les modèles ont montré des performances insatisfaisantes en raison de plusieurs incohérences critiques identifiées dans les données d’origine :\n\nDiversité des formats de date : Présence de formats très hétérogènes (dates écrites en toutes lettres, formats numériques variés), ce qui a complexifié la phase de validation automatique.\nIncomplétude et fragmentation des articles : Certains articles présentaient des descriptions sur une ligne et des prix sur une autre, ou encore plusieurs descriptions fragmentées pour un même produit.\nDéfis de standardisation : Face à ces obstacles, une étape de standardisation rigoureuse a été nécessaire pour établir une base de données d’exemple cohérente.\n\nDes efforts sont actuellement poursuivis pour affiner ce corpus afin de garantir un niveau de fiabilité optimal pour les phases d’entraînement et d’évaluation.\nVoici un exemple du format JSON standardisé ciblé :\n{\n  \"line_items\": [\n    {\n      \"description\": \"Câble de communication AISG\",\n      \"quantity\": \"300\",\n      \"amount\": null \n    },\n    {\n      \"description\": null,\n      \"quantity\": null,\n      \"amount\": \"3,235.17\"\n    }\n  ]\n}"
+    "objectID": "posts/presentation/index.html#monitoring-mlflow-métriques-clés",
+    "href": "posts/presentation/index.html#monitoring-mlflow-métriques-clés",
+    "title": "Facture OCR Project",
+    "section": "Monitoring MLflow : Métriques Clés",
+    "text": "Monitoring MLflow : Métriques Clés\nMétriques Alignées avec le Business\n\nF1-Score global : Indicateur de qualité (objectif &gt; 90%)\nLatence P95 : Respect du SLA (&lt; 6s/facture)\nCoût par 1000 factures : Rentabilité vs Document AI\n\n\n\n\n\n\n\n\n\nExpliquer que MLflow n’est pas qu’un outil d’expérimentation\nIl sert aussi au monitoring en production\nLes graphiques permettent de comparer les runs et détecter les problèmes"
   },
   {
-    "objectID": "posts/report/index.html#état-actuel-du-pipeline-de-données",
-    "href": "posts/report/index.html#état-actuel-du-pipeline-de-données",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "3.2 État actuel du Pipeline de Données",
-    "text": "3.2 État actuel du Pipeline de Données\nActuellement, aucune étape automatisée de nettoyage ou de prétraitement des fichiers PDF entrants n’a été mise en place en amont. Les documents sont stockés en l’état, ce qui constitue un obstacle pour les modèles d’IA, car la qualité visuelle brute d’un scan impacte directement le taux de succès de l’OCR."
+    "objectID": "posts/presentation/index.html#évaluation-rigoureuse",
+    "href": "posts/presentation/index.html#évaluation-rigoureuse",
+    "title": "Facture OCR Project",
+    "section": "Évaluation Rigoureuse",
+    "text": "Évaluation Rigoureuse\n\n\nMétriques Complémentaires\n\nAccuracy : Champs fixes (ID, date)\nCER/WER : Qualité de transcription textuelle\nF1 Fuzzy Matching : Tolérance aux variantes (“Câble” vs “Cable”)\n\n\nDéfis Rencontrés\n\nFragmentation des articles\nMultilinguisme\nAmbiguïté sémantique\n\n\nMlflow\n\n\nMontrer la complexité de l’évaluation sur des documents semi-structurés\nExpliquer pourquoi on utilise Fuzzy Matching (variantes orthographiques)\nMentionner les défis techniques surmontés"
   },
   {
-    "objectID": "posts/report/index.html#fondamentaux-du-nettoyage-dimages",
-    "href": "posts/report/index.html#fondamentaux-du-nettoyage-dimages",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "3.3 Fondamentaux du Nettoyage d’Images",
-    "text": "3.3 Fondamentaux du Nettoyage d’Images\nPour pallier ce manque, une couche de traitement d’image robuste basée sur OpenCV et Pillow a été introduite. Voici l’analyse détaillée des algorithmes implémentés et de leur justification technique :\n\nUpscaling Intelligent :\n\nProblème : Certains scans arrivent en basse résolution (72 DPI), rendant les petits caractères illisibles pour l’OCR.\nSolution : Si la largeur de l’image est inférieure à 2000px, un redimensionnement avec l’algorithme de rééchantillonnage de Lanczos (resize_if_small) est appliqué, ce qui préserve mieux les détails des bords que l’interpolation bicubique standard.\n\nDenoising :\n\nProblème : Le “bruit poivre et sel” classique des scanners anciens crée des artefacts noirs isolés.\nSolution : Application d’un MedianFilter. Contrairement au flou gaussien qui “bave” les contours, le filtre médian élimine le bruit ponctuel tout en gardant les arêtes des lettres nettes.\n\nDeskewing :\n\nProblème : Une facture scannée avec une rotation de 3° suffit à chasser le texte hors des colonnes attendues pour l’extraction de tableaux.\nSolution : Détection de l’angle d’inclinaison via cv2.minAreaRect sur un masque binaire (THRESH_OTSU), suivie d’une rotation inverse.\n\nCLAHE :\n\nProblème : L’égalisation d’histogramme classique “brûle” les zones claires. Sur une photo de facture avec des ombres (ex: prise avec un smartphone), le contraste n’est pas uniforme.\nSolution : CLAHE améliore le contraste localement sur des tuiles (8x8 pixels), permettant de révéler du texte caché dans l’ombre sans surexposer le reste du document.\n\nAjustements Colorimétriques :\n\nOptimisation fine utilisant ImageEnhance pour maximiser le “Pop” du texte noir sur fond blanc, guidée par les hyperparamètres trouvés via Optuna."
+    "objectID": "posts/presentation/index.html#api-rest-chargement-dynamique",
+    "href": "posts/presentation/index.html#api-rest-chargement-dynamique",
+    "title": "Facture OCR Project",
+    "section": "API REST : Chargement Dynamique",
+    "text": "API REST : Chargement Dynamique\nFastAPI + MLflow\nMODELS_CACHE = {}\n\n@app.post(\"/predict_mlflow\")\nasync def predict_mlflow(file: UploadFile, model_uri: str):\n    if model_uri not in MODELS_CACHE:\n        MODELS_CACHE[model_uri] = mlflow.pyfunc.load_model(model_uri)\n    \n    model = MODELS_CACHE[model_uri]\n    results = await run_in_threadpool(lambda: model.predict([file_path]))\n    return {\"results\": results}\n✅ Agnostique du modèle : changement de version sans redéploiement\n\n\nExpliquer le principe du cache pour éviter les rechargements\nMontrer que l’API peut charger n’importe quel modèle depuis MLflow\nCela permet de changer de modèle sans toucher au code du backend"
   },
   {
-    "objectID": "posts/report/index.html#stratégies-de-prétraitement-implémentées",
-    "href": "posts/report/index.html#stratégies-de-prétraitement-implémentées",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "3.4 Stratégies de Prétraitement Implémentées",
-    "text": "3.4 Stratégies de Prétraitement Implémentées\n\n3.4.1 Approche ML Traditionnelle (Optimisation Scientifique)\nPlutôt que de définir ces paramètres de nettoyage arbitrairement (“au feeling”), une méthodologie rigoureuse d’optimisation bayésienne des hyperparamètres (HPO) a été adoptée en utilisant le framework Optuna.\nLe pipeline exécute de multiples itérations (“trials”) en faisant varier les paramètres pour maximiser une métrique objective : le F1-Score global de l’extraction.\n\nParamètres optimisés :\n\nFacteur de contraste (Range: 1.0 - 1.8)\nFacteur de luminosité (Range: 1.0 - 1.4)\nTaille du noyau de débruitage (Denoise Kernel: 1, 3, 5)\nActivation conditionnelle du CLAHE et du Deskewing (Booléen)\n\n\n\n\n\n\n\ngraph TD\n    subgraph Optuna_Engine [Optuna HPO Engine]\n        Sampler[TPE Sampler]\n        Obj[Objectif: Maximize F1]\n    end\n\n    subgraph Preprocessing_Pipeline [Script: preprocessing_all.py]\n        direction TB\n        ImgIn[Input Image] --&gt; DeNoise[Denoise Median]\n        DeNoise --&gt; DeSkew[Deskew Rotation]\n        DeSkew --&gt; Clahe[CLAHE Contrast Local]\n        Clahe --&gt; Resize[Lanczos Resize]\n        Resize --&gt; Bright[Brightness Contrast]\n    end\n\n    subgraph Evaluation [Evaluation Pipeline]\n        OCR[OCR Model]\n        Metric[Calcul F1 Score]\n    end\n\n    %% Flujo de trabajo con etiquetas entre comillas para evitar errores\n    Sampler -- \"1. Suggère Paramètres\" --&gt; Preprocessing_Pipeline\n    Bright --&gt; OCR\n    OCR --&gt; Metric\n    Metric -- \"2. Feedback Score\" --&gt; Obj\n    Obj -- \"3. Update Distribution\" --&gt; Sampler\n    \n    %% Estilos para que en el blog resalte\n    style Optuna_Engine fill:#e1f5fe,stroke:#01579b\n    style Preprocessing_Pipeline fill:#fff3e0,stroke:#e65100\n    style Evaluation fill:#f1f8e9,stroke:#33691e\n\n\n\n\n\n\nCette approche transforme la configuration du pré-traitement d’un art subjectif en une science mesurable, garantissant que chaque filtre appliqué contribue statistiquement à la qualité du résultat final.\n\n\n3.4.2 Prémices d’un Agent IA de Prétraitement\nPour résoudre le manque de flexibilité de l’approche statique (qui applique les mêmes paramètres agnostiques à tous les documents), les bases de ce qui deviendra un Agent IA de Prétraitement ont été posées.\nL’idée est de créer un système capable d’évaluer d’abord la qualité visuelle spécifique du document (luminosité, flou, biais) avant de décider dynamiquement des actions à entreprendre.\n\n\n\n\n\ngraph TD\n    A[Facture PDF] --&gt; B[Analyseur de Qualité]\n    B --&gt; C{Qualité OK ?}\n    C -- Non --&gt; D[Agent décide des transformations]\n    D --&gt; E[Appliquer Corrections Spécifiques]\n    E --&gt; B\n    C -- Oui --&gt; F[OCR Intelligent]\n    F --&gt; G[JSON]\n\n\n\n\n\n\nLa logique repose sur une boucle de feedback intelligente : tant que le score de qualité visuelle n’est pas optimal, l’agent itère sur les paramètres. Cela permet de traiter une photo sombre différemment d’un scan clair, là où l’approche traditionnelle échouerait sur l’un des deux."
+    "objectID": "posts/presentation/index.html#intégration-streamlit",
+    "href": "posts/presentation/index.html#intégration-streamlit",
+    "title": "Facture OCR Project",
+    "section": "Intégration Streamlit",
+    "text": "Intégration Streamlit\n\n\n\n\n\nsequenceDiagram\n    participant User\n    participant Streamlit\n    participant API\n    participant MLflow\n    \n    User-&gt;&gt;Streamlit: Upload PDF\n    Streamlit-&gt;&gt;API: POST /predict_mlflow\n    API-&gt;&gt;MLflow: Load Model\n    MLflow--&gt;&gt;API: Model Object\n    API-&gt;&gt;API: predict(pdf)\n    API--&gt;&gt;Streamlit: JSON Structured\n    Streamlit-&gt;&gt;User: Display + Filters\n\n\n\n\n\n\nFastAPI\n\n\nMontrer le flux complet de l’utilisateur final\nL’app Streamlit a été enrichie avec des pages de comparaison et de filtrage\nDémo prévue pendant la soutenance"
   },
   {
-    "objectID": "posts/report/index.html#architecture-du-pipeline",
-    "href": "posts/report/index.html#architecture-du-pipeline",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "4.1 Architecture du Pipeline",
-    "text": "4.1 Architecture du Pipeline\nLe projet repose sur une architecture modulaire :\n\nIngestion: Chargement depuis Google Cloud Storage (GCS).\nPreprocessing: OpenCV / Python.\nExtraction (Modèles IA) : voir section suivante."
+    "objectID": "posts/presentation/index.html#démonstration-prévue",
+    "href": "posts/presentation/index.html#démonstration-prévue",
+    "title": "Facture OCR Project",
+    "section": "Démonstration Prévue",
+    "text": "Démonstration Prévue\nComposants à Démontrer\n\n✅ Upload d’une facture via Streamlit\n✅ Appel API FastAPI + inspection JSON\n✅ Consultation MLflow (métriques de l’inférence)\n✅ Trigger de déploiement (Git Push → Cloud Run)\n\nModele Runner\n\n\nPréparer la démo en direct\nAvoir une facture de test prête\nMontrer l’interface MLflow avec les runs précédents\nSi le temps le permet, montrer le déploiement automatique"
   },
   {
-    "objectID": "posts/report/index.html#analyse-comparative-des-modèles-ocr",
-    "href": "posts/report/index.html#analyse-comparative-des-modèles-ocr",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "4.2 Analyse Comparative des Modèles OCR",
-    "text": "4.2 Analyse Comparative des Modèles OCR\nPour ce projet, plusieurs familles de modèles ont été évaluées afin de trouver l’équilibre optimal entre précision, coût et maintenabilité.\n\n4.2.1 1. Typologie des Modèles\nDeux catégories principales sont distinguées :\n\nOCR Traditionnel (ex: Tesseract) :\n\nPrincipe : Analyse géométrique pixel par pixel pour identifier des caractères.\nAvantages : Gratuit, extrêmement rapide, s’exécute 100% en local (confidentialité totale), mature.\nLimites : “Aveugle” au contexte sémantique. Il peut lire “O” au lieu de “0” sans comprendre qu’il s’agit d’un prix. Nécessite souvent des expressions régulières (Regex) complexes pour structurer la donnée a posteriori.\n\nLLM Vision / Extracteurs (ex: Mistral, Llama, Gemini) :\n\nPrincipe : Modèles de langage géants capables de “voir” (via un encodeur visuel ou un OCR intermédiaire) et de “comprendre” le document globalement.\nAvantages : Compréhension sémantique forte. Capacité à corriger une faute de frappe (“Totla” -&gt; “Total”) grâce au contexte. Sortie directe en JSON structuré prêt à l’emploi.\nLimites : Coût d’inférence (API), latence plus élevée, risque d’hallucination (inventer une donnée manquante).\n\n\n\n\n4.2.2 2. Modèles Sélectionnés et Benchmarks\nTrois modèles spécifiques ont été sélectionnés pour l’implémentation finale, excluant Google Document AI (propriétaire et “boîte noire”) pour privilégier le contrôle et la flexibilité.\n\n\n\n\n\n\n\n\n\n\n\nModèle\nType\nLicence\nCoût estimé / 1k pages\nVitesse\nPrécision Contextuelle\n\n\n\n\nTesseract 5\nOCR Classique\nOpen Source (Apache 2.0)\n0.00 € (CPU)\nTrès Rapide (&lt;1s)\nFaible (Nécessite Regex)\n\n\nLlama 3 (via Groq)\nLLM (Text-to-JSON)\nOpen Weights\nTrès Faible\nUltra Rapide (LPU)\nExcellente\n\n\nMistral 7B / Large\nLLM (Génératif)\nOpen Weights / API\nFaible / Moyen\nMoyenne\nTrès Bonne\n\n\n\n\n\n4.2.3 3. Justification du Choix Final\n\nTesseract a été conservé comme Baseline (référence de base). Il permet de valider si l’ajout d’une IA complexe apporte réellement de la valeur par rapport à une solution gratuite.\nMistral a été choisi pour sa robustesse en multilingue et sa facilité d’utilisation.\nLlama 3 (implémenté via l’accélérateur Groq) a démontré une capacité exceptionnelle à respecter le SLA de 5 minutes pour 50 factures grâce à son inférence ultra-rapide."
-  },
-  {
-    "objectID": "posts/report/index.html#pipeline-dinférence-architecture-end-to-end",
-    "href": "posts/report/index.html#pipeline-dinférence-architecture-end-to-end",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "4.3 Pipeline d’Inférence (Architecture End-to-End)",
-    "text": "4.3 Pipeline d’Inférence (Architecture End-to-End)\nL’architecture globale de la solution est conçue pour être modulaire et scalable sur GCP, intégrant des techniques d’ingénierie logicielle avancées pour maximiser la performance.\n\n4.3.1 Workflow Complet\nLe flux de données suit ces étapes clés : 1. Ingestion Asynchrone : Récupération parallèle des PDF depuis le Bucket GCS via asyncio. 2. Pré-traitement (3 Modes) : * None : Image brute. * Standard : Application de filtres basiques. * Intelligent (Optuna) : Paramètres optimisés dynamiquement. 3. Inférence (Batch) : Envoi optimisé des requêtes aux modèles (Mistral API, Groq) avec gestion de la concurrence pour minimiser la latence réseau. 4. Post-traitement et Validation : Parsing, nettoyage Regex (pour Tesseract), et validation stricte du schéma JSON via Pydantic. 5. Output : Stockage persistant des résultats validés.\n\n\n4.3.2 Optimisation de la Performance (SLA)\nPour atteindre l’objectif de 50 factures en &lt; 5 minutes, les mesures suivantes ont été implémentées : * Concurrence Asynchrone : Utilisation intensive de Python asyncio pour non-bloquer les I/O (lectures GCS, appels API). * Parallélisme CPU : Utilisation de ProcessPoolExecutor pour distribuer la charge lourde du traitement d’image (OpenCV) sur tous les cœurs disponibles.\n\n\n\n\n\ngraph LR\n    subgraph Google_Cloud [GCP Infrastructure]\n        GCS[(GCS Input Bucket)]\n    end\n\n    subgraph Core_Pipeline [Inference Engine]\n        direction TB\n        Pre[Pre-processing&lt;br/&gt;Asyncio + Multiprocessing]\n        Router{Model Router}\n        Mistral[Mistral API]\n        Llama[Llama 3 / Groq]\n        Tess[Tesseract Engine]\n        Valid[JSON Validation&lt;br/&gt;Pydantic]\n    end\n\n    Output[(JSON Final)]\n\n    GCS -- Async Fetch --&gt; Pre\n    Pre --&gt; Router\n    Router -- \"Option A\" --&gt; Mistral\n    Router -- \"Option B\" --&gt; Llama\n    Router -- \"Option C\" --&gt; Tess\n    Mistral --&gt; Valid\n    Llama --&gt; Valid\n    Tess --&gt; Valid\n    Valid --&gt; Output\n    \n    style Core_Pipeline fill:#f9fbe7,stroke:#827717\n    style Google_Cloud fill:#e3f2fd,stroke:#0d47a1"
-  },
-  {
-    "objectID": "posts/report/index.html#configuration-des-services",
-    "href": "posts/report/index.html#configuration-des-services",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "4.4 Configuration des Services",
-    "text": "4.4 Configuration des Services\nLa configuration est centralisée dans des fichiers .env et gérée par pydantic pour valider les schémas d’entrée/sortie."
-  },
-  {
-    "objectID": "posts/report/index.html#méthodologie",
-    "href": "posts/report/index.html#méthodologie",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "5.1 Méthodologie",
-    "text": "5.1 Méthodologie\nL’évaluation repose sur MLflow pour le tracking des expériences. Les métriques clés sont : * Exact Match Rate (EMR) pour les champs d’en-tête. * F1 Score pour les lignes produits (tolérance floue via RapidFuzz). * Character Error Rate (CER) pour mesurer la qualité de la transcription textuelle."
-  },
-  {
-    "objectID": "posts/report/index.html#résultats-du-benchmark",
-    "href": "posts/report/index.html#résultats-du-benchmark",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "5.2 Résultats du Benchmark",
-    "text": "5.2 Résultats du Benchmark\n(Insérer ici les graphiques générés par MLflow ou des tableaux de résultats)\n\nLe modèle [MODELE_GAGNANT] a obtenu les meilleures performances avec un F1-Score global de XX%."
-  },
-  {
-    "objectID": "posts/report/index.html#api-rest-c9",
-    "href": "posts/report/index.html#api-rest-c9",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "6.1 API REST (C9)",
-    "text": "6.1 API REST (C9)\nLe modèle sélectionné a été encapsulé dans une API REST développée avec FastAPI. * Endpoint: POST /extract * Entrée: Fichier PDF/Image * Sortie: JSON structuré\n@app.post(\"/extract\")\nasync def extract_invoice(file: UploadFile):\n    # Logique d'appel du modèle\n    return {\"data\": extracted_json}"
-  },
-  {
-    "objectID": "posts/report/index.html#application-utilisateur",
-    "href": "posts/report/index.html#application-utilisateur",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "6.2 Application Utilisateur",
-    "text": "6.2 Application Utilisateur\nUne interface Streamlit permet aux utilisateurs finaux de : 1. Uploader une facture. 2. Visualiser les résultats extraits en temps réel. 3. Corriger les erreurs éventuelles (Human-in-the-loop)."
-  },
-  {
-    "objectID": "posts/report/index.html#industrialisation",
-    "href": "posts/report/index.html#industrialisation",
-    "title": "Rapport de Projet: Pipeline OCR Intelligent",
-    "section": "6.3 Industrialisation",
-    "text": "6.3 Industrialisation\n\nContainerisation: Utilisation de Docker pour packager l’application.\nCI/CD: Pipeline de déploiement (théorique ou implémenté via GitHub Actions).\nMonitoring: Suivi de la dérive du modèle via MLflow."
+    "objectID": "posts/presentation/index.html#impact-et-perspectives",
+    "href": "posts/presentation/index.html#impact-et-perspectives",
+    "title": "Facture OCR Project",
+    "section": "Impact et Perspectives",
+    "text": "Impact et Perspectives\nRésultats Obtenus\n\nSLA respecté : 50 factures en ~4.5 minutes ✅\nPrécision : F1 &gt; 95% (Mistral) ✅\nCoûts réduits vs Document AI ✅\n\nÉvolutions Futures\n\nOrchestration via Apache Airflow\nAmelioration Modele\n\n\n\nMontrer que le projet a atteint tous ses objectifs\nProposer des évolutions réalistes et pertinentes\nRemercier le jury et ouvrir aux questions"
   }
 ]
