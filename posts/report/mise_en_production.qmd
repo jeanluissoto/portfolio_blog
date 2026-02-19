@@ -183,8 +183,6 @@ L'application a été restructurée en pages indépendantes :
 + **Model Comparison** : Tableau comparatif Pandas filtrable par champs.
 + **MLflow Dashboard** : Visualisation des runs directement dans Streamlit.
 
-![Interface Streamlit](images/app_inference.png)
-*(Image attendue : Capture d'écran de l'application Streamlit affichant une facture et les données extraites à côté)*
 
 # Stratégie de Monitoring et Tests
 

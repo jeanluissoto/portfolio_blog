@@ -6,12 +6,12 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Jean Luis Soto">
   <meta name="dcterms.date" content="2026-02-19">
-  <title>Jean Luis Soto's Portfolio – Pipeline OCR de Factures</title>
+  <title>Jean Luis Soto's Portfolio – Facture OCR Project</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,8 +29,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-7aaf31681eed659f0200bcc8fe9a56fc.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-06e768f098560084c2d7120de8ad04fb.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,13 +194,13 @@
   <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
   <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Pipeline OCR de Factures</h1>
-  <p class="subtitle">Acheel</p>
+  <h1 class="title">Facture OCR Project</h1>
+  <p class="subtitle">Soutenance de Certification - Artefact School</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -151,13 +217,9 @@ Jean Luis Soto
 <h1>Introduction</h1>
 
 </section>
-<section id="objetive-du-projet" class="slide level2">
-<h2>Objetive du Projet</h2>
-<p><strong>Problématique Métier</strong></p>
-<ul>
-<li>Traitement manuel de factures d’importation : <strong>lent et sujet aux erreurs</strong></li>
-<li>Automatization d’enregistrement du contenu des factures pour réduire les erreurs humaines et accélérer le processus</li>
-</ul>
+<section id="contexte-du-projet" class="slide level2">
+<h2>Contexte du Projet</h2>
+<p><strong>Problématique Métier</strong> - Entreprise SaaS ERP dans le secteur douanier (Pérou) - Traitement manuel de factures d’importation : <strong>lent et sujet aux erreurs</strong> - Échec de la solution précédente (Google Document AI) : coûts élevés, sur-apprentissage</p>
 <div class="columns">
 <div class="column" style="width:33%;">
 <p><img data-src="images/facture_1.png" style="width:90.0%"></p>
@@ -166,137 +228,11 @@ Jean Luis Soto
 </div><div class="column" style="width:33%;">
 <p><img data-src="images/facture_3.png" style="width:90.0%"></p>
 </div></div>
-</section></section>
-<section>
-<section id="demonstration" class="title-slide slide level1 center">
-<h1>Demonstration</h1>
-
-</section>
-<section id="pipeline-automatisé" class="slide level2 smaller scrollable">
-<h2>Pipeline Automatisé</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<h3 id="flux-automatisé">Flux Automatisé</h3>
-<p>Le pipeline gère l’ingestion de bout en bout :</p>
-<div class="cell" data-reveal="true" data-fig-width="3" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    A(GCS) --&gt;|PDF| B{Airflow}
-    B --&gt;|OCR| C[API]
-    C --&gt;|JSON| D[(BigQuery)]
-    style B fill:#017cee,color:#fff
-    style D fill:#4285F4,color:#fff
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<p><iframe data-external="1" src="https://www.youtube.com/embed/wRgK5PhEHZc" width="100%" height="500px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> <em>Le Dashboard Airflow permet de monitorer chaque étape du traitement.</em></p>
-</div></div>
-</section>
-<section id="outil-ui" class="slide level2 smaller scrollable">
-<h2>🖥️ Outil UI</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<h3 id="interface-utilisateur">Interface Utilisateur</h3>
-<p>Permet de valider et monitorer les extractions :</p>
-<ul>
-<li><strong>Upload Direct</strong> de factures</li>
-<li><strong>Visualisation</strong> des données structurées</li>
-</ul>
-<p><a href="https://ocr-app-642264350551.europe-west9.run.app/Model_Inference" class="btn btn-outline-primary mt-4" role="button">Tester l’outil</a></p>
-</div><div class="column" style="width:60%;">
-<iframe data-external="1" src="https://www.youtube.com/embed/R1dVrTcpjEQ" width="100%" height="500px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-</div></div>
-</section></section>
-<section>
-<section id="architecture-globale" class="title-slide slide level1 center">
-<h1>Architecture Globale</h1>
-
-</section>
-<section id="architecture-globale-1" class="slide level2 smaller scrollable">
-<h2>Architecture Globale</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<div class="cell" data-reveal="true" data-fig-width="11" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TB
-    subgraph GitHub
-        Code[Code, dbt &amp; Models]
-        Exp[Expérimentations]
-    end
-
-    subgraph MLflow [MLflow Cloud]
-        Registry[Model Registry]
-        Metrics[Métriques]
-    end
-
-    subgraph GCP [Google Cloud Platform]
-        direction TB
-        
-        AF((Airflow Orchestrator))
-        
-        subgraph DataStack [Pipeline de Données]
-            API[FastAPI OCR]
-            BQ[(BigQuery)]
-            DBT[[dbt Core]]
-            VS[(Vector Store RAG)]
-        end
-
-        subgraph UX [Interface]
-            Frontend[Streamlit App]
-        end
-    end
-
-    %% Flux MLOps
-    Code --&gt;|CI/CD| MLflow
-    Exp --&gt;|Log| MLflow
-    MLflow --&gt;|Load Model| API
-    
-    %% Flux Data &amp; Airflow
-    AF --&gt;|Orchestre| API
-    AF --&gt;|Sync| VS
-    API --&gt;|Raw Data| BQ
-    BQ --&gt;|Transform| DBT --&gt; BQ
-    
-    %% Flux Utilisateur
-    Frontend --&gt;|Interroge / Chat| API
-    API --&gt;|Retrieve| VS
-    API --&gt;|Query| BQ
-    
-    style AF fill:#017cee,color:#fff
-    style MLflow fill:#e1f5fe
-    style DBT fill:#ff694b,color:#fff
-    style GCP fill:#fff3e0,stroke:#e65100
-    style VS fill:#f1f8e9
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:35%;">
-<p><strong>Cycle de Vie Intégré</strong></p>
-<ul>
-<li><strong>MLOps (MLflow)</strong> : Gestion des versions du modèle et suivi des expérimentations GitHub.</li>
-<li><strong>Orchestration (Airflow)</strong> : Pilotage du pipeline (OCR → BigQuery) et mise à jour du Vector Store.</li>
-<li><strong>Modern Data Stack</strong> : Transformation via <strong>dbt</strong> pour l’analytique et indexation vectorielle pour le <strong>RAG</strong>.</li>
-<li><strong>Frontend</strong> : Point d’accès unique pour l’analyse métier et le Q&amp;A intelligent sur les factures.</li>
-</ul>
-</div></div>
 <aside class="notes">
 <ul>
-<li>Expliquer le flux de travail MLOps</li>
-<li>GitHub pour le code, MLflow pour le tracking, GCP pour la production</li>
-<li>Seul le modèle “Production” dans MLflow est chargé par l’API</li>
+<li>Expliquer le contexte business : besoin d’automatisation pour réduire les erreurs humaines</li>
+<li>Mentionner l’échec de Document AI pour justifier l’approche alternative</li>
+<li>Préparer la transition vers les objectifs</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -310,84 +246,28 @@ Jean Luis Soto
           display:block!important;
       }</style></aside>
 </section>
-<section id="intégration-streamlit" class="slide level2">
-<h2>Intégration Streamlit</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">sequenceDiagram
-    participant User
-    participant Streamlit
-    participant API
-    participant MLflow
-    
-    User-&gt;&gt;Streamlit: Upload PDF
-    Streamlit-&gt;&gt;API: POST /predict_mlflow
-    API-&gt;&gt;MLflow: Load Model
-    MLflow--&gt;&gt;API: Model Object
-    API-&gt;&gt;API: predict(pdf)
-    API--&gt;&gt;Streamlit: JSON Structured
-    Streamlit-&gt;&gt;User: Display + Filters
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<p><a href="https://ocr-backend-api-642264350551.europe-west9.run.app/docs" class="btn btn-primary" role="button">FastAPI</a></p>
-<aside class="notes">
-<ul>
-<li>Montrer le flux complet de l’utilisateur final</li>
-<li>L’app Streamlit a été enrichie avec des pages de comparaison et de filtrage</li>
-<li>Démo prévue pendant la soutenance</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="optimisation-scientifique-du-parametres" class="slide level2">
-<h2>Optimisation Scientifique du Parametres</h2>
+<section id="objectifs-techniques" class="slide level2">
+<h2>Objectifs Techniques</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
-<div class="cell" data-reveal="true" data-fig-width="12" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    Optuna[Optuna HPO Engine] --&gt;|Suggère Paramètres| Prep[Pipeline Prétraitement]
-    Prep --&gt;|Image Optimisée| OCR[Modèle OCR]
-    OCR --&gt;|Résultats| Eval[Calcul F1-Score]
-    Eval --&gt;|Feedback| Optuna
-    
-    style Optuna fill:#e1f5fe,stroke:#01579b
-    style Prep fill:#fff3e0,stroke:#e65100
-    style Eval fill:#f1f8e9,stroke:#33691e
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<p><img data-src="images/line_f1_optimal.png" style="width:80.0%"></p>
+<div class="column" style="width:50%;">
+<p><strong>Performance</strong></p>
+<ul>
+<li>SLA : <strong>50 factures &lt; 5 min</strong></li>
+<li>Précision <strong>&gt; 90%</strong></li>
+<li>Formats hétérogènes</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Économie</strong></p>
+<ul>
+<li>Réduction des coûts vs Document AI</li>
+<li>Flexibilité : aucun ré-entraînement par client</li>
+</ul>
 </div></div>
-<p><strong>Paramètres optimisés avec Optuna</strong> : Contraste, Débruitage, CLAHE, Deskewing</p>
 <aside class="notes">
 <ul>
-<li>Expliquer qu’au lieu de paramètres arbitraires, on utilise une approche scientifique</li>
-<li>Optuna teste automatiquement des combinaisons pour maximiser le F1-Score</li>
-<li>Cela garantit que chaque filtre appliqué améliore statistiquement le résultat</li>
+<li>Insister sur le SLA strict (exigence métier)</li>
+<li>Expliquer l’importance de la flexibilité (multi-clients, multi-formats)</li>
+<li>Transition : “Pour atteindre ces objectifs, deux phases ont été réalisées”</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -402,45 +282,8 @@ Jean Luis Soto
       }</style></aside>
 </section></section>
 <section>
-<section id="conclusion" class="title-slide slide level1 center">
-<h1>Conclusion</h1>
-
-</section>
-<section id="impact-et-perspectives" class="slide level2">
-<h2>Impact et Perspectives</h2>
-<p><strong>Résultats Obtenus</strong></p>
-<ul>
-<li>SLA respecté : 50 factures en ~4.5 minutes ✅</li>
-<li>Précision : F1 &gt; 95% (Mistral) ✅</li>
-<li>Coûts réduits vs Document AI ✅</li>
-</ul>
-<p><strong>Évolutions Futures</strong></p>
-<ul>
-<li>Orchestration via Apache Airflow du RAG</li>
-<li>Ajouter dans le Cloud l’outil LightRAG</li>
-<li>Ajouter le processus DBT pour l’analytique</li>
-</ul>
-<aside class="notes">
-<ul>
-<li>Montrer que le projet a atteint tous ses objectifs</li>
-<li>Proposer des évolutions réalistes et pertinentes</li>
-<li>Remercier le jury et ouvrir aux questions</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="annexe" class="title-slide slide level1 center">
-<h1>Annexe</h1>
+<section id="partie-12-cas-pratique" class="title-slide slide level1 center">
+<h1>Partie 1/2: Cas Pratique</h1>
 <p><strong>Sélection et Paramétrage du Service IA</strong></p>
 </section>
 <section id="dispositif-de-veille-technologique" class="slide level2">
@@ -456,7 +299,6 @@ Jean Luis Soto
 <li>Solutions Cloud : Document AI, Mistral AI</li>
 </ul></li>
 </ul>
-<p><a href="https://mlflow-tracking-dev-642264350551.europe-west9.run.app" class="btn btn-primary" role="button">Mlflow</a></p>
 <aside class="notes">
 <ul>
 <li>Montrer la rigueur de la veille (sources multiples)</li>
@@ -519,6 +361,362 @@ Jean Luis Soto
 <li>Expliquer les critères de sélection (F1, Vitesse, Coût)</li>
 <li>Justifier pourquoi Mistral a été choisi malgré un coût plus élevé</li>
 <li>Mentionner que Tesseract est gardé comme baseline</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="optimisation-scientifique-du-parametres" class="slide level2">
+<h2>Optimisation Scientifique du Parametres</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="cell" data-reveal="true" data-fig-width="12" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    Optuna[Optuna HPO Engine] --&gt;|Suggère Paramètres| Prep[Pipeline Prétraitement]
+    Prep --&gt;|Image Optimisée| OCR[Modèle OCR]
+    OCR --&gt;|Résultats| Eval[Calcul F1-Score]
+    Eval --&gt;|Feedback| Optuna
+    
+    style Optuna fill:#e1f5fe,stroke:#01579b
+    style Prep fill:#fff3e0,stroke:#e65100
+    style Eval fill:#f1f8e9,stroke:#33691e
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/line_f1_optimal.png" style="width:80.0%"></p>
+</div></div>
+<p><strong>Paramètres optimisés avec Optuna</strong> : Contraste, Débruitage, CLAHE, Deskewing</p>
+<aside class="notes">
+<ul>
+<li>Expliquer qu’au lieu de paramètres arbitraires, on utilise une approche scientifique</li>
+<li>Optuna teste automatiquement des combinaisons pour maximiser le F1-Score</li>
+<li>Cela garantit que chaque filtre appliqué améliore statistiquement le résultat</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="partie-22-mise-en-situation" class="title-slide slide level1 center">
+<h1>Partie 2/2: Mise en Situation</h1>
+<p><strong>Industrialisation et Déploiement</strong></p>
+</section>
+<section id="architecture-globale" class="slide level2 smaller">
+<h2>Architecture Globale</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="cell" data-reveal="true" data-fig-width="10" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TB
+    subgraph GitHub
+        Code[Code Source]
+        Exp[Expérimentations]
+    end
+    subgraph MLflow [MLflow Cloud]
+        Registry[Model Registry]
+        Metrics[Métriques]
+    end
+    subgraph GCP
+        API[FastAPI Backend]
+        Frontend[Streamlit App]
+    end
+    
+    Code --&gt;|CI/CD| MLflow
+    Exp --&gt;|Log| MLflow
+    MLflow --&gt;|Load Model| API
+    API --&gt;|JSON| Frontend
+    
+    style MLflow fill:#e1f5fe
+    style GCP fill:#fff3e0
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:35%;">
+<p><strong>Cycle de Vie MLOps</strong></p>
+<ul>
+<li><strong>GitHub</strong> : Centralisation du code source.</li>
+<li><strong>MLflow</strong> : Gestion du cycle de vie (Tracking &amp; Registry).</li>
+<li><strong>GCP</strong> : Infrastructure de production (Backend/Frontend).</li>
+<li><strong>Découplage</strong> : L’API consomme uniquement les versions “Production”.</li>
+</ul>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Expliquer le flux de travail MLOps</li>
+<li>GitHub pour le code, MLflow pour le tracking, GCP pour la production</li>
+<li>Seul le modèle “Production” dans MLflow est chargé par l’API</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="structure-technique-du-code" class="slide level2">
+<h2>Structure Technique du Code</h2>
+<p><strong>Organisation Modulaire</strong></p>
+<ul>
+<li><code>data_preprocessing/</code> : 3 stratégies (Baseline, Intelligent, Comprehensive)</li>
+<li><code>models/</code> : Tesseract, Mistral, Llama</li>
+<li><code>evaluations2.py</code> : Métriques rigoureuses (CER, WER, F1)</li>
+<li><code>ocr_pipeline.py</code> : Wrapper MLflow (PythonModel)</li>
+<li><code>api.py</code> : FastAPI + Chargement dynamique</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Montrer la séparation des responsabilités</li>
+<li>Chaque module a une fonction claire</li>
+<li>Le wrapper MLflow permet le versioning des modèles</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="monitoring-mlflow-métriques-clés" class="slide level2">
+<h2>Monitoring MLflow : Métriques Clés</h2>
+<p><strong>Métriques Alignées avec le Business</strong></p>
+<ol type="1">
+<li><strong>F1-Score global</strong> : Indicateur de qualité (objectif &gt; 90%)</li>
+<li><strong>Latence P95</strong> : Respect du SLA (&lt; 6s/facture)</li>
+<li><strong>Coût par 1000 factures</strong> : Rentabilité vs Document AI</li>
+</ol>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/pipeline_total_time_sec.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/global_line_object_f1_strict.png"></p>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Expliquer que MLflow n’est pas qu’un outil d’expérimentation</li>
+<li>Il sert aussi au monitoring en production</li>
+<li>Les graphiques permettent de comparer les runs et détecter les problèmes</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="évaluation-rigoureuse" class="slide level2 smaller">
+<h2>Évaluation Rigoureuse</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><strong>Métriques Complémentaires</strong></p>
+<ul>
+<li><strong>Accuracy</strong> : Champs fixes (ID, date)</li>
+<li><strong>CER/WER</strong> : Qualité de transcription textuelle</li>
+<li><strong>F1 Fuzzy Matching</strong> : Tolérance aux variantes (“Câble” vs “Cable”)</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><strong>Défis Rencontrés</strong></p>
+<ul>
+<li>Fragmentation des articles</li>
+<li>Multilinguisme</li>
+<li>Ambiguïté sémantique</li>
+</ul>
+</div></div>
+<p><a href="https://mlflow-tracking-dev-642264350551.europe-west9.run.app" class="btn btn-primary" role="button">Mlflow</a></p>
+<aside class="notes">
+<ul>
+<li>Montrer la complexité de l’évaluation sur des documents semi-structurés</li>
+<li>Expliquer pourquoi on utilise Fuzzy Matching (variantes orthographiques)</li>
+<li>Mentionner les défis techniques surmontés</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="api-rest-chargement-dynamique" class="slide level2">
+<h2>API REST : Chargement Dynamique</h2>
+<p><strong>FastAPI + MLflow</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>MODELS_CACHE <span class="op">=</span> {}</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="at">@app.post</span>(<span class="st">"/predict_mlflow"</span>)</span>
+<span id="cb1-4"><a></a><span class="cf">async</span> <span class="kw">def</span> predict_mlflow(<span class="bu">file</span>: UploadFile, model_uri: <span class="bu">str</span>):</span>
+<span id="cb1-5"><a></a>    <span class="cf">if</span> model_uri <span class="kw">not</span> <span class="kw">in</span> MODELS_CACHE:</span>
+<span id="cb1-6"><a></a>        MODELS_CACHE[model_uri] <span class="op">=</span> mlflow.pyfunc.load_model(model_uri)</span>
+<span id="cb1-7"><a></a>    </span>
+<span id="cb1-8"><a></a>    model <span class="op">=</span> MODELS_CACHE[model_uri]</span>
+<span id="cb1-9"><a></a>    results <span class="op">=</span> <span class="cf">await</span> run_in_threadpool(<span class="kw">lambda</span>: model.predict([file_path]))</span>
+<span id="cb1-10"><a></a>    <span class="cf">return</span> {<span class="st">"results"</span>: results}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>✅ <strong>Agnostique du modèle</strong> : changement de version sans redéploiement</p>
+<aside class="notes">
+<ul>
+<li>Expliquer le principe du cache pour éviter les rechargements</li>
+<li>Montrer que l’API peut charger n’importe quel modèle depuis MLflow</li>
+<li>Cela permet de changer de modèle sans toucher au code du backend</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="intégration-streamlit" class="slide level2">
+<h2>Intégration Streamlit</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    participant User
+    participant Streamlit
+    participant API
+    participant MLflow
+    
+    User-&gt;&gt;Streamlit: Upload PDF
+    Streamlit-&gt;&gt;API: POST /predict_mlflow
+    API-&gt;&gt;MLflow: Load Model
+    MLflow--&gt;&gt;API: Model Object
+    API-&gt;&gt;API: predict(pdf)
+    API--&gt;&gt;Streamlit: JSON Structured
+    Streamlit-&gt;&gt;User: Display + Filters
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><a href="https://ocr-backend-api-642264350551.europe-west9.run.app/docs" class="btn btn-primary" role="button">FastAPI</a></p>
+<aside class="notes">
+<ul>
+<li>Montrer le flux complet de l’utilisateur final</li>
+<li>L’app Streamlit a été enrichie avec des pages de comparaison et de filtrage</li>
+<li>Démo prévue pendant la soutenance</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="démonstration-prévue" class="slide level2">
+<h2>Démonstration Prévue</h2>
+<p><strong>Composants à Démontrer</strong></p>
+<ol type="1">
+<li>✅ Upload d’une facture via Streamlit</li>
+<li>✅ Appel API FastAPI + inspection JSON</li>
+<li>✅ Consultation MLflow (métriques de l’inférence)</li>
+<li>✅ Trigger de déploiement (Git Push → Cloud Run)</li>
+</ol>
+<p><a href="https://ocr-app-642264350551.europe-west9.run.app" class="btn btn-primary" role="button">Modele Runner</a></p>
+<aside class="notes">
+<ul>
+<li>Préparer la démo en direct</li>
+<li>Avoir une facture de test prête</li>
+<li>Montrer l’interface MLflow avec les runs précédents</li>
+<li>Si le temps le permet, montrer le déploiement automatique</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="conclusion" class="title-slide slide level1 center">
+<h1>Conclusion</h1>
+
+</section>
+<section id="impact-et-perspectives" class="slide level2">
+<h2>Impact et Perspectives</h2>
+<p><strong>Résultats Obtenus</strong></p>
+<ul>
+<li>SLA respecté : 50 factures en ~4.5 minutes ✅</li>
+<li>Précision : F1 &gt; 95% (Mistral) ✅</li>
+<li>Coûts réduits vs Document AI ✅</li>
+</ul>
+<p><strong>Évolutions Futures</strong></p>
+<ul>
+<li>Orchestration via Apache Airflow</li>
+<li>Amelioration Modele</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Montrer que le projet a atteint tous ses objectifs</li>
+<li>Proposer des évolutions réalistes et pertinentes</li>
+<li>Remercier le jury et ouvrir aux questions</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
